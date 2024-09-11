@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('frontend/public/fonts/RobotoMono-Italic-VariableFont_wght.ttf');
+  font-weight: 100 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Robot Mono';
+  src: url('frontend/public/fonts/RobotoMono-VariableFont_wght.ttf');
+  font-weight: 100 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('frontend/public/fonts/Rubik-Italic-VariableFont_wght.ttf');
+  font-weight: 300 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('frontend/public/fonts/Rubik-VariableFont_wght.ttf');
+  font-weight: 300 900;
+  font-style: normal;
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
