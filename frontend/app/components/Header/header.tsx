@@ -4,7 +4,7 @@ import HeaderButton from './HeaderButton';
 export default function Header() {
     return (
         <header>
-            <div className='main-component'>
+            <div className='main-component shadow'>
                 
                 <div className='outer-container'>
 
@@ -12,14 +12,15 @@ export default function Header() {
                         
                     {/* Link Navigation */}
                     <div className='inner-container'>
-                        <HeaderButton href=''>Home</HeaderButton>
-                        <HeaderButton href=''>About</HeaderButton>
-                        <HeaderButton href=''>Projects</HeaderButton>
-                        <HeaderButton href=''>Contact</HeaderButton>
+                        <HeaderButton href='/'>Home</HeaderButton>
+                        <HeaderButton href='/about'>About</HeaderButton>
+                        <HeaderButton href='/projects'>Projects</HeaderButton>
+                        <HeaderButton href='/blog'>Blog</HeaderButton>
+                        <HeaderButton href='/contact'>Contact</HeaderButton>
                     </div>
                     
                 </div>
             </div>
         </header>
-    )
-}
+    );
+};

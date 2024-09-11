@@ -1,13 +1,16 @@
 import Image from "next/image";
-import Container from "@/app/components/container";
+import styles from "./page.module.css";
+import AboutMe from "@/app/components/aboutMe/aboutMe";
 
 export default function Home() {
   return (
-    <main>
-      <Container>
-        <h1>This is my Blog.</h1>
-        <p> A little bit about me!</p>
-      </Container>
+    <main className={styles.section}>
+      <div>
+        <AboutMe>
+          A little bit about me is...
+        </AboutMe>
+      </div>
     </main>
+  
   );
 }
