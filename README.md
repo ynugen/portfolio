@@ -6,6 +6,7 @@ I want to create a website to display my portfolio in a creative and fun way. I 
 
 ### Table of Contents
 * [Plan](#plan)
+* [User Stories](#user-stories)
 
 ## Plan
 
@@ -16,3 +17,6 @@ Priority of the pages I want to have:
 * Home/About page
 * Contact page
 
+## User Stories
+
+1. **As a** user, **I want** a home page **so that** I can see links and preview images to portfolio

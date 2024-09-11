@@ -1,0 +1,61 @@
+.header-title {
+    color: #000;
+    font-family: 'Rubik';
+    font-size: 2.25rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header-font {
+    color: #000;
+    font-family: 'Rubik';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.header-font:hover {
+    font-weight:600;
+}
+
+.text-container {
+    display: flex;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    /* Min width to prevent change of 
+     * spacing between other text 
+     * containers on hover
+     */
+    min-width: 8rem;
+}
+
+.inner-container {
+    display: flex;
+    align-items: center;
+    gap: 4.25rem;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    /* Padding around items */
+    padding-top: 1.56rem;
+    padding-bottom: 1.56rem;
+    padding-left: 2.63rem;
+    padding-right: 2.63rem;
+}
+
+.main-container {
+    display: flex;
+    width: var(--Desktop-Width, 90rem);
+    padding: 1.5625rem 2.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+}

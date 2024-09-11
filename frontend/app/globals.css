@@ -4,34 +4,35 @@
 
 @font-face {
   font-family: 'Roboto Mono';
-  src: url('frontend/public/fonts/RobotoMono-Italic-VariableFont_wght.ttf');
+  src: url('/fonts/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 700;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Robot Mono';
-  src: url('frontend/public/fonts/RobotoMono-VariableFont_wght.ttf');
+  font-family: 'Roboto Mono';
+  src: url('/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Rubik';
-  src: url('frontend/public/fonts/Rubik-Italic-VariableFont_wght.ttf');
+  src: url('/fonts/Rubik-Italic-VariableFont_wght.ttf') format('truetype');
   font-weight: 300 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Rubik';
-  src: url('frontend/public/fonts/Rubik-VariableFont_wght.ttf');
+  src: url('/fonts/Rubik-VariableFont_wght.ttf') format('truetype');
   font-weight: 300 900;
   font-style: normal;
 }
 
 
-:root {
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -59,4 +60,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
