@@ -1,19 +1,19 @@
 .header-title {
     color: #000;
     font-family: 'Rubik';
-    font-size: 2.25rem;
     font-style: italic;
     font-weight: 600;
+    font-size: 2.5rem;
     line-height: normal;
 }
 
 .header-font {
     color: #000;
     font-family: 'Rubik';
-    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    font-size: 2rem;
 }
 .header-font:hover {
     font-weight:600;
@@ -28,14 +28,17 @@
      * spacing between other text 
      * containers on hover
      */
-    min-width: 8rem;
+    min-width: 9rem;
     flex-direction: row;
 }
 
+/* Container for each navigational link*/
 .inner-container {
     display: flex;
-    align-items: center;
-    gap: 4.25rem;
+    grid-template-rows: repeat(20% auto);
+    max-width: 100%;
+    width: var(--max-width);
+    
 }
 
 .outer-container {
@@ -52,13 +55,14 @@
 
 .main-container {
     display: flex;
-    width: var(--Desktop-Width, 90rem);
+    width: var(--Desktop-Width);
     padding: 1.5625rem 2.625rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
     padding-bottom: 4px;
+    height: 1vh;
 }
 
 .shadow {

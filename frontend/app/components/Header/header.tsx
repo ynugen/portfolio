@@ -4,11 +4,11 @@ import HeaderButton from './HeaderButton';
 export default function Header() {
     return (
         <header>
-            <div className='main-component shadow'>
+            <div className='main-component shadow sticky'>
                 
                 <div className='outer-container'>
 
-                    <div className='header-title'>Amy Nguyen</div>
+                    <div className='header-title md:text-1xl'>Amy Nguyen</div>
                         
                     {/* Link Navigation */}
                     <div className='inner-container'>

@@ -1,4 +1,10 @@
 .section {
     display: grid;
     align-items: center;
+    z-index: -1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: ;
 }
