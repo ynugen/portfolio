@@ -1,30 +1,16 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import AboutMe from "@/app/components/aboutMe/aboutMe";
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <main>
-      <div className={styles.section}>
-        
-        <div>
-          <div className="grid grid-cols-4 items-center gap-2.5 justify-center">
-            
-            <div className="flex-col content-center flex p-10 items center gap-2.5 col-span-1">
-              <Image src='/lovely.png' alt='Purple haired girl' width={260} height={260}/>
-              
-              <div className="justify-center">
-                A little bit about me is...
-              </div>
-            </div>
-            
-            <div className="col-span-3">
-              Yessss this is more about me
-            </div>
+    <section className="mx-auto w-11/12 md:w-1/2 mt-20 flex flex-col gap-16 mb-20">
+      <header className="font-rubik font-semibold text-6xl text-neutral-900 text-center">
+        <h1>Amy Nguyen</h1>
+      </header>
 
-          </div>
-        </div>
-      </div>
-    </main>
-  );
+      <section className="md:grid md:grid-cols-2 flex flex-col gap-10"></section>
+    </section>
+  )
 }
+
+export default HomePage;

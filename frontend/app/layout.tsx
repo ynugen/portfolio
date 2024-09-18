@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from './components/header/header'
+import { Roboto_Mono, Rubik} from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
+// Define fonts used for page
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  variable: "--font-roboto-mono",
+  weight: ["100", "700"],
+})
+
+const rubik = Rubik({
+  subsets: ["latin"],
+  variable: "--font-rubik",
+  weight: ["300", "900"],
+})
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -17,9 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
-
+      <body className={`${robotoMono.variable} ${rubik.variable} bg-neutral-100`}>
+        
         {children}
         
       </body>
