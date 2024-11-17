@@ -17,7 +17,7 @@ public class BlogPost {
     private String date;
     private String text;
 
-
+    
 
     // Getters
     public Long getId() {
