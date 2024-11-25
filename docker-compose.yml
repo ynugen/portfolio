@@ -1,0 +1,28 @@
+services:
+  springboot:
+    build:
+      context: ./springboot
+      dockerfile: Dockerfile
+    container_name: springboot
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    networks:
+      - app-network  
+
+  clientside:
+    build:
+      context: ./clientside
+      dockerfile: Dockerfile
+    container_name: clientside
+    ports:
+      - "3000:3000"
+    enviroment:
+      - REACT_APP_API_URL=http://springboot:8080
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
