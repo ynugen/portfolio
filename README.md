@@ -19,4 +19,5 @@ Priority of the pages I want to have:
 
 ## User Stories
 
-1. **As a** user, **I want** a home page **so that** I can see links and preview images to portfolio
+1. **As a** casual user, **I want** a home page **so that** I can see links and preview images to portfolio
+2. **As an** admin user, **I want** an admin page **so that** I can add blog posts, portfolio posts, and project posts to the website.
