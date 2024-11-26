@@ -3,39 +3,39 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-frontend/node_modules
-frontend/.pnp
-frontend/.pnp.js
-frontend/.yarn/install-state.gz
+clientside/node_modules
+clientside/.pnp
+clientside/.pnp.js
+clientside/.yarn/install-state.gz
 
 # testing
-frontend/coverage
+clientside/coverage
 
 # next.js
-frontend/.next/
-frontend/out/
+clientside/.next/
+clientside/out/
 
 # production
-frontend/build
+clientside/build
 
 # misc
-frontend/.DS_Store
-frontend/*.pem
+clientside/.DS_Store
+clientside/*.pem
 
 # debug
-frontend/npm-debug.log*
-frontend/yarn-debug.log*
-frontend/yarn-error.log*
+clientside/npm-debug.log*
+clientside/yarn-debug.log*
+clientside/yarn-error.log*
 
 # local env files
-frontend/.env*.local
+clientside/.env*.local
 
 # vercel
-frontend/.vercel
+clientside/.vercel
 
 # typescript
-frontend/*.tsbuildinfo
-frontend/next-env.d.ts
+clientside/*.tsbuildinfo
+clientside/next-env.d.ts
 
 
 # Springboot .gitignore
