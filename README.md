@@ -2,20 +2,22 @@
 
 ## Description
 
-I want to create a website to display my portfolio in a creative and fun way. I want to be able to create blog posts, display my art and coding project, and perhaps allow people to subscribe to a weekly newsletter. I will be using Figma to design the pages and flow. I'm going to implement the front end using the React framework Next.js and learn Spring Boot for the backend. 
+I want to create a website to display my portfolio in a creative and fun way. I want to be able to create blog posts, display my art and coding project, and perhaps allow people to subscribe to a weekly newsletter. I will be using Figma to design the pages and flow. I'm going to implement the front end using the React framework Next.js ~~and learn Spring Boot for the backend~~. To deploy on github.io, I'll be writing code that will be static compatible!
 
 ### Table of Contents
-* [Plan](#plan)
-* [User Stories](#user-stories)
+
+- [Plan](#plan)
+- [User Stories](#user-stories)
 
 ## Plan
 
 Priority of the pages I want to have:
-* Blog page
-* Projects page
-* Art page
-* Home/About page
-* Contact page
+
+- Blog page
+- Design + Software Projects page
+- Art page
+- Home/~~About page~~ Landing Page
+- Contact page
 
 ## User Stories
 
