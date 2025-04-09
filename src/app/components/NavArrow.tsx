@@ -9,7 +9,7 @@ type ArrowProps = {
 export default function NavArrow({
   direction = "default",
   alt = "arrow",
-  className = "",
+  className = "arrow",
 }: ArrowProps) {
   const src =
     direction === "default"

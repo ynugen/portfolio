@@ -147,6 +147,15 @@
 }
 
 /* Font Styles */
+.subtitle-2 {
+  font-family: "Timetwist", serif;
+  font-size: 1.34rem;
+  font-weight: normal;
+  line-height: normal;
+  text-transform: capitalize;
+
+  color: var(--slate-grey);
+}
 
 /* Container Styles */
 .sidebar {
@@ -154,4 +163,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Image styles */
+.arrow {
+  color: var(--slate-grey);
 }

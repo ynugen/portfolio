@@ -1,3 +1,5 @@
+import NavLink from "./NavLink";
+
 const Sidebar: React.FC = () => {
   return (
     <div className="sidebar">
@@ -18,9 +20,41 @@ const Sidebar: React.FC = () => {
         {/* Navigation container*/}
         <div>
           {/* Page Links */}
-          <div></div>
+          <div>
+            <NavLink
+              direction="default"
+              alt="arrow"
+              className="arrow"
+              linkString="Design"
+            />
+            <NavLink
+              direction="default"
+              alt="arrow"
+              className="arrow"
+              linkString="Software"
+            />
+            <NavLink
+              direction="default"
+              alt="arrow"
+              className="arrow"
+              linkString="Whimsy"
+            />
+            <NavLink
+              direction="default"
+              alt="arrow"
+              className="arrow"
+              linkString="Misc"
+            />
+          </div>
           {/* Contact Me link */}
-          <div></div>
+          <div>
+            <NavLink
+              direction="diagonal"
+              alt="arrow"
+              className="arrow"
+              linkString="Contact"
+            />
+          </div>
         </div>
       </div>
     </div>
