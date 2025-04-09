@@ -12,9 +12,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="sidebar flex-row jusify-start">
+      <body style={{ backgroundColor: "var(--background)" }}>
         <Sidebar />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
