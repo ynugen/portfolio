@@ -165,6 +165,19 @@
   align-items: center;
 }
 
+.nav-container {
+}
+.page-links {
+  width: 10rem;
+  height: 10rem;
+}
+
+.contact-links {
+  gap: 0.5rem;
+  width: 10rem;
+  height: 10rem;
+}
+
 /* Image styles */
 .arrow {
   color: var(--slate-grey);

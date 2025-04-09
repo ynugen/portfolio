@@ -18,9 +18,9 @@ const Sidebar: React.FC = () => {
         <div></div>
 
         {/* Navigation container*/}
-        <div>
+        <div className="nav-container flex flex-col items-start self-stretch">
           {/* Page Links */}
-          <div>
+          <div className="page-links flex flex-col justify-between items-start p-3">
             <NavLink
               direction="default"
               alt="arrow"
@@ -47,7 +47,7 @@ const Sidebar: React.FC = () => {
             />
           </div>
           {/* Contact Me link */}
-          <div>
+          <div className="contact-links flex flex-col justify-end items-start p-3">
             <NavLink
               direction="diagonal"
               alt="arrow"
