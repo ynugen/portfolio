@@ -7,7 +7,7 @@ const Sidebar: React.FC = () => {
       <div className="title-container p-3">
         {/* Scrolling animated text */}
         <div className="scrolling-container">
-          <span className="body">
+          <span className="body scrolling-text">
             NGUYEN MT A. (AKA AYIMA) IS A{" "}
             <span className="body-bi">
               CREAT

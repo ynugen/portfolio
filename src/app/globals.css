@@ -220,15 +220,9 @@
 }
 
 .scrolling-container {
-  width: inherit;
-  white-space: nowrap;
-  animation: scroll 10s linear infinite;
-  animation-timing-function: linear, ease-in-out;
-}
-
-.scrolling-container:hover {
-  animation-play-state: paused;
-  cursor: default;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
 }
 
 .about-container {
@@ -256,6 +250,17 @@
 }
 
 /* Animation styles */
+.scrolling-text {
+  white-space: nowrap;
+  animation: scroll 60s linear infinite;
+  animation-timing-function: linear, ease-in-out;
+}
+
+.scrolling-text:hover {
+  animation-play-state: paused;
+  cursor: default;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
