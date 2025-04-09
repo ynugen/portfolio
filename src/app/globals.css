@@ -147,14 +147,59 @@
 }
 
 /* Font Styles */
+.title-1 {
+  font-family: "Timetwist", serif;
+  font-size: 5.96019rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* text-shadow: -11px 0px 0px var(--marigold); */
+  /* color: var(--slate-grey); */
+}
 .subtitle-2 {
   font-family: "Timetwist", serif;
-  font-size: 1.34rem;
+  font-size: 1.33694rem;
   font-weight: normal;
   line-height: normal;
   text-transform: capitalize;
 
   color: var(--slate-grey);
+}
+
+.body {
+  color: var(--Slate-Gray);
+
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.33694rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.body-b {
+  color: var(--Slate-Gray);
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.33694rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.body-bi {
+  color: var(--Slate-Gray);
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.33694rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.body-small {
+  color: var(--Slate-Gray, #3a3a3a);
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 0.82625rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 /* Container Styles */
@@ -163,10 +208,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-right: var(--slate-grey) 1px solid;
+  width: fit-content;
 }
 
-.nav-container {
+.title-container {
+  width: 30rem;
+  height: 30rem;
+  justify-content: center;
+  gap: 0.625rem;
 }
+
+.scrolling-container {
+  width: inherit;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+  animation-timing-function: linear, ease-in-out;
+}
+
+.scrolling-container:hover {
+  animation-play-state: paused;
+  cursor: default;
+}
+
+.about-container {
+  width: 20rem;
+  height: 20rem;
+}
+
+/* .nav-container {
+} */
+
 .page-links {
   width: 10rem;
   height: 10rem;
@@ -181,4 +253,14 @@
 /* Image styles */
 .arrow {
   color: var(--slate-grey);
+}
+
+/* Animation styles */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
