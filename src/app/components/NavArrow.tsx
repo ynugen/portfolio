@@ -1,4 +1,5 @@
 import Image from "next/image";
+import config from "../../../next.config.js";
 
 // Simple component to render an arrow icon
 
@@ -13,12 +14,12 @@ export default function NavArrow({
   alt = "arrow",
   className = "arrow",
 }: ArrowProps) {
-  // const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const basePath = config.basePath;
 
   const src =
     direction === "default"
-      ? "/icons/arrow-default.svg"
-      : "/icons/arrow-diagonal.svg";
+      ? `${basePath}/icons/arrow-default.svg`
+      : `${basePath}/icons/arrow-diagonal.svg`;
 
   return (
     <Image src={src} alt={alt} className={className} width={24} height={24} />
