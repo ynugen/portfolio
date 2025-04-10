@@ -12,6 +12,7 @@
   --matcha: #a8d08d;
 
   --square-size: min(calc(100vh / 5), calc(100vw / 8));
+  --h1-font-size: 6rem !important;
 }
 
 /* Timetwist font face */
@@ -140,7 +141,7 @@
 /* Font Styles */
 .title-1 {
   font-family: "Timetwist", serif;
-  font-size: 5.96019rem;
+  font-size: var(--h1-font-size);
   font-weight: bold;
   text-transform: uppercase;
   vertical-align: middle;
@@ -149,7 +150,7 @@
 }
 .subtitle-2 {
   font-family: "Timetwist", serif;
-  font-size: 1.33694rem;
+  font-size: calc(var("--h1-font-size") / (1.618 * 3));
   font-weight: normal;
   line-height: normal;
   text-transform: capitalize;
@@ -161,7 +162,7 @@
   color: var(--slate-grey);
 
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 1.33694rem;
+  font-size: calc(var("--h1-font-size") / (1.618 * 3));
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -170,7 +171,7 @@
 .body-b {
   color: var(--slate-grey);
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 1.33694rem;
+  font-size: calc(var("--h1-font-size") / (1.618 * 3));
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -179,7 +180,7 @@
 .body-bi {
   color: var(--slate-grey);
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 1.33694rem;
+  font-size: calc(var("--h1-font-size") / (1.618 * 3));
   font-style: italic;
   font-weight: 500;
   line-height: normal;
@@ -188,7 +189,7 @@
 .body-small {
   color: var(--slate-grey);
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 0.82625rem;
+  font-size: calc(var("--h1-font-size") / (1.618 * 4));
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -203,31 +204,48 @@
   border-right: var(--slate-grey) 1px solid;
   width: fit-content;
   aspect-ratio: auto;
-  height: 100%;
+  height: 100vh;
   background-color: var(--background);
 }
 
 .title-container {
   width: calc(3 * var(--square-size));
   height: calc(3 * var(--square-size));
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 0.625rem;
+  align-items: center; /* Centers content within the container */
+}
+
+.name-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows content to wrap and fit within the container */
+  justify-content: center; /* Centers content horizontally */
 }
 
 .profile-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  width: 100%;
-  height: 100%;
+  height: auto; /* Adjusts height dynamically to fit within the title-container */
+  gap: 0.75rem;
+  max-height: 96%; /* Ensures it doesn't exceed the title-container's height */
+  box-sizing: border-box; /* Includes padding and border in size calculations */
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  overflow: hidden;
 }
 
 .scrolling-container {
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
+  align-items: center;
+  height: 1.5rem;
 }
 
 .about-container {
@@ -257,8 +275,8 @@
 /* Animation styles */
 .scrolling-text {
   white-space: nowrap;
-  animation: scroll 60s linear infinite;
-  animation-timing-function: linear, ease-in-out;
+  animation: scroll 40s linear infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .scrolling-text:hover {
@@ -271,6 +289,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }

@@ -12,7 +12,7 @@ const Sidebar: React.FC = () => {
         {/* Scrolling animated text */}
         <div className="scrolling-container">
           <span className="body scrolling-text">
-            NGUYEN MT A. (AKA AYIMA) IS A{" "}
+            NGUYEN MT A. (AKA <span className="body-b">AYIMA</span>) IS A{" "}
             <span className="body-bi">
               CREAT
               <span className="body-b">IV</span>E
@@ -25,7 +25,8 @@ const Sidebar: React.FC = () => {
             <span className="body-b">
               SOFTWARE <span className="body-bi">CRAFT</span>MAN
             </span>{" "}
-            BASED IN MELBOURNE, AUSTRALIA. NGUYEN MT A. (AKA AYIMA) IS A{" "}
+            BASED in MELBOURNE, AUSTRALIA. NGUYEN MT A. (AKA{" "}
+            <span className="body-b">AYIMA</span>) IS A{" "}
             <span className="body-bi">
               CREAT
               <span className="body-b">IV</span>E
@@ -38,13 +39,13 @@ const Sidebar: React.FC = () => {
             <span className="body-b">
               SOFTWARE <span className="body-bi">CRAFT</span>MAN
             </span>{" "}
-            BASED IN MELBOURNE, AUSTRALIA.
+            BASED in MELBOURNE, AUSTRALIA.{" "}
           </span>
         </div>
 
         <div className="profile-container">
           {/* Title text */}
-          <div className="title-1 flex h-[6rem]">
+          <div className="title-1 flex h-[6.5rem]">
             <div style={{ color: "var(--marigold)", position: "relative" }}>
               AYIMA
               <div
@@ -61,14 +62,17 @@ const Sidebar: React.FC = () => {
           </div>
 
           {/* Image */}
-          <div className="flex justify-center items-top p-3 w-full h-full">
+          <div
+            className="profile-image-container p-3"
+            style={{ overflow: "hidden" }}
+          >
             <Image
               src={`${basePath}/images/lovely.png`}
               alt="Profile picture"
               objectFit="cover"
-              height={280}
-              width={280}
-              className="object-cover"
+              layout="responsive"
+              height={200}
+              width={200}
             />
           </div>
         </div>
