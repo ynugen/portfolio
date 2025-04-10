@@ -1,5 +1,6 @@
 import NavLink from "./NavLink";
 import Title from "./Title";
+import Link from "next/link";
 import Image from "next/image";
 import config from "../../../next.config.js";
 
@@ -61,11 +62,11 @@ const Sidebar: React.FC = () => {
               </div>
             </div> */}
 
-            <Title
-              title="AYIMA"
-              className="title-1 flex h-[6.5rem]"
-              color="var(--marigold)"
-            />
+            <Title className="title-1 flex h-[6.5rem]" color="var(--marigold)">
+              <Link href="/">
+                <h1>AYIMA</h1>
+              </Link>
+            </Title>
           </div>
 
           {/* Image */}

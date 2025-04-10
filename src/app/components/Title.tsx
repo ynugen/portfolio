@@ -2,13 +2,13 @@
 import { useEffect, useRef, useState } from "react";
 
 type TitleProps = {
-  title: string;
+  children: React.ReactNode;
   className?: string;
   color?: string;
 };
 
 export default function Title({
-  title = "AYIMA",
+  children,
   className = "title-1 flex h-[6.5rem]",
   color = "var(--marigold)",
 }: TitleProps) {
@@ -52,7 +52,7 @@ export default function Title({
 
   return (
     <div ref={titleRef} className={className} style={shadowStyle}>
-      {title}
+      {children}
     </div>
   );
 }
