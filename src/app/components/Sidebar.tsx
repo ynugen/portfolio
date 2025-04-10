@@ -111,42 +111,37 @@ const Sidebar: React.FC = () => {
         </div>
 
         {/* Navigation container*/}
-        <div className="nav-container flex flex-col items-start self-stretch subtitle-2">
+        <div className="nav-container flex flex-col items-start self-stretch">
           {/* Page Links */}
           <div className="page-links flex flex-col justify-between items-start p-3">
-            <NavLink
-              direction="default"
-              alt="arrow"
-              className="arrow"
-              linkString="Design"
-            />
-            <NavLink
-              direction="default"
-              alt="arrow"
-              className="arrow"
-              linkString="Software"
-            />
-            <NavLink
-              direction="default"
-              alt="arrow"
-              className="arrow"
-              linkString="Whimsy"
-            />
-            <NavLink
-              direction="default"
-              alt="arrow"
-              className="arrow"
-              linkString="Misc"
-            />
+            <NavLink direction="default" alt="arrow">
+              <Link href="/design" className="link">
+                Design
+              </Link>
+            </NavLink>
+            <NavLink direction="default" alt="arrow">
+              <Link href="/software" className="link">
+                Software
+              </Link>
+            </NavLink>
+            <NavLink direction="default" alt="arrow">
+              <Link href="/whimsy" className="link">
+                Whimsy
+              </Link>
+            </NavLink>
+            <NavLink direction="default" alt="arrow">
+              <Link href="/misc" className="link">
+                Misc
+              </Link>
+            </NavLink>
           </div>
           {/* Contact Me link */}
           <div className="contact-links flex flex-col justify-end items-start p-3">
-            <NavLink
-              direction="diagonal"
-              alt="arrow"
-              className="arrow"
-              linkString="Contact"
-            />
+            <NavLink direction="diagonal" alt="arrow">
+              <Link href="/contact" className="link">
+                Contact
+              </Link>
+            </NavLink>
           </div>
         </div>
       </div>

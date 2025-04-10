@@ -164,6 +164,27 @@
   color: var(--slate-grey);
 }
 
+.link {
+  font-family: "Timetwist", serif;
+  font-size: calc(var(--h1-font-size) / (1.618 * 3));
+  font-weight: bold;
+  line-height: normal;
+  text-transform: capitalize;
+
+  color: var(--background);
+
+  -webkit-text-stroke-color: var(--slate-grey);
+  -webkit-text-stroke-width: 1.5px;
+}
+
+.link:hover,
+.page-selected {
+  color: var(--marigold);
+  -webkit-text-stroke-color: var(--slate-grey);
+  -webkit-text-stroke-width: 1.5px;
+  text-shadow: 4px 0px 0px var(--slate-grey);
+}
+
 .body {
   color: var(--slate-grey);
 

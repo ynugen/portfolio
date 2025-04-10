@@ -4,26 +4,24 @@ type NavLinkProps = {
   direction: "default" | "diagonal";
   alt: string;
   className?: string;
-  linkString?: string;
+  children: React.ReactNode;
 };
 
 export default function NavLink({
   direction = "default",
   alt = "arrow",
-  className = "",
-  linkString = "Link",
+  children,
 }: NavLinkProps) {
   return (
-    <div className="inline-flex justify-center items-center gap-[0.5rem]">
-      <div className="pb-1">
+    <div className={`inline-flex justify-center items-center gap-[0.5rem]`}>
+      <div className="pb-0.5">
         <NavArrow
           direction={direction}
           alt={alt}
-          className={`w-[24px] h-[24px] ${className}`}
+          className={`w-[24px] h-[24px]`}
         />
       </div>
-
-      {linkString}
+      {children}
     </div>
   );
 }
