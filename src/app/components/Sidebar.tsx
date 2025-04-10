@@ -1,4 +1,8 @@
 import NavLink from "./NavLink";
+import Image from "next/image";
+import config from "../../../next.config.js";
+
+const basePath = config.basePath;
 
 const Sidebar: React.FC = () => {
   return (
@@ -38,24 +42,36 @@ const Sidebar: React.FC = () => {
           </span>
         </div>
 
-        {/* Title text */}
-        <div className="title-1">
-          <div style={{ color: "var(--marigold)", position: "relative" }}>
-            AYIMA
-            <div
-              className="absolute"
-              style={{
-                color: "var(--slate-grey)",
-                top: "0",
-                left: "11px",
-              }}
-            >
+        <div className="profile-container">
+          {/* Title text */}
+          <div className="title-1 flex h-[6rem]">
+            <div style={{ color: "var(--marigold)", position: "relative" }}>
               AYIMA
+              <div
+                className="absolute"
+                style={{
+                  color: "var(--slate-grey)",
+                  top: "0",
+                  left: "11px",
+                }}
+              >
+                AYIMA
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Image */}
+          {/* Image */}
+          <div className="flex justify-center items-top p-3 w-full h-full">
+            <Image
+              src={`${basePath}/images/lovely.png`}
+              alt="Profile picture"
+              objectFit="cover"
+              height={280}
+              width={280}
+              className="object-cover"
+            />
+          </div>
+        </div>
       </div>
 
       {/* About and Navigational containers */}
@@ -68,7 +84,7 @@ const Sidebar: React.FC = () => {
           <div className="body-small text-justify">
             I&#39;ve been orbiting around design my entire life - realised it as
             an afterthought and not a possibility. But time is much too a fickle
-            thing for me to mull and ponder over my if only&#39;s. Imagination
+            thing for me to mull and ponder over if only&#39;s. Imagination
             should be brought to life. Welcome to my collection of all things -
             lost and little - that I&#39;ve curated across my years.
           </div>

@@ -9,9 +9,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body style={{ backgroundColor: "var(--background)" }}>
-        <Sidebar />
-        <main>{children}</main>
+      <body style={{ backgroundColor: "var(--marigold)" }}>
+        <div className="grid grid-cols-8 h-screen w-full">
+          <aside className="col-span-3">
+            <Sidebar />
+          </aside>
+
+          <main className="col-span-5">{children}</main>
+        </div>
       </body>
     </html>
   );
