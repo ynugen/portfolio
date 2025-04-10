@@ -18,8 +18,8 @@ export default function NavArrow({
 
   const src =
     direction === "default"
-      ? `${basePath}/icons/arrow-default.svg`
-      : `${basePath}/icons/arrow-diagonal.svg`;
+      ? `${basePath}/icons/arrow-default.png`
+      : `${basePath}/icons/arrow-diagonal.png`;
 
   return (
     <Image src={src} alt={alt} className={className} width={24} height={24} />

@@ -19,7 +19,7 @@ export default function NavLink({
         <NavArrow
           direction={direction}
           alt={alt}
-          className={`w-[1.25rem] h-[1.25rem] ${className}`}
+          className={`w-[24px] h-[24px] ${className}`}
         />
       </div>
 

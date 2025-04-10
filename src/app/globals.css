@@ -22,6 +22,8 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
 }
 @font-face {
   font-family: "Timetwist";
@@ -29,6 +31,8 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
 }
 @font-face {
   font-family: "Timetwist";
@@ -36,6 +40,8 @@
   font-weight: normal;
   font-style: italic;
   font-display: swap;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
 }
 
 /* Helvetica Neue font face */
@@ -270,6 +276,8 @@
 /* Image styles */
 .arrow {
   color: var(--slate-grey);
+  image-rendering: crisp-edges; /* Fallback for older browsers */
+  image-rendering: pixelated; /* Preferred for nearest-neighbor resizing */
 }
 
 /* Animation styles */
