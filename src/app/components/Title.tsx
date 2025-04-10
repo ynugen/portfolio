@@ -37,7 +37,7 @@ export default function Title({
       }
 
       setShadowStyle({
-        textShadow: `${offsetX}px 0px 0px ${color}`,
+        textShadow: `${offsetX}px 0px 0px ${color}, ${offsetX}px 1px 0px ${color}, ${offsetX}px -1px 0px ${color}`,
       });
     };
 

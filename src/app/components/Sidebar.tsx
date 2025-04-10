@@ -3,10 +3,24 @@ import Title from "./Title";
 import Link from "next/link";
 import Image from "next/image";
 import config from "../../../next.config.js";
+import { usePathname } from "next/navigation";
 
 const basePath = config.basePath;
 
 const Sidebar: React.FC = () => {
+  // Get the current pathname
+  const pathname = usePathname();
+
+  const navLinks = {
+    main: [
+      { href: "/design", label: "Design" },
+      { href: "/software", label: "Software" },
+      { href: "/whimsy", label: "Whimsy" },
+      { href: "/misc", label: "Misc" },
+    ],
+    contact: [{ href: "/contact", label: "Contact" }],
+  };
+
   return (
     <div className="sidebar">
       {/* Title container */}
@@ -48,21 +62,10 @@ const Sidebar: React.FC = () => {
         <div className="profile-container">
           {/* Title text */}
           <div className="title-1 flex h-[6.5rem]">
-            {/* <div style={{ color: "var(--marigold)", position: "relative" }}>
-              AYIMA
-              <div
-                className="absolute"
-                style={{
-                  color: "var(--slate-grey)",
-                  top: "0",
-                  left: "11px",
-                }}
-              >
-                AYIMA
-              </div>
-            </div> */}
-
-            <Title className="title-1 flex h-[6.5rem]" color="var(--marigold)">
+            <Title
+              className="title-1 flex h-[6.5rem] title-outline"
+              color="var(--slate-grey)"
+            >
               <Link href="/">
                 <h1>AYIMA</h1>
               </Link>
@@ -114,7 +117,7 @@ const Sidebar: React.FC = () => {
         <div className="nav-container flex flex-col items-start self-stretch">
           {/* Page Links */}
           <div className="page-links flex flex-col justify-between items-start p-3">
-            <NavLink direction="default" alt="arrow">
+            {/* <NavLink direction="default" alt="arrow">
               <Link href="/design" className="link">
                 Design
               </Link>
@@ -133,15 +136,46 @@ const Sidebar: React.FC = () => {
               <Link href="/misc" className="link">
                 Misc
               </Link>
-            </NavLink>
+            </NavLink> */}
+
+            {navLinks.main.map((link) => (
+              <NavLink
+                key={link.href}
+                direction="default"
+                alt="arrow"
+                className={`${
+                  pathname === link.href ? "active-link" : "inactive-link"
+                }`}
+              >
+                <Link href={link.href} className="link">
+                  {link.label}
+                </Link>
+              </NavLink>
+            ))}
           </div>
+
           {/* Contact Me link */}
           <div className="contact-links flex flex-col justify-end items-start p-3">
-            <NavLink direction="diagonal" alt="arrow">
+            {/* <NavLink direction="diagonal" alt="arrow">
               <Link href="/contact" className="link">
                 Contact
               </Link>
-            </NavLink>
+            </NavLink> */}
+
+            {navLinks.contact.map((link) => (
+              <NavLink
+                key={link.href}
+                direction="diagonal"
+                alt="arrow"
+                className={`${
+                  pathname === link.href ? "active-link" : "inactive-link"
+                }`}
+              >
+                <Link href={link.href} className="link">
+                  {link.label}
+                </Link>
+              </NavLink>
+            ))}
           </div>
         </div>
       </div>
