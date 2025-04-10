@@ -66,11 +66,11 @@ const Sidebar: React.FC = () => {
 
           {/* About me text */}
           <div className="body-small text-justify">
-            I’ve been orbiting around design my entire life - realised it as an
-            afterthought and not a possibility. But time is much too a fickle
-            thing for me to mull and ponder over my if only's. Imagination
+            I&#39;ve been orbiting around design my entire life - realised it as
+            an afterthought and not a possibility. But time is much too a fickle
+            thing for me to mull and ponder over my if only&#39;s. Imagination
             should be brought to life. Welcome to my collection of all things -
-            lost and little - that I’ve curated across my years.
+            lost and little - that I&#39;ve curated across my years.
           </div>
         </div>
 

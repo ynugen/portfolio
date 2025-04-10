@@ -1,4 +1,4 @@
-// Simple component to display navigation arrows
+// Simple component to render an arrow icon
 
 type ArrowProps = {
   direction?: "default" | "diagonal";
@@ -11,9 +11,16 @@ export default function NavArrow({
   alt = "arrow",
   className = "arrow",
 }: ArrowProps) {
+  const basePath = process.env.BASE_URL
+    ? process.env.BASE_URL.replace(/\/+$/, "")
+    : "";
+
   const src =
     direction === "default"
-      ? "/icons/arrow-default.svg"
-      : "/icons/arrow-diagonal.svg";
-  return <img src={src} alt={alt} className={className} />;
+      ? `${basePath}/icons/arrow-default.svg`
+      : `${basePath}/icons/arrow-diagonal.svg`;
+
+  return (
+    <img src={src} alt={alt} className={className} width={24} height={24} />
+  );
 }
