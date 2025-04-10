@@ -156,7 +156,7 @@
 }
 .subtitle-2 {
   font-family: "Timetwist", serif;
-  font-size: calc(var("--h1-font-size") / (1.618 * 3));
+  font-size: calc(var(--h1-font-size) / (1.618 * 3));
   font-weight: normal;
   line-height: normal;
   text-transform: capitalize;

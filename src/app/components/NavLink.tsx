@@ -14,7 +14,7 @@ export default function NavLink({
   linkString = "Link",
 }: NavLinkProps) {
   return (
-    <div className="inline-flex justify-center items-center gap-[0.3125rem] subtitle-2">
+    <div className="inline-flex justify-center items-center gap-[0.5rem]">
       <div className="pb-1">
         <NavArrow
           direction={direction}

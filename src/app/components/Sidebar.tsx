@@ -103,7 +103,7 @@ const Sidebar: React.FC = () => {
         </div>
 
         {/* Navigation container*/}
-        <div className="nav-container flex flex-col items-start self-stretch">
+        <div className="nav-container flex flex-col items-start self-stretch subtitle-2">
           {/* Page Links */}
           <div className="page-links flex flex-col justify-between items-start p-3">
             <NavLink
