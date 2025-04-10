@@ -62,10 +62,7 @@ const Sidebar: React.FC = () => {
           </div>
 
           {/* Image */}
-          <div
-            className="profile-image-container p-3"
-            style={{ overflow: "hidden" }}
-          >
+          <div className="image-container pb-3" style={{ overflow: "hidden" }}>
             <Image
               src={`${basePath}/images/lovely.png`}
               alt="Profile picture"
@@ -83,6 +80,17 @@ const Sidebar: React.FC = () => {
         {/* About text */}
         <div className="about-container flex flex-col justify-end p-3">
           {/* Motion graphic */}
+
+          <div className="image-container pb-3">
+            <Image
+              src={`${basePath}/images/lovely.png`}
+              alt="Motion graphic"
+              objectFit="cover"
+              layout="responsive"
+              height={200}
+              width={200}
+            />
+          </div>
 
           {/* About me text */}
           <div className="body-small text-justify">
