@@ -13,9 +13,7 @@ export default function NavArrow({
   alt = "arrow",
   className = "arrow",
 }: ArrowProps) {
-  const basePath = process.env.BASE_URL
-    ? process.env.BASE_URL.replace(/\/+$/, "")
-    : "";
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   const src =
     direction === "default"
