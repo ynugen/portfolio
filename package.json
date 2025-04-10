@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d out",
     "format:out": "prettier --write out/**/*.{html,css}"
   },
   "dependencies": {
