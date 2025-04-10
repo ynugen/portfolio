@@ -13,10 +13,14 @@ export default function NavArrow({
   alt = "arrow",
   className = "arrow",
 }: ArrowProps) {
+  const basePath = process.env.BASE_URL
+    ? process.env.BASE_URL.replace(/\/+$/, "")
+    : "";
+
   const src =
     direction === "default"
-      ? "/icons/arrow-default.svg"
-      : "/icons/arrow-diagonal.svg";
+      ? `${basePath}/icons/arrow-default.svg`
+      : `${basePath}/icons/arrow-diagonal.svg`;
 
   return (
     <Image src={src} alt={alt} className={className} width={24} height={24} />
