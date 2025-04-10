@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 // Simple component to render an arrow icon
 
 type ArrowProps = {
@@ -21,6 +23,6 @@ export default function NavArrow({
       : `${basePath}/icons/arrow-diagonal.svg`;
 
   return (
-    <img src={src} alt={alt} className={className} width={24} height={24} />
+    <Image src={src} alt={alt} className={className} width={24} height={24} />
   );
 }
