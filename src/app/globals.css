@@ -245,6 +245,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; /* Centers content within the container */
+  border-bottom: var(--slate-grey) 1px solid;
 }
 
 .name-container {
@@ -281,6 +282,7 @@
 .about-container {
   width: calc(2 * var(--square-size));
   height: calc(2 * var(--square-size));
+  border-right: var(--slate-grey) 1px solid;
 }
 
 /* .nav-container {
@@ -289,6 +291,7 @@
 .page-links {
   width: var(--square-size);
   height: var(--square-size);
+  border-bottom: var(--slate-grey) 1px solid;
 }
 
 .contact-links {

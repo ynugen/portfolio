@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 const basePath = config.basePath;
 
 const Sidebar: React.FC = () => {
-  // Get the current pathname
+  // Get the current relative pathname
   const pathname = usePathname();
 
   const navLinks = {
@@ -73,7 +73,7 @@ const Sidebar: React.FC = () => {
           </div>
 
           {/* Image */}
-          <div className="image-container pb-3" style={{ overflow: "hidden" }}>
+          <div className="image-container" style={{ overflow: "hidden" }}>
             <Image
               src={`${basePath}/images/lovely.png`}
               alt="Profile picture"

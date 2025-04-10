@@ -9,13 +9,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body style={{ backgroundColor: "var(--marigold)" }}>
-        <div className=" h-screen w-full">
-          <aside className="">
+      <body style={{ backgroundColor: "var(--background)" }}>
+        <div className="h-screen w-full flex">
+          <aside className="w-fit">
             <Sidebar />
           </aside>
 
-          <main className="">{children}</main>
+          <main
+            className="flex-1"
+            style={{ backgroundColor: "var(--marigold)" }}
+          >
+            {children}
+          </main>
         </div>
       </body>
     </html>
