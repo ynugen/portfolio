@@ -1,0 +1,58 @@
+"use client";
+import { useEffect, useRef, useState } from "react";
+
+type TitleProps = {
+  title: string;
+  className?: string;
+  color?: string;
+};
+
+export default function Title({
+  title = "AYIMA",
+  className = "title-1 flex h-[6.5rem]",
+  color = "var(--marigold)",
+}: TitleProps) {
+  const titleRef = useRef<HTMLDivElement>(null);
+  const [shadowStyle, setShadowStyle] = useState({});
+
+  useEffect(() => {
+    const handleMouseMove = (event: MouseEvent) => {
+      if (!titleRef.current) return;
+
+      // Get the bounding container of title element
+      const rect = titleRef.current.getBoundingClientRect();
+
+      // Calculate center of the title box
+      const centerX = rect.left + rect.width / 2;
+
+      // Calculate the offset of the mouse position from the center of the title box
+      // Only offset the shadow in the x direction based on cursor position
+      let offsetX = (event.clientX - centerX) / 20;
+
+      // Limit the offset to a maximum of 11 pixels (or depending on the title font size so that it doesn't look weird)
+      if (offsetX > 11) {
+        offsetX = 11;
+      } else if (offsetX < -11) {
+        offsetX = -11;
+      }
+
+      setShadowStyle({
+        textShadow: `${offsetX}px 0px 0px ${color}`,
+      });
+    };
+
+    // Mouse movement event listener
+    window.addEventListener("mousemove", handleMouseMove);
+
+    // Cleanup function to remove the event listener
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  return (
+    <div ref={titleRef} className={className} style={shadowStyle}>
+      {title}
+    </div>
+  );
+}

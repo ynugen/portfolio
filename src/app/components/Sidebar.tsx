@@ -1,4 +1,5 @@
 import NavLink from "./NavLink";
+import Title from "./Title";
 import Image from "next/image";
 import config from "../../../next.config.js";
 
@@ -46,7 +47,7 @@ const Sidebar: React.FC = () => {
         <div className="profile-container">
           {/* Title text */}
           <div className="title-1 flex h-[6.5rem]">
-            <div style={{ color: "var(--marigold)", position: "relative" }}>
+            {/* <div style={{ color: "var(--marigold)", position: "relative" }}>
               AYIMA
               <div
                 className="absolute"
@@ -58,7 +59,13 @@ const Sidebar: React.FC = () => {
               >
                 AYIMA
               </div>
-            </div>
+            </div> */}
+
+            <Title
+              title="AYIMA"
+              className="title-1 flex h-[6.5rem]"
+              color="var(--marigold)"
+            />
           </div>
 
           {/* Image */}
