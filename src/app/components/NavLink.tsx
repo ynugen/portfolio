@@ -13,7 +13,9 @@ export default function NavLink({
   children,
 }: NavLinkProps) {
   return (
-    <div className={`inline-flex justify-center items-center gap-[0.5rem]`}>
+    <div
+      className={`inline-flex justify-center items-center gap-[0.5rem] w-fit`}
+    >
       <div className="pb-0.5">
         <NavArrow
           direction={direction}

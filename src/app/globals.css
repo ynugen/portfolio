@@ -12,7 +12,7 @@
   --matcha: #a8d08d;
 
   --square-size: min(calc(100vh / 5), calc(100vw / 8));
-  --h1-font-size: 6rem !important;
+  --title-font-size: calc(var(--square-size) * 0.463768116);
 }
 
 /* Timetwist font face */
@@ -147,7 +147,7 @@
 /* Font Styles */
 .title-1 {
   font-family: "Timetwist", serif;
-  font-size: var(--h1-font-size);
+  font-size: var(--title-font-size);
   font-weight: bold;
   text-transform: uppercase;
   vertical-align: middle;
@@ -159,7 +159,7 @@
 
 .subtitle-2 {
   font-family: "Timetwist", serif;
-  font-size: calc(var(--h1-font-size) / (1.618 * 3));
+  font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-weight: normal;
   line-height: normal;
   text-transform: capitalize;
@@ -169,7 +169,7 @@
 
 .link {
   font-family: "Timetwist", serif;
-  font-size: calc(var(--h1-font-size) / (1.618 * 3));
+  font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-weight: bold;
   line-height: normal;
   text-transform: capitalize;
@@ -185,14 +185,14 @@
   color: var(--marigold);
   -webkit-text-stroke-color: var(--slate-grey);
   -webkit-text-stroke-width: 1.5px;
-  text-shadow: 4px 0px 0px var(--slate-grey);
+  text-shadow: calc(var(--square-size) * 0.02) 0px 0px var(--slate-grey);
 }
 
 .body {
   color: var(--slate-grey);
 
   font-family: "Helvetica Neue", sans-serif;
-  font-size: calc(var("--h1-font-size") / (1.618 * 3));
+  font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -201,7 +201,7 @@
 .body-b {
   color: var(--slate-grey);
   font-family: "Helvetica Neue", sans-serif;
-  font-size: calc(var("--h1-font-size") / (1.618 * 3));
+  font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -210,7 +210,7 @@
 .body-bi {
   color: var(--slate-grey);
   font-family: "Helvetica Neue", sans-serif;
-  font-size: calc(var("--h1-font-size") / (1.618 * 3));
+  font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-style: italic;
   font-weight: 500;
   line-height: normal;
@@ -219,7 +219,7 @@
 .body-small {
   color: var(--slate-grey);
   font-family: "Helvetica Neue", sans-serif;
-  font-size: calc(var("--h1-font-size") / (1.618 * 4));
+  font-size: calc(var(--title-font-size) / (1.618 * 4));
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -258,9 +258,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto; /* Adjusts height dynamically to fit within the title-container */
-  gap: 1.25rem;
-  max-height: 96%; /* Ensures it doesn't exceed the title-container's height */
+  height: auto;
+  gap: calc(var(--square-size) * 0.11);
+  max-height: 96%;
   box-sizing: border-box; /* Includes padding and border in size calculations */
 }
 

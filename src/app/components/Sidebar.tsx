@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import config from "../../../next.config.js";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 const basePath = config.basePath;
 
@@ -61,10 +62,11 @@ const Sidebar: React.FC = () => {
 
         <div className="profile-container">
           {/* Title text */}
-          <div className="title-1 flex h-[6.5rem]">
+          <div className="title-1 flex h-[var(--title-font-size)]">
             <Title
-              className="title-1 flex h-[6.5rem] title-outline"
+              className="title-1 flex title-outline3"
               color="var(--slate-grey)"
+              maxOffset="var(--max-offset)"
             >
               <Link href="/">
                 <h1>AYIMA</h1>
@@ -117,27 +119,6 @@ const Sidebar: React.FC = () => {
         <div className="nav-container flex flex-col items-start self-stretch">
           {/* Page Links */}
           <div className="page-links flex flex-col justify-between items-start p-3">
-            {/* <NavLink direction="default" alt="arrow">
-              <Link href="/design" className="link">
-                Design
-              </Link>
-            </NavLink>
-            <NavLink direction="default" alt="arrow">
-              <Link href="/software" className="link">
-                Software
-              </Link>
-            </NavLink>
-            <NavLink direction="default" alt="arrow">
-              <Link href="/whimsy" className="link">
-                Whimsy
-              </Link>
-            </NavLink>
-            <NavLink direction="default" alt="arrow">
-              <Link href="/misc" className="link">
-                Misc
-              </Link>
-            </NavLink> */}
-
             {navLinks.main.map((link) => (
               <NavLink
                 key={link.href}
@@ -156,12 +137,6 @@ const Sidebar: React.FC = () => {
 
           {/* Contact Me link */}
           <div className="contact-links flex flex-col justify-end items-start p-3">
-            {/* <NavLink direction="diagonal" alt="arrow">
-              <Link href="/contact" className="link">
-                Contact
-              </Link>
-            </NavLink> */}
-
             {navLinks.contact.map((link) => (
               <NavLink
                 key={link.href}

@@ -29,11 +29,19 @@ export default function Title({
       // Only offset the shadow in the x direction based on cursor position
       let offsetX = (event.clientX - centerX) / 20;
 
+      // Dynamically set the maximum offset based on my golden ratio unit square size\
+      const squareSize = Math.min(
+        window.innerHeight / 5,
+        window.innerHeight / 8
+      );
+      console.log("squareSize", squareSize);
+      const maxOffset = squareSize * 0.05;
+
       // Limit the offset to a maximum of 11 pixels (or depending on the title font size so that it doesn't look weird)
-      if (offsetX > 11) {
-        offsetX = 11;
-      } else if (offsetX < -11) {
-        offsetX = -11;
+      if (offsetX > maxOffset) {
+        offsetX = maxOffset;
+      } else if (offsetX < -maxOffset) {
+        offsetX = -maxOffset;
       }
 
       setShadowStyle({
