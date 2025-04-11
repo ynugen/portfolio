@@ -34,7 +34,8 @@ export default function Title({
         window.innerHeight / 5,
         window.innerHeight / 8
       );
-      console.log("squareSize", squareSize);
+
+      // console.log("squareSize", squareSize);
       const maxOffset = squareSize * 0.05;
 
       // Limit the offset to a maximum of 11 pixels (or depending on the title font size so that it doesn't look weird)
