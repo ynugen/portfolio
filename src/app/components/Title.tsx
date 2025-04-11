@@ -32,11 +32,11 @@ export default function Title({
       // Dynamically set the maximum offset based on my golden ratio unit square size\
       const squareSize = Math.min(
         window.innerHeight / 5,
-        window.innerHeight / 8
+        window.innerWidth / 8
       );
 
       // console.log("squareSize", squareSize);
-      const maxOffset = squareSize * 0.05;
+      const maxOffset = squareSize * 0.06;
 
       // Limit the offset to a maximum of 11 pixels (or depending on the title font size so that it doesn't look weird)
       if (offsetX > maxOffset) {
