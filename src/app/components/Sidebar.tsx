@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import config from "../../../next.config.js";
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
 
 const basePath = config.basePath;
 
@@ -66,7 +65,6 @@ const Sidebar: React.FC = () => {
             <Title
               className="title-1 flex title-outline3"
               color="var(--slate-grey)"
-              maxOffset="var(--max-offset)"
             >
               <Link href="/">
                 <h1>AYIMA</h1>
@@ -120,15 +118,13 @@ const Sidebar: React.FC = () => {
           {/* Page Links */}
           <div className="page-links flex flex-col justify-between items-start p-3">
             {navLinks.main.map((link) => (
-              <NavLink
-                key={link.href}
-                direction="default"
-                alt="arrow"
-                className={`${
-                  pathname === link.href ? "active-link" : "inactive-link"
-                }`}
-              >
-                <Link href={link.href} className="link">
+              <NavLink key={link.href} direction="default" alt="arrow">
+                <Link
+                  href={link.href}
+                  className={`${
+                    pathname === link.href ? "active-link" : "link"
+                  }`}
+                >
                   {link.label}
                 </Link>
               </NavLink>
@@ -138,15 +134,13 @@ const Sidebar: React.FC = () => {
           {/* Contact Me link */}
           <div className="contact-links flex flex-col justify-end items-start p-3">
             {navLinks.contact.map((link) => (
-              <NavLink
-                key={link.href}
-                direction="diagonal"
-                alt="arrow"
-                className={`${
-                  pathname === link.href ? "active-link" : "inactive-link"
-                }`}
-              >
-                <Link href={link.href} className="link">
+              <NavLink key={link.href} direction="diagonal" alt="arrow">
+                <Link
+                  href={link.href}
+                  className={`${
+                    pathname === link.href ? "active-link" : "link"
+                  }`}
+                >
                   {link.label}
                 </Link>
               </NavLink>
