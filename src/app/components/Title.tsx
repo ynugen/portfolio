@@ -57,7 +57,7 @@ export default function Title({
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []);
+  }, [color]);
 
   return (
     <div ref={titleRef} className={className} style={shadowStyle}>

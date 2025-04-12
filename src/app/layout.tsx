@@ -1,6 +1,7 @@
 "use client";
 import "./globals.css";
 import Sidebar from "./components/Sidebar";
+import DynamicCSS from "./components/DynamicCSS";
 
 export default function RootLayout({
   children,
@@ -10,6 +11,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body style={{ backgroundColor: "var(--background)" }}>
+        <DynamicCSS />
         <div className="h-screen w-full flex">
           <aside className="w-fit">
             <Sidebar />

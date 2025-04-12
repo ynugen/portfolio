@@ -174,10 +174,10 @@
   line-height: normal;
   text-transform: capitalize;
 
-  color: var(--background);
+  color: var(--slate-grey);
 
-  -webkit-text-stroke-color: var(--slate-grey);
-  -webkit-text-stroke-width: 1.5px;
+  /* -webkit-text-stroke-color: var(--slate-grey);
+  -webkit-text-stroke-width: calc(var(--square-size) * 0.009); */
 }
 
 .link:hover,
