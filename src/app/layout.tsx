@@ -1,6 +1,6 @@
 "use client";
 import "./globals.css";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/Sidebar_TEMP";
 import DynamicCSS from "./components/DynamicCSS";
 
 export default function RootLayout({
