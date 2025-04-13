@@ -184,7 +184,7 @@
 .active-link {
   color: var(--marigold);
   -webkit-text-stroke-color: var(--slate-grey);
-  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-width: calc(var(--square-size) * 0.005);
   text-shadow: calc(var(--square-size) * 0.02) 0px 0px var(--slate-grey);
 }
 
@@ -229,7 +229,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   border-right: var(--slate-grey) 1px solid;
   width: fit-content;

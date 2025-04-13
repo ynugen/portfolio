@@ -28,7 +28,8 @@ const Sidebar: React.FC = () => {
         {/* Scrolling animated text */}
         <div className="scrolling-container">
           <span className="body scrolling-text">
-            NGUYEN MT A. (AKA <span className="body-b">AYIMA</span>) IS A{" "}
+            NGUYEN MT A. (AKA <span className="body-b">AYIMA</span>) IS AN
+            ASPIRING{" "}
             <span className="body-bi">
               CREAT
               <span className="body-b">IV</span>E
@@ -42,7 +43,7 @@ const Sidebar: React.FC = () => {
               SOFTWARE <span className="body-bi">CRAFT</span>MAN
             </span>{" "}
             BASED in MELBOURNE, AUSTRALIA. NGUYEN MT A. (AKA{" "}
-            <span className="body-b">AYIMA</span>) IS A{" "}
+            <span className="body-b">AYIMA</span>) IS AN ASPIRING{" "}
             <span className="body-bi">
               CREAT
               <span className="body-b">IV</span>E
@@ -122,7 +123,7 @@ const Sidebar: React.FC = () => {
                 <Link
                   href={link.href}
                   className={`${
-                    pathname === link.href ? "active-link" : "link"
+                    pathname === link.href ? "active-link link" : "link"
                   }`}
                 >
                   {link.label}
@@ -138,7 +139,7 @@ const Sidebar: React.FC = () => {
                 <Link
                   href={link.href}
                   className={`${
-                    pathname === link.href ? "active-link" : "link"
+                    pathname === link.href ? "active-link link" : "link"
                   }`}
                 >
                   {link.label}
