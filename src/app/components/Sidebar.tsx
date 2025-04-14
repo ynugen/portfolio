@@ -36,7 +36,7 @@ const Sidebar: React.FC = () => {
             </span>
             ,{" "}
             <span className="body-b">
-              GRAPHIC <span className="body-bi">DESIGN</span>ER
+              <span className="body-bi">DESIGN</span>ER
             </span>{" "}
             , AND{" "}
             <span className="body-b">
@@ -50,7 +50,7 @@ const Sidebar: React.FC = () => {
             </span>
             ,{" "}
             <span className="body-b">
-              GRAPHIC <span className="body-bi">DESIGN</span>ER
+              <span className="body-bi">DESIGN</span>ER
             </span>{" "}
             , AND{" "}
             <span className="body-b">

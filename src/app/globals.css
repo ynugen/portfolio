@@ -176,15 +176,15 @@
 
   color: var(--slate-grey);
 
-  /* -webkit-text-stroke-color: var(--slate-grey);
-  -webkit-text-stroke-width: calc(var(--square-size) * 0.009); */
+  will-change: filter, text-shadow;
+  transition: filter 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
 }
 
 .link:hover,
 .active-link {
   color: var(--marigold);
   -webkit-text-stroke-color: var(--slate-grey);
-  -webkit-text-stroke-width: calc(var(--square-size) * 0.005);
+  -webkit-text-stroke-width: 1px;
   text-shadow: calc(var(--square-size) * 0.02) 0px 0px var(--slate-grey);
 }
 
