@@ -153,8 +153,17 @@
   vertical-align: middle;
   -webkit-text-stroke-color: var(--slate-grey);
   -webkit-text-stroke-width: 3px;
-  /* text-shadow: -11px 0px 0px var(--marigold); */
   color: var(--marigold);
+}
+
+.subtitle-1 {
+  font-family: "Timetwist", serif;
+  font-size: calc(var(--title-font-size) / (1.618 * 2));
+  font-weight: bold;
+  line-height: normal;
+  text-transform: uppercase;
+
+  color: var(--slate-grey);
 }
 
 .subtitle-2 {
@@ -226,6 +235,15 @@
 }
 
 /* Container Styles */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;

@@ -41,3 +41,9 @@ _12/04/2025_
 I've been working on debugging the responsiveness of my static build website yesterday and today. The issue is that everytime the viewport size changes - I want to recalculate my square size and title size font variables. However, with a static deployment, I cannot do this in the global.css file.
 
 OK uPDATE! So chat was able to help me solve this by creating a component that would handle recalculating the values and update the respective root variables in my global.css. This is great - now my sidebar is responsive for all desktop sizes. I have yet to implement the responsivity for mobile! Will do that now.
+
+_14/04/2025_
+
+## Responsiveness for mobile
+
+Designed what the mobile ver would look like in Figma! Still deciding how I want to store each project info and how I want the components to display it! This is a hard and long ideation phase T^T.

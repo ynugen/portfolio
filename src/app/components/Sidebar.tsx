@@ -120,14 +120,16 @@ const Sidebar: React.FC = () => {
           <div className="page-links flex flex-col justify-between items-start p-3">
             {navLinks.main.map((link) => (
               <NavLink key={link.href} direction="default" alt="arrow">
-                <Link
-                  href={link.href}
-                  className={`${
-                    pathname === link.href ? "active-link link" : "link"
-                  }`}
-                >
-                  {link.label}
-                </Link>
+                <h3>
+                  <Link
+                    href={link.href}
+                    className={`${
+                      pathname === link.href ? "active-link link" : "link"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                </h3>
               </NavLink>
             ))}
           </div>
@@ -136,14 +138,16 @@ const Sidebar: React.FC = () => {
           <div className="contact-links flex flex-col justify-end items-start p-3">
             {navLinks.contact.map((link) => (
               <NavLink key={link.href} direction="diagonal" alt="arrow">
-                <Link
-                  href={link.href}
-                  className={`${
-                    pathname === link.href ? "active-link link" : "link"
-                  }`}
-                >
-                  {link.label}
-                </Link>
+                <h3>
+                  <Link
+                    href={link.href}
+                    className={`${
+                      pathname === link.href ? "active-link link" : "link"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                </h3>
               </NavLink>
             ))}
           </div>
