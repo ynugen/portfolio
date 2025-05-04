@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="page">
-      <div className="subtitle-1">
+      <div className="title-2">
         <h2>PROJECTS</h2>
       </div>
     </div>

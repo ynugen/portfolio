@@ -63,10 +63,7 @@ const Sidebar: React.FC = () => {
         <div className="profile-container">
           {/* Title text */}
           <div className="title-1 flex h-[var(--title-font-size)]">
-            <Title
-              className="title-1 flex title-outline3"
-              color="var(--slate-grey)"
-            >
+            <Title className="title-1 flex" color="var(--slate-grey)">
               <Link href="/">
                 <h1>AYIMA</h1>
               </Link>
@@ -88,7 +85,7 @@ const Sidebar: React.FC = () => {
       </div>
 
       {/* About and Navigational containers */}
-      <div className="flex">
+      <div className="flex sub-container">
         {/* About text */}
         <div className="about-container flex flex-col justify-end p-3">
           {/* Motion graphic */}

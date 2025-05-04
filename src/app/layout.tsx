@@ -17,10 +17,7 @@ export default function RootLayout({
             <Sidebar />
           </aside>
 
-          <main
-            className="flex-1"
-            style={{ backgroundColor: "var(--marigold)" }}
-          >
+          <main className="flex-1" style={{ backgroundColor: "var(--matcha)" }}>
             {children}
           </main>
         </div>

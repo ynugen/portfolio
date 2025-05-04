@@ -6,10 +6,10 @@
 :root {
   --background: #f5f5f5;
 
-  --slate-grey: #3a3a3a;
+  --slate-grey: #353535;
   --marigold: #ffc107;
   --lilac: #b28dff;
-  --matcha: #a8d08d;
+  --matcha: #a3a36d;
 
   --square-size: min(calc(100vh / 5), calc(100vw / 8));
   --title-font-size: calc(var(--square-size) * 0.463768116);
@@ -156,6 +156,19 @@
   color: var(--marigold);
 }
 
+.title-2 {
+  font-family: "Timetwist", serif;
+  font-size: calc(var(--title-font-size) / (1.618));
+  font-weight: bold;
+  line-height: normal;
+  text-transform: uppercase;
+  -webkit-text-stroke-color: var(--slate-grey);
+  -webkit-text-stroke-width: 3px;
+  color: var(--background);
+
+  text-shadow: 0px calc(var(--square-size) * 0.045) 0px var(--slate-grey);
+}
+
 .subtitle-1 {
   font-family: "Timetwist", serif;
   font-size: calc(var(--title-font-size) / (1.618 * 2));
@@ -263,6 +276,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; /* Centers content within the container */
+  border-bottom: var(--slate-grey) 1px solid;
+}
+
+.sub-container {
   border-bottom: var(--slate-grey) 1px solid;
 }
 
