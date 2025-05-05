@@ -161,7 +161,7 @@
   font-size: calc(var(--title-font-size) / 1.618);
   font-weight: bold;
   line-height: normal;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   -webkit-text-stroke-color: var(--slate-grey);
   -webkit-text-stroke-width: 3px;
   color: var(--background);
