@@ -260,8 +260,10 @@
 .page-title-container {
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  align-items: center;
+  padding-top: calc(var(--title-font-size) / (1.618 * 2));
   box-sizing: border-box;
+  height: fit-content;
 }
 .sidebar {
   display: flex;
@@ -317,7 +319,8 @@
   overflow-x: hidden;
   display: flex;
   align-items: center;
-  height: 1.5rem;
+  /* height: 1.5rem; */
+  height: calc(var(--title-font-size));
 }
 
 .about-container {
