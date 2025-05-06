@@ -62,7 +62,7 @@ const Sidebar: React.FC = () => {
 
         <div className="profile-container">
           {/* Title text */}
-          <div className="title-1 flex h-[var(--title-font-size)]">
+          <div className="title-1 flex name-container">
             <Title className="title-1 flex" color="var(--slate-grey)">
               <Link href="/">
                 <h1>AYIMA</h1>

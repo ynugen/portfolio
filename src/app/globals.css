@@ -287,6 +287,10 @@
   border-bottom: var(--slate-grey) 1px solid;
 }
 
+.name-container {
+  height: calc(var(--title-font-size) * 1.3);
+}
+
 .sub-container {
   border-bottom: var(--slate-grey) 1px solid;
 }
@@ -302,7 +306,6 @@
   flex-direction: column;
   align-items: center;
   height: auto;
-  gap: calc(var(--square-size) * 0.11);
   max-height: 96%;
   box-sizing: border-box; /* Includes padding and border in size calculations */
 }
