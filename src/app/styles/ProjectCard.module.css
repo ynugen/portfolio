@@ -1,6 +1,48 @@
 .mainContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  width: stretch;
+  gap: 1rem;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  height: calc(var(--title-font-size) * 0.9);
+  width: stretch;
+  border-bottom: var(--olive) 2px solid;
+}
+
+.descContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.projectTitle {
+  font-family: "Helvetica-Neue", sans-serif;
+  font-weight: bold;
+  color: var(--olive);
+  font-size: calc(var(--title-font-size) / (1.618));
+  -webkit-text-stroke-color: var(--slate-grey);
+  -webkit-text-stroke-width: 2px;
+  text-transform: capitalize;
+}
+
+.projectDesc {
+  font-family: "Helvetica-Neue", sans-serif;
+  font-weight: 300;
+  color: var(--slate-grey);
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: calc(var(--title-font-size) / (1.618 * 3));
 }

@@ -1,4 +1,4 @@
-"use Client";
+"use client";
 import { useEffect } from "react";
 
 // Dynamically calculates my CSS variables based on window size
