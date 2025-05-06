@@ -14,8 +14,8 @@ const Sidebar: React.FC = () => {
   const navLinks = {
     main: [
       { href: "/design", label: "Design", color: "var(--lavender-mauve)" },
-      { href: "/software", label: "Software", color: "var(--marigold)" },
-      { href: "/whimsy", label: "Whimsy", color: "var(--periwinkle)" },
+      { href: "/software", label: "Software", color: "var(--periwinkle)" },
+      { href: "/whimsy", label: "Whimsy", color: "var(--marigold)" },
       { href: "/misc", label: "Misc", color: "var(--peach)" },
     ],
     contact: [

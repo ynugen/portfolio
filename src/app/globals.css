@@ -199,7 +199,7 @@
   line-height: normal;
   text-transform: capitalize;
 
-  color: var(--slate-grey);
+  color: var(--marigold);
 
   will-change: filter, text-shadow;
   transition: filter 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
@@ -207,7 +207,6 @@
 
 .link:hover,
 .active-link {
-  /* color: var(--lavender-mauve); */
   -webkit-text-stroke-color: var(--slate-grey);
   -webkit-text-stroke-width: 1px;
   text-shadow: calc(var(--square-size) * 0.02) 0px 0px var(--slate-grey);
