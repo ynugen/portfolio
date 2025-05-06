@@ -166,11 +166,11 @@
   font-weight: bold;
   line-height: normal;
   /* text-transform: uppercase; */
-  -webkit-text-stroke-color: var(--slate-grey);
-  -webkit-text-stroke-width: 3px;
+  /* -webkit-text-stroke-color: var(--slate-grey); */
+  /* -webkit-text-stroke-width: 3px; */
   /* color: var(--background); */
 
-  text-shadow: 0px calc(var(--square-size) * 0.045) 0px var(--slate-grey);
+  /* text-shadow: 0px calc(var(--square-size) * 0.045) 0px var(--olive); */
 }
 
 .subtitle-1 {
@@ -258,7 +258,8 @@
   justify-content: start;
   align-items: center;
   margin-top: 0.75rem;
-  padding: calc(var(--square-size) * 0.32) calc(var(--square-size) * 0.18) calc(var(--square-size) * 0.32) calc(var(--square-size) * 0.18);
+  gap: calc(var(--square-size) * 0.09);
+  padding: calc(var(--square-size) * 0.09) calc(var(--square-size) * 0.18) calc(var(--square-size) * 0.32) calc(var(--square-size) * 0.18);
 }
 
 .page-title-container {

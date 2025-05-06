@@ -8,7 +8,7 @@ export default function Home() {
     <div className="page">
       {/* <div
         className="title-2 page-title-container h-[var(--title-font-size)]"
-        style={{ color: "var(--marigold)" }}
+        style={{ color: "var(--olive)" }}
       >
         <h2>Projects</h2>
       </div> */}
