@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import styles from "@/app/styles/ProjectCard.module.css";
 import config from "../../../next.config.js";
 import Image from "next/image";
