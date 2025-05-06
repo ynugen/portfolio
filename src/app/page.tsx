@@ -1,4 +1,4 @@
-import { projects } from "./data/projects";
+import { projects, Project } from "./data/projects";
 import ProjectCard from "./components/ProjectCard";
 
 const mainProjects = projects.filter((p: Project) => p.main === true);
@@ -15,7 +15,7 @@ export default function Home() {
 
       {/* List of main Projects */}
       <div>
-        {projects.map((project) => (
+        {mainProjects.map((project) => (
           <ProjectCard
             key={project.title}
             projectTitle={project.title}

@@ -21,12 +21,12 @@ export default function ProjectCard({
   src,
   alt,
 }: ProjectCardProps) {
-  const [squareSize, setSquareSize] = useState(100); // Default fallback
+  // const [squareSize, setSquareSize] = useState(100); // Default fallback
 
-  useEffect(() => {
-    const newSize = Math.min(window.innerHeight / 5, window.innerWidth / 8);
-    setSquareSize(newSize);
-  }, []);
+  // useEffect(() => {
+  //   const newSize = Math.min(window.innerHeight / 5, window.innerWidth / 8);
+  //   setSquareSize(newSize);
+  // }, []);
 
   return (
     <div className={styles.mainContainer}>
@@ -45,6 +45,7 @@ export default function ProjectCard({
           height={10} // Aspect ratio height
         />
       </div>
+      <div>{projectType}</div>
     </div>
   );
 }
