@@ -13,12 +13,18 @@ const Sidebar: React.FC = () => {
 
   const navLinks = {
     main: [
-      { href: "/design", label: "Design" },
-      { href: "/software", label: "Software" },
-      { href: "/whimsy", label: "Whimsy" },
-      { href: "/misc", label: "Misc" },
+      { href: "/design", label: "Design", color: "var(--lavender-mauve)" },
+      { href: "/software", label: "Software", color: "var(--marigold)" },
+      { href: "/whimsy", label: "Whimsy", color: "var(--periwinkle)" },
+      { href: "/misc", label: "Misc", color: "var(--peach)" },
     ],
-    contact: [{ href: "/contact", label: "Contact" }],
+    contact: [
+      {
+        href: "/contact",
+        label: "Contact",
+        color: "var(--matcha)",
+      },
+    ],
   };
 
   return (
@@ -123,6 +129,21 @@ const Sidebar: React.FC = () => {
                     className={`${
                       pathname === link.href ? "active-link link" : "link"
                     }`}
+                    style={{
+                      color:
+                        pathname === link.href
+                          ? link.color
+                          : "var(--slate-grey)",
+                    }}
+                    onMouseEnter={(e) =>
+                      (e.currentTarget.style.color = link.color)
+                    }
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.style.color =
+                        pathname === link.href
+                          ? link.color
+                          : "var(--slate-grey)")
+                    }
                   >
                     {link.label}
                   </Link>
@@ -139,8 +160,25 @@ const Sidebar: React.FC = () => {
                   <Link
                     href={link.href}
                     className={`${
-                      pathname === link.href ? "active-link link" : "link"
+                      pathname === link.href
+                        ? `${link.color} active-link link`
+                        : "link"
                     }`}
+                    style={{
+                      color:
+                        pathname === link.href
+                          ? link.color
+                          : "var(--slate-grey)",
+                    }}
+                    onMouseEnter={(e) =>
+                      (e.currentTarget.style.color = link.color)
+                    }
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.style.color =
+                        pathname === link.href
+                          ? link.color
+                          : "var(--slate-grey)")
+                    }
                   >
                     {link.label}
                   </Link>

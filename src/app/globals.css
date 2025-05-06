@@ -8,8 +8,11 @@
 
   --slate-grey: #353535;
   --marigold: #ffc107;
-  --lilac: #b28dff;
+  --lavender-mauve: #c69bcf;
+  --periwinkle: #9c90c3;
+  --peach: #f59e5b;
   --matcha: #a3a36d;
+  --olive: #48492a;
 
   --square-size: min(calc(100vh / 5), calc(100vw / 8));
   --title-font-size: calc(var(--square-size) * 0.463768116);
@@ -204,7 +207,7 @@
 
 .link:hover,
 .active-link {
-  color: var(--marigold);
+  /* color: var(--lavender-mauve); */
   -webkit-text-stroke-color: var(--slate-grey);
   -webkit-text-stroke-width: 1px;
   text-shadow: calc(var(--square-size) * 0.02) 0px 0px var(--slate-grey);
