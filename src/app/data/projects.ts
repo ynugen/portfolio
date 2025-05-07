@@ -1,8 +1,5 @@
-import config from "../../../next.config.js";
-
 export type ProjectType = "design" | "development" | "misc";
 
-const basePath = config.basePath;
 export interface Project {
   title: string;
   date: string;
