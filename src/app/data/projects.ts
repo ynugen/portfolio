@@ -17,7 +17,7 @@ export const projects: Project[] = [
   {
     title: "ReHarvest Website",
     date: "'25",
-    src: `${basePath}/images/ReHarvestThumbnail.png`,
+    src: `/images/ReHarvestThumbnail.png`,
     alt: "ReHarvest Website",
     type: "design",
     link: "/design/ReHarvest",
