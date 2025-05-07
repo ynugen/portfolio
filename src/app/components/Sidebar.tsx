@@ -22,7 +22,7 @@ const Sidebar: React.FC = () => {
       {
         href: "/contact",
         label: "Contact",
-        color: "var(--matcha)",
+        color: "var(--marigold)",
       },
     ],
   };

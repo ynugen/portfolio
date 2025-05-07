@@ -279,7 +279,7 @@
   width: fit-content;
   aspect-ratio: auto;
   height: 100vh;
-  background-color: var(--background);
+  background-color: var(--matcha);
 }
 
 .title-container {
