@@ -10,7 +10,7 @@ interface ProjectCardProps {
   projectLink: string;
   projectTitle: string;
   projectDate: string;
-  projectType: string;
+  projectType: string[];
   src: string;
   alt: string;
 }
@@ -45,7 +45,7 @@ export default function ProjectCard({
             </div>
 
             <div className={styles.projectDesc}>
-              {projectDate} • {projectType}
+              {projectDate} • {projectType.join(" • ")}
             </div>
           </div>
         </div>

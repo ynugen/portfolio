@@ -273,26 +273,32 @@
 /* Container Styles */
 
 .page {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  margin-top: 0.75rem;
-  gap: calc(var(--square-size) * 0.3);
-  padding: calc(var(--square-size) * 0.09) calc(var(--square-size) * 0.18) calc(var(--square-size) * 0.32) calc(var(--square-size) * 0.18);
+  position: relative;
+  overflow-y: auto;
+  height: 100vh;
+  scroll-behavior: smooth;
+  max-height: 100vh;
 }
 
 .page-title-container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: calc(var(--title-font-size) / (1.618 * 2));
-  box-sizing: border-box;
+  justify-content: center;;
   height: fit-content;
+  width: 100%;
+  padding: calc(var(--square-size) * 0.4) 0 0 0;
+  pointer-events: none;
+  background-color: transparent;
 }
 
+
 .projects-container {
-  padding: 0 calc(var(--square-size) * 0.4) 0 calc(var(--square-size) * 0.4);
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--square-size) * 0.2) calc(var(--square-size) * 0.4) calc(var(--square-size) * 0.2) calc(var(--square-size) * 0.4);
+  gap: calc(var(--square-size) * 0.2);
 }
 
 .sidebar {
