@@ -1,4 +1,8 @@
-export type ProjectType = "design" | "development" | "misc";
+export type ProjectType =
+  | "product design"
+  | "graphic design"
+  | "software"
+  | "misc";
 
 export interface Project {
   title: string;
@@ -16,7 +20,7 @@ export const projects: Project[] = [
     date: "'25",
     src: `/images/ReHarvestThumbnail.png`,
     alt: "ReHarvest Website",
-    type: "design",
+    type: "product design",
     link: "/design/ReHarvest",
     main: true,
   },

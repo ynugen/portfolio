@@ -19,6 +19,25 @@
   --title-font-size: calc(var(--square-size) * 0.463768116);
 }
 
+/* Pixeloid font face */
+@font-face {
+  font-family: "Pixeloid";
+  src: url("/fonts/PixeloidSans-mLxMm.ttf") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+}
+
+@font-face {
+  font-family: "Pixeloid";
+  src: url("/fonts/PixeloidSansBold-PKnYd.ttf") format("truetype");
+  font-weight: bold;
+  font-display: swap;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+}
+
 /* Timetwist font face */
 @font-face {
   font-family: "Timetwist";
@@ -163,8 +182,9 @@
 .title-2 {
   font-family: "Timetwist", serif;
   font-size: calc(var(--title-font-size) / 1.618);
-  font-weight: bold;
+  font-weight: normal;
   line-height: normal;
+  font-style: italic;
   /* text-transform: uppercase; */
   /* -webkit-text-stroke-color: var(--slate-grey); */
   /* -webkit-text-stroke-width: 3px; */
@@ -258,7 +278,7 @@
   justify-content: start;
   align-items: center;
   margin-top: 0.75rem;
-  gap: calc(var(--square-size) * 0.09);
+  gap: calc(var(--square-size) * 0.3);
   padding: calc(var(--square-size) * 0.09) calc(var(--square-size) * 0.18) calc(var(--square-size) * 0.32) calc(var(--square-size) * 0.18);
 }
 
@@ -270,6 +290,11 @@
   box-sizing: border-box;
   height: fit-content;
 }
+
+.projects-container {
+  padding: 0 calc(var(--square-size) * 0.4) 0 calc(var(--square-size) * 0.4);
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;

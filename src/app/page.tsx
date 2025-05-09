@@ -6,18 +6,19 @@ const mainProjects = projects.filter((p: Project) => p.main === true);
 export default function Home() {
   return (
     <div className="page">
-      {/* <div
+      <div
         className="title-2 page-title-container h-[var(--title-font-size)]"
         style={{ color: "var(--olive)" }}
       >
-        <h2>Projects</h2>
-      </div> */}
+        <h2>PROJECTS</h2>
+      </div>
 
       {/* List of main Projects */}
-      <div>
+      <div className="projects-container">
         {mainProjects.map((project) => (
           <ProjectCard
             key={project.title}
+            projectLink={project.link}
             projectTitle={project.title}
             projectDate={project.date}
             projectType={project.type}
