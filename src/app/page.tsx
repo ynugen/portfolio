@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div className="page">
       <div
-        className="title-2 page-title-container h-[var(--title-font-size)]"
-        style={{ color: "var(--olive)" }}
+        className="title-2 green-dropshadow page-title-container h-[var(--title-font-size)]"
+        style={{ color: "var(--slate-grey)" }}
       >
         <h2>PROJECTS</h2>
       </div>
