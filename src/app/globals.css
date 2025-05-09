@@ -187,8 +187,23 @@
   font-style: italic;
 }
 
-.green-dropshadow {
+.matcha-dropshadow {
   text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--matcha), 0px calc(var(--square-size) * 0.072) 0px var(--matcha), 0px calc(var(--square-size) * 0.038) 0px var(--matcha);
+}
+.grey-dropshadow {
+  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--slate-grey), 0px calc(var(--square-size) * 0.072) 0px var(--slate-grey), 0px calc(var(--square-size) * 0.038) 0px var(--slate-grey);
+}
+.lavender-dropshadow {
+  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--lavender-mauve), 0px calc(var(--square-size) * 0.072) 0px var(--lavender-mauve), 0px calc(var(--square-size) * 0.038) 0px var(--lavender-mauve);
+}
+.periwinkle-dropshadow {
+  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--periwinkle), 0px calc(var(--square-size) * 0.072) 0px var(--periwinkle), 0px calc(var(--square-size) * 0.038) 0px var(--periwinkle);
+}
+.peach-dropshadow {
+  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--peach), 0px calc(var(--square-size) * 0.072) 0px var(--peach), 0px calc(var(--square-size) * 0.038) 0px var(--peach);
+}
+.marigold-dropshadow {
+  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--marigold), 0px calc(var(--square-size) * 0.072) 0px var(--marigold), 0px calc(var(--square-size) * 0.038) 0px var(--marigold);
 }
 
 .subtitle-1 {
