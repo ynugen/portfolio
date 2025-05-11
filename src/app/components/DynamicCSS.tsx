@@ -10,14 +10,17 @@ export default function DynamicCSS() {
         window.innerHeight / 5,
         window.innerWidth / 8
       );
-      document.documentElement.style.setProperty(
-        "--square-size",
-        `${squareSize}px`
-      );
-      document.documentElement.style.setProperty(
-        "--title-font-size",
-        `${squareSize * 0.463768116}px`
-      );
+
+      if (window.innerWidth > 768) {
+        document.documentElement.style.setProperty(
+          "--square-size",
+          `${squareSize}px`
+        );
+        document.documentElement.style.setProperty(
+          "--title-font-size",
+          `${squareSize * 0.463768116}px`
+        );
+      }
     };
 
     window.addEventListener("resize", updateVars);

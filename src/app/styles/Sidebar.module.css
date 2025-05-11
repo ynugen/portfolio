@@ -52,6 +52,7 @@
   justify-content: end;
   padding: calc(0.11 * var(--square-size));
   border-right: var(--slate-grey) 1px solid;
+  gap: calc(var(--square-size) * 0.11);
 }
 
 .navContainer {

@@ -12,6 +12,7 @@ type ArrowProps = {
 export default function NavArrow({
   direction = "default",
   alt = "arrow",
+  className = "",
 }: ArrowProps) {
   const basePath = config.basePath;
 
@@ -20,5 +21,17 @@ export default function NavArrow({
       ? `${basePath}/icons/arrow-default.png`
       : `${basePath}/icons/arrow-diagonal.png`;
 
-  return <Image src={src} alt={alt} className="arrow" width={16} height={16} />;
+  return (
+    <div
+      className={`relative lg:w-6 md:w-5 aspect-square ${className} min-w-5`}
+    >
+      <Image
+        src={src}
+        alt={alt}
+        className="arrow object-contain"
+        fill
+        sizes="24px"
+      />
+    </div>
+  );
 }

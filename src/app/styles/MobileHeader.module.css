@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   height: fit-content;
+  padding: calc(0.11 * var(--square-size-mb));
+  border-bottom: var(--slate-grey) 1px solid;
 }
 
 @media (max-width: 768px) {
@@ -20,7 +22,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border-bottom: var(--slate-grey) 1px solid;
-  padding: calc(0.11 * var(--square-size));
+  align-items: start;
+}
+
+.nameContainer {
+  height: calc(var(--title-font-size-mb) * 1);
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: stretch;
+  gap: calc(var(--square-size-mb) * 0.15);
+  padding: calc(var(--square-size-mb) * 0.05);
 }

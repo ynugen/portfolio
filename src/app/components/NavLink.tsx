@@ -10,18 +10,15 @@ type NavLinkProps = {
 export default function NavLink({
   direction = "default",
   alt = "arrow",
+  className = "",
   children,
 }: NavLinkProps) {
   return (
     <div
       className={`inline-flex justify-center items-center gap-[0.5rem] w-fit`}
     >
-      <div className="pb-0.5">
-        <NavArrow
-          direction={direction}
-          alt={alt}
-          className={`w-[24px] h-[24px]`}
-        />
+      <div className="">
+        <NavArrow direction={direction} alt={alt} className={`${className}`} />
       </div>
       {children}
     </div>

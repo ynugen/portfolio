@@ -36,18 +36,24 @@ export default function Title({
       );
 
       // console.log("squareSize", squareSize);
-      const maxOffset = squareSize * 0.06;
 
-      // Limit the offset to a maximum of 11 pixels (or depending on the title font size so that it doesn't look weird)
-      if (offsetX > maxOffset) {
-        offsetX = maxOffset;
-      } else if (offsetX < -maxOffset) {
-        offsetX = -maxOffset;
+      if (window.innerWidth > 768) {
+        const maxOffset = squareSize * 0.06;
+        // Limit the offset to a maximum of 11 pixels (or depending on the title font size so that it doesn't look weird)
+        if (offsetX > maxOffset) {
+          offsetX = maxOffset;
+        } else if (offsetX < -maxOffset) {
+          offsetX = -maxOffset;
+        }
+
+        setShadowStyle({
+          textShadow: `${offsetX}px 0px 0px ${color}`,
+        });
+      } else {
+        setShadowStyle({
+          textShadow: `10px 0px 0px ${color}`,
+        });
       }
-
-      setShadowStyle({
-        textShadow: `${offsetX}px 0px 0px ${color}, ${offsetX}px 0px 0px ${color}, ${offsetX}px 0px 0px ${color}`,
-      });
     };
 
     // Mouse movement event listener
