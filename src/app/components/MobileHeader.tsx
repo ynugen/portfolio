@@ -67,67 +67,70 @@ const MobileHeader: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* Links */}
-      <div className={styles.linksContainer}>
-        {navLinks.main.map((link) => (
-          <NavLink key={link.href} direction="default" alt="arrow">
-            <h3>
-              <Link
-                href={link.href}
-                className="link"
-                style={{
-                  textShadow:
-                    pathname === link.href
-                      ? `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`
-                      : "var(--slate-grey)",
-                  color: `var(--slate-grey)`,
-                  transition: "text-shadow 0.3s ease", // Add transition for smooth animation
-                }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.textShadow = `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`)
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.textShadow =
-                    pathname === link.href
-                      ? `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`
-                      : "none")
-                }
-              >
-                {link.label}
-              </Link>
-            </h3>
-          </NavLink>
-        ))}
 
-        {navLinks.contact.map((link) => (
-          <NavLink key={link.href} direction="diagonal" alt="arrow">
-            <h3>
-              <Link
-                href={link.href}
-                className={`link`}
-                style={{
-                  textShadow:
-                    pathname === link.href
-                      ? `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`
-                      : "var(--slate-grey)",
-                  color: `var(--slate-grey)`,
-                  transition: "text-shadow 0.3s ease", // Add transition for smooth animation
-                }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.textShadow = `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`)
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.textShadow =
-                    pathname === link.href
-                      ? `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`
-                      : "none")
-                }
-              >
-                {link.label}
-              </Link>
-            </h3>
-          </NavLink>
-        ))}
+      {/* Links */}
+      <div className="flex justify-center">
+        <div className={styles.linksContainer}>
+          {navLinks.main.map((link) => (
+            <NavLink key={link.href} direction="default" alt="arrow">
+              <h3>
+                <Link
+                  href={link.href}
+                  className="link"
+                  style={{
+                    textShadow:
+                      pathname === link.href
+                        ? `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`
+                        : "var(--slate-grey)",
+                    color: `var(--slate-grey)`,
+                    transition: "text-shadow 0.3s ease", // Add transition for smooth animation
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.textShadow = `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`)
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.textShadow =
+                      pathname === link.href
+                        ? `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`
+                        : "none")
+                  }
+                >
+                  {link.label}
+                </Link>
+              </h3>
+            </NavLink>
+          ))}
+
+          {navLinks.contact.map((link) => (
+            <NavLink key={link.href} direction="diagonal" alt="arrow">
+              <h3>
+                <Link
+                  href={link.href}
+                  className={`link`}
+                  style={{
+                    textShadow:
+                      pathname === link.href
+                        ? `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`
+                        : "var(--slate-grey)",
+                    color: `var(--slate-grey)`,
+                    transition: "text-shadow 0.3s ease", // Add transition for smooth animation
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.textShadow = `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`)
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.textShadow =
+                      pathname === link.href
+                        ? `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`
+                        : "none")
+                  }
+                >
+                  {link.label}
+                </Link>
+              </h3>
+            </NavLink>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   height: fit-content;
-  padding: calc(0.11 * var(--square-size-mb));
   border-bottom: var(--slate-grey) 1px solid;
 }
 
@@ -22,18 +21,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
+  padding: calc(0.11 * var(--square-size-mb));
+  gap: calc(var(--square-size-mb) * 0.11);
+  height: var(--square-size-mb);
+  border-bottom: var(--slate-grey) 1px solid;
 }
 
 .nameContainer {
-  height: calc(var(--title-font-size-mb) * 1);
+  height: calc(var(--title-font-size-mb) * 1.2);
 }
 
 .linksContainer {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  width: stretch;
-  gap: calc(var(--square-size-mb) * 0.15);
-  padding: calc(var(--square-size-mb) * 0.05);
+  justify-content: space-between;
+  padding: calc(0.15 * var(--square-size-mb)) calc(0.11 * var(--square-size-mb));
+  height: calc(var(--square-size-mb) * 1.618);
 }
