@@ -178,7 +178,7 @@
   /* -webkit-text-stroke-width: 2px; */
 }
 
-.marigold{
+.grey {
   color: var(--slate-grey);
 }
 
@@ -292,6 +292,12 @@
   flex-direction: row;;
  }
 
+ @media (max-width: 768px) {
+  .page-layout {
+    flex-direction: column;
+  }
+}
+
 .page {
   position: relative;
   overflow-y: auto;
@@ -320,12 +326,43 @@
   background-color: transparent;
 }
 
-/* Image styles */
 .arrow {
   color: var(--slate-grey);
   image-rendering: crisp-edges; /* Fallback for older browsers */
   image-rendering: pixelated; /* Preferred for nearest-neighbor resizing */
   width: calc(var(--square-size) * 0.1);
   height: calc(var(--square-size) * 0.1);
+}
+
+.scrolling-container {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  height: calc(
+    (var(--title-font-size) / (1.618 * 2) + 0.025 * var(--square-size))
+  );
+  padding-top: calc(0.025 * var(--square-size));
+}
+
+/* Animation styles */
+.scrolling-text {
+  white-space: nowrap;
+  animation: scroll 40s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.scrolling-text:hover {
+  animation-play-state: paused;
+  cursor: default;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 

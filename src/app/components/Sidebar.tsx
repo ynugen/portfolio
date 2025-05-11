@@ -5,39 +5,24 @@ import Link from "next/link";
 import Image from "next/image";
 import config from "../../../next.config.js";
 import { usePathname } from "next/navigation";
+import { navLinks } from "../data/links";
 
 const basePath = config.basePath;
 
 const Sidebar: React.FC = () => {
   const pathname = usePathname();
-
-  const navLinks = {
-    main: [
-      { href: "/design", label: "Design", color: "var(--marigold)" },
-      { href: "/software", label: "Software", color: "var(--periwinkle)" },
-      { href: "/whimsy", label: "Whimsy", color: "var(--lavender-mauve)" },
-      { href: "/misc", label: "Misc", color: "var(--peach)" },
-    ],
-    contact: [
-      {
-        href: "/contact",
-        label: "About Me",
-        color: "var(--lavender-mauve)",
-      },
-    ],
-  };
   return (
     <div className={styles.sidebar}>
       {/* Title container */}
       <div className={styles.titleContainer}>
         {/* Scrolling animated text */}
         <div
-          className={styles.scrollingContainer}
+          className={`scrolling-container`}
           onClick={() => (window.location.href = navLinks.contact[0].href)}
           style={{ cursor: "pointer" }}
         >
           <span
-            className={`${styles.scrollingText} body`}
+            className={`scrolling-text  body`}
             style={{ cursor: "pointer" }}
           >
             NGUYEN MT A. (AKA <span className="body-b">AYIMA</span>) IS AN
@@ -73,7 +58,7 @@ const Sidebar: React.FC = () => {
         </div>
 
         {/* Title text */}
-        <div className={`title-1 flex ${styles.nameContainer}`}>
+        <div className={`title-1 grey flex ${styles.nameContainer}`}>
           <Title className="title-1 flex" color="var(--marigold)">
             <Link href="/">
               <h1>AYIMA</h1>

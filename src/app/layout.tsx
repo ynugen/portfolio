@@ -1,6 +1,7 @@
 "use client";
 import "./globals.css";
 import Sidebar from "./components/Sidebar";
+import MobileHeader from "./components/MobileHeader";
 import DynamicCSS from "./components/DynamicCSS";
 
 export default function RootLayout({
@@ -19,6 +20,7 @@ export default function RootLayout({
         <DynamicCSS />
         <div className="h-screen w-full page-layout">
           <Sidebar />
+          <MobileHeader />
 
           <main
             className="flex-1"

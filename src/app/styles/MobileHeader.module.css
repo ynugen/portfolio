@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+  }
+}
+
+@media (min-width: 767px) {
+  .header {
+    display: none;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: var(--slate-grey) 1px solid;
+  padding: calc(0.11 * var(--square-size));
+}
