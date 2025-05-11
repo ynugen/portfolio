@@ -1,4 +1,3 @@
-import styles from "@/app/styles/Sidebar.module.css";
 import NavLink from "./NavLink";
 import Title from "./Title";
 import Link from "next/link";
@@ -8,38 +7,37 @@ import { usePathname } from "next/navigation";
 
 const basePath = config.basePath;
 
-const Sidebar: React.FC = () => {
+const Sidebar2: React.FC = () => {
+  // Get the current relative pathname
   const pathname = usePathname();
 
   const navLinks = {
     main: [
-      { href: "/design", label: "Design", color: "var(--marigold)" },
+      { href: "/design", label: "Design", color: "var(--lavender-mauve)" },
       { href: "/software", label: "Software", color: "var(--periwinkle)" },
-      { href: "/whimsy", label: "Whimsy", color: "var(--lavender-mauve)" },
+      { href: "/whimsy", label: "Whimsy", color: "var(--marigold)" },
       { href: "/misc", label: "Misc", color: "var(--peach)" },
     ],
     contact: [
       {
         href: "/contact",
         label: "About Me",
-        color: "var(--lavender-mauve)",
+        color: "var(--marigold)",
       },
     ],
   };
+
   return (
-    <div className={styles.sidebar}>
+    <div className="sidebar">
       {/* Title container */}
-      <div className={styles.titleContainer}>
+      <div className="title-container p-3">
         {/* Scrolling animated text */}
         <div
-          className={styles.scrollingContainer}
+          className="scrolling-container"
           onClick={() => (window.location.href = navLinks.contact[0].href)}
           style={{ cursor: "pointer" }}
         >
-          <span
-            className={`${styles.scrollingText} body`}
-            style={{ cursor: "pointer" }}
-          >
+          <span className="body scrolling-text" style={{ cursor: "pointer" }}>
             NGUYEN MT A. (AKA <span className="body-b">AYIMA</span>) IS AN
             ASPIRING{" "}
             <span className="body-bi">
@@ -72,33 +70,37 @@ const Sidebar: React.FC = () => {
           </span>
         </div>
 
-        {/* Title text */}
-        <div className={`title-1 flex ${styles.nameContainer}`}>
-          <Title className="title-1 flex" color="var(--marigold)">
-            <Link href="/">
-              <h1>AYIMA</h1>
-            </Link>
-          </Title>
-        </div>
+        <div className="profile-container">
+          {/* Title text */}
+          <div className="title-1 marigold flex name-container">
+            <Title className="title-1 flex" color="var(--marigold)">
+              <Link href="/">
+                <h1>AYIMA</h1>
+              </Link>
+            </Title>
+          </div>
 
-        {/* Image */}
-        <div className={styles.imageContainer} style={{ overflow: "hidden" }}>
-          <Image
-            src={`${basePath}/images/lovely.png`}
-            alt="Profile picture"
-            objectFit="cover"
-            layout="responsive"
-            height={200}
-            width={200}
-          />
+          {/* Image */}
+          <div className="image-container" style={{ overflow: "hidden" }}>
+            <Image
+              src={`${basePath}/images/lovely.png`}
+              alt="Profile picture"
+              objectFit="cover"
+              layout="responsive"
+              height={200}
+              width={200}
+            />
+          </div>
         </div>
       </div>
 
-      <div className={styles.subContainer}>
-        {/* About Text */}
-        <div className={`${styles.aboutContainer}`}>
+      {/* About and Navigational containers */}
+      <div className="flex sub-container">
+        {/* About text */}
+        <div className="about-container flex flex-col justify-end p-3">
           {/* Motion graphic */}
-          <div className={`${styles.imageContainer}`}>
+
+          <div className="image-container pb-3">
             <Image
               src={`${basePath}/images/lovely.png`}
               alt="Motion graphic"
@@ -110,7 +112,7 @@ const Sidebar: React.FC = () => {
           </div>
 
           {/* About me text */}
-          <div className={`body-small text-justify`}>
+          <div className="body-small text-justify">
             I&#39;ve been orbiting around design my entire life - realised it as
             an afterthought and not a possibility. But time is much too a fickle
             thing for me to mull and ponder over if only&#39;s. Imagination
@@ -119,32 +121,32 @@ const Sidebar: React.FC = () => {
           </div>
         </div>
 
-        {/* Navigation Links */}
-        <div className={`${styles.navContainer}`}>
+        {/* Navigation container*/}
+        <div className="nav-container flex flex-col items-start self-stretch">
           {/* Page Links */}
-          <div className={`${styles.pageLinks}`}>
+          <div className="page-links">
             {navLinks.main.map((link) => (
               <NavLink key={link.href} direction="default" alt="arrow">
                 <h3>
                   <Link
                     href={link.href}
-                    className={`link`}
+                    className={`${
+                      pathname === link.href ? "active-link link" : "link"
+                    }`}
                     style={{
-                      textShadow:
+                      color:
                         pathname === link.href
-                          ? `calc(var(--square-size) * 0.02) 0px 0px ${link.color}`
+                          ? link.color
                           : "var(--slate-grey)",
-                      color: `var(--slate-grey)`,
-                      transition: "text-shadow 0.3s ease", // Add transition for smooth animation
                     }}
                     onMouseEnter={(e) =>
-                      (e.currentTarget.style.textShadow = `calc(var(--square-size) * 0.02) 0px 0px ${link.color}`)
+                      (e.currentTarget.style.color = link.color)
                     }
                     onMouseLeave={(e) =>
-                      (e.currentTarget.style.textShadow =
+                      (e.currentTarget.style.color =
                         pathname === link.href
-                          ? `calc(var(--square-size) * 0.02) 0px 0px ${link.color}`
-                          : "none")
+                          ? link.color
+                          : "var(--slate-grey)")
                     }
                   >
                     {link.label}
@@ -154,30 +156,32 @@ const Sidebar: React.FC = () => {
             ))}
           </div>
 
-          {/* Contact Links */}
-          <div className={`${styles.contactLinks}`}>
+          {/* Contact Me link */}
+          <div className="contact-links flex flex-col justify-end items-start p-3">
             {navLinks.contact.map((link) => (
-              <NavLink key={link.href} direction="default" alt="arrow">
+              <NavLink key={link.href} direction="diagonal" alt="arrow">
                 <h3>
                   <Link
                     href={link.href}
-                    className={`link`}
+                    className={`${
+                      pathname === link.href
+                        ? `${link.color} active-link link`
+                        : "link"
+                    }`}
                     style={{
-                      textShadow:
+                      color:
                         pathname === link.href
-                          ? `calc(var(--square-size) * 0.02) 0px 0px ${link.color}`
+                          ? link.color
                           : "var(--slate-grey)",
-                      color: `var(--slate-grey)`,
-                      transition: "text-shadow 0.3s ease", // Add transition for smooth animation
                     }}
                     onMouseEnter={(e) =>
-                      (e.currentTarget.style.textShadow = `calc(var(--square-size) * 0.02) 0px 0px ${link.color}`)
+                      (e.currentTarget.style.color = link.color)
                     }
                     onMouseLeave={(e) =>
-                      (e.currentTarget.style.textShadow =
+                      (e.currentTarget.style.color =
                         pathname === link.href
-                          ? `calc(var(--square-size) * 0.02) 0px 0px ${link.color}`
-                          : "none")
+                          ? link.color
+                          : "var(--slate-grey)")
                     }
                   >
                     {link.label}
@@ -191,5 +195,4 @@ const Sidebar: React.FC = () => {
     </div>
   );
 };
-
-export default Sidebar;
+export default Sidebar2;

@@ -10,7 +10,7 @@ export default function Home() {
         className="title-2 matcha-dropshadow page-title-container h-[var(--title-font-size)]"
         style={{ color: "var(--slate-grey)" }}
       >
-        <h2>PROJECTS</h2>
+        <h2>RECENT PROJECTS</h2>
       </div>
 
       {/* List of main Projects */}

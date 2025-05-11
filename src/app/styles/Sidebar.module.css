@@ -1,0 +1,110 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-right: var(--slate-grey) 1px solid;
+  width: fit-content;
+  aspect-ratio: auto;
+  /* height: 100vh; */
+  background-color: var(--matcha);
+}
+
+.titleContainer {
+  width: calc(3 * var(--square-size));
+  height: calc(3 * var(--square-size));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: var(--slate-grey) 1px solid;
+  padding: calc(0.11 * var(--square-size));
+}
+
+.scrollingContainer {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  height: calc(
+    (var(--title-font-size) / (1.618 * 2) + 0.025 * var(--square-size))
+  );
+  padding-top: calc(0.025 * var(--square-size));
+}
+
+.nameContainer {
+  padding-top: calc(0.025 * var(--square-size));
+  height: calc(var(--title-font-size) * 1.3);
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  overflow: hidden;
+}
+
+.subContainer {
+  border-bottom: var(--slate-grey) 1px solid;
+  display: flex;
+}
+
+.aboutContainer {
+  width: calc(2 * var(--square-size));
+  height: calc(2 * var(--square-size));
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: calc(0.11 * var(--square-size));
+  border-right: var(--slate-grey) 1px solid;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  align-self: stretch;
+}
+
+.pageLinks {
+  width: var(--square-size);
+  height: var(--square-size);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: calc(var(--square-size) * 0.08);
+}
+
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  width: var(--square-size);
+  height: var(--square-size);
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  padding: calc(var(--square-size) * 0.08);
+  border-top: var(--slate-grey) 1px solid;
+}
+
+/* Animation styles */
+.scrollingText {
+  white-space: nowrap;
+  animation: scroll 40s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.scrollingText:hover {
+  animation-play-state: paused;
+  cursor: default;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

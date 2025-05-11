@@ -10,12 +10,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body style={{ backgroundColor: "var(--matcha)" }}>
+      <body
+        style={{
+          backgroundColor: "var(--matcha)",
+          border: "var(--slate-grey) 1px solid",
+        }}
+      >
         <DynamicCSS />
-        <div className="h-screen w-full flex">
-          <aside className="w-fit">
-            <Sidebar />
-          </aside>
+        <div className="h-screen w-full page-layout">
+          <Sidebar />
 
           <main
             className="flex-1"
