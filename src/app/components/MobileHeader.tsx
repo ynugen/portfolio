@@ -2,12 +2,11 @@ import styles from "@/app/styles/MobileHeader.module.css";
 import NavLink from "./NavLink";
 import Title from "./Title";
 import Link from "next/link";
-import config from "../../../next.config.js";
+// import config from "../../../next.config.js";
 import { usePathname } from "next/navigation";
 import { navLinks } from "../data/links";
-import { nav } from "motion/react-client";
 
-const basePath = config.basePath;
+// const basePath = config.basePath;
 
 const MobileHeader: React.FC = () => {
   const pathname = usePathname();

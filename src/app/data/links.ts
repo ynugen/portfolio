@@ -9,7 +9,7 @@ export const navLinks = {
     {
       href: "/contact",
       label: "About Me",
-      color: "var(--lavender-mauve)",
+      color: "var(--marigold)",
     },
   ],
 };

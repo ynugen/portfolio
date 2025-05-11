@@ -173,6 +173,30 @@
   font-display: swap;
 }
 
+
+/* Milky Vintage */
+@font-face {
+  font-family: "Milky Vintage";
+  src: url("/fonts/MilkyVintage.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+}
+
+.grey {
+  color: var(--slate-grey);
+}
+
+.marigold {
+  color: var(--marigold);
+}
+
+.olive {
+  color: var(--olive);
+}
+
 /* Font Styles */
 .title-1 {
   font-family: "Timetwist", serif;
@@ -182,10 +206,6 @@
   vertical-align: middle;
   /* -webkit-text-stroke-color: var(--marigold); */
   /* -webkit-text-stroke-width: 2px; */
-}
-
-.grey {
-  color: var(--slate-grey);
 }
 
 .title-2 {

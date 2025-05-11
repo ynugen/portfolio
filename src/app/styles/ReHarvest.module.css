@@ -1,0 +1,91 @@
+.golden-squash {
+  color: #e9b44c;
+}
+
+/* Containers */
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(0.3 * var(--square-size)) 0 0 0;
+  gap: calc(var(--square-size) * 0.05);
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(0.3 * var(--square-size)) calc(var(--square-size) * 0.2);
+  gap: calc(var(--square-size) * 0.05);
+}
+.headingContainer {
+  width: 100%;
+}
+.paraContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 calc(0.6 * var(--square-size));
+}
+
+/* Fonts */
+
+.title {
+  color: var(--Grass-Green, #82a36b);
+  text-shadow: calc(var(--square-size) * 0.025) calc(var(--square-size) * 0.025)
+      0px var(--slate-grey),
+    calc(var(--square-size) * 0.05) calc(var(--square-size) * 0.05) 0px #e9b44c;
+
+  /* Display Heading Small */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--Text, #3c3c3b);
+  font-family: "Milky Vintage";
+  font-size: var(--title-font-size);
+  font-style: bold;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subtitle {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: calc(var(--title-font-size) / (1.618 * 2));
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: Captialize;
+}
+
+.heading {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: calc(var(--title-font-size) / (1.618 * 3));
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: calc(var(--title-font-size) / (1.618 * 4));
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .titleContainer {
+    padding: calc(0.3 * var(--square-size-mb));
+    gap: calc(var(--square-size-mb) * 0.05);
+  }
+  .title {
+    font-size: var(--title-font-size-mb);
+    text-shadow: calc(var(--square-size-mb) * 0.03)
+        calc(var(--square-size-mb) * 0.03) 0px var(--slate-grey),
+      calc(var(--square-size-mb) * 0.055) calc(var(--square-size-mb) * 0.055)
+        0px #e9b44c;
+  }
+  .subtitle {
+    font-size: calc(var(--title-font-size-mb) / (1.618 * 2));
+  }
+}
