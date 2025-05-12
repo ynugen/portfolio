@@ -25,7 +25,7 @@
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--Text, #3c3c3b);
   font-family: "Milky Vintage";
-  font-size: var(--title-font-size);
+  font-size: calc(var(--title-font-size));
   font-style: bold;
   font-weight: 400;
   line-height: normal;

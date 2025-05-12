@@ -24,9 +24,6 @@ export default function ReHarvest() {
       <div className={`${styles.titleContainer}`}>
         <span className={`${styles.title}`}>
           <h2>ReHarvest</h2>
-        </span>{" "}
-        <span className={`${styles.subtitle} ${styles.text}`}>
-          Rethinking Food Waste for Good
         </span>
       </div>
 
@@ -50,11 +47,21 @@ export default function ReHarvest() {
 
           <div className={`${styles.bodyb} ${styles.forestGreen}`}>Role</div>
           <div className={`${styles.body} grey`}>
-            As the designer on the team, I led the end-to-end design process —
+            As the designer on the team, I led the end-to-end design process,
             from initial ideation and user flows to creating low- and
             high-fidelity prototypes. I developed a cohesive brand identity and
             designed reusable UI components to ensure consistency and usability
             across the platform.
+          </div>
+
+          <div className={`${styles.bodyb} ${styles.forestGreen}`}>Tools</div>
+          <div className={`${styles.body} grey`}>
+            <ul>
+              <li>Figma</li>
+              <li>Canva</li>
+              <li>Github</li>
+              <li>Notion</li>
+            </ul>
           </div>
         </div>
 
@@ -478,7 +485,7 @@ export default function ReHarvest() {
             User Journeys
           </div>
 
-          <div className={`flex jsutify-between`}>
+          <div className={`flex justify-around`}>
             <div
               className={`flex flex-col items-center ${styles.heading2} ${styles.forestGreen} gap-3`}
             >
@@ -508,6 +515,12 @@ export default function ReHarvest() {
                   className={styles.image1}
                 />
               </div>
+            </div>
+          </div>
+
+          <div className={`${styles.paraContainer}`}>
+            <div className={`${styles.heading} ${styles.forestGreen}`}>
+              Ideation
             </div>
           </div>
         </div>
