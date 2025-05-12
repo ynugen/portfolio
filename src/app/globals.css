@@ -250,7 +250,12 @@
   text-shadow: 0px calc(var(--square-size-s) * 0.105) 0px var(--periwinkle),
     0px calc(var(--square-size-s) * 0.072) 0px var(--periwinkle),
     0px calc(var(--square-size-s) * 0.038) 0px var(--periwinkle);
-}
+ }
+ .marigold-dropshadow {
+    text-shadow: 0px calc(var(--square-size-s) * 0.105) 0px var(--marigold),
+      0px calc(var(--square-size-s) * 0.072) 0px var(--marigold),
+      0px calc(var(--square-size-s) * 0.038) 0px var(--marigold);
+ }
 }
 
 
