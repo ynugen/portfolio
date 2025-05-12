@@ -158,6 +158,9 @@
     0px calc(var(--square-size) * 0.072) 0px var(--marigold),
     0px calc(var(--square-size) * 0.038) 0px var(--marigold);
 }
+
+/* Font Size Adjustments for Mobile */
+@media (max-width: 768px) {
   .link {
     font-size: calc(var(--title-font-size-mb) / (1.618 * 3));;
   }
@@ -170,6 +173,7 @@
  .body-bi {
   font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
  }
+}
 
 
 /* Container Styles */
