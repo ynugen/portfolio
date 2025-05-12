@@ -197,6 +197,10 @@
   color: var(--olive);
 }
 
+.matcha {
+  color: var(--matcha);
+}
+
 /* Font Styles */
 .title-1 {
   font-family: "Timetwist", serif;
@@ -401,6 +405,11 @@
     (var(--title-font-size) / (1.618 * 2) + 0.025 * var(--square-size))
   );
   padding-top: calc(0.025 * var(--square-size));
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 /* Animation styles */
