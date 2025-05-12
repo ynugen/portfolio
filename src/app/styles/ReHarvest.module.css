@@ -285,4 +285,31 @@
   .profileContainer {
     padding: 0 calc(0.2 * var(--square-size-m));
   }
+  .person {
+    gap: calc(var(--square-size-m) * 0.1);
+  }
+  .people {
+    gap: calc(var(--square-size-m) * 0.3);
+  }
+}
+
+@media (max-width: 640px) {
+  .bodyContainer {
+    padding: calc(0.1 * var(--square-size-s)) calc(var(--square-size-s) * 0.4);
+  }
+  .paraContainer {
+    padding: calc(0.08 * var(--square-size-s)) 0;
+  }
+  .listContainer {
+    padding: 0 calc(0.4 * var(--square-size-s));
+  }
+  .listContainer1 {
+    padding: 0 calc(0.2 * var(--square-size-s));
+  }
+  .profileContainer {
+    padding: 0 calc(0.2 * var(--square-size-s));
+  }
+  .person {
+    gap: calc(var(--square-size-s) * 0.1);
+  }
 }

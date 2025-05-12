@@ -256,6 +256,11 @@
       0px calc(var(--square-size-s) * 0.072) 0px var(--marigold),
       0px calc(var(--square-size-s) * 0.038) 0px var(--marigold);
  }
+ .peach-dropshadow {
+    text-shadow: 0px calc(var(--square-size-s) * 0.105) 0px var(--peach),
+      0px calc(var(--square-size-s) * 0.072) 0px var(--peach),
+      0px calc(var(--square-size-s) * 0.038) 0px var(--peach);
+ }
 }
 
 
