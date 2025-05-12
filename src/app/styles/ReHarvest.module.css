@@ -24,10 +24,10 @@
   /* Display Heading Small */
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--Text, #3c3c3b);
-  font-family: var(--font-milky);
+  font-family: var(--font-milky), serif;
   font-size: calc(var(--title-font-size));
   font-style: bold;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 
   /* Animation */
@@ -275,6 +275,11 @@
   }
   .paraContainer {
     padding: calc(0.08 * var(--square-size-m)) 0;
+    gap: calc(var(--square-size-m) * 0.1);
+  }
+  .paraContainer1 {
+    padding: calc(0.08 * var(--square-size-m)) 0;
+    gap: calc(var(--square-size-m) * 0.05);
   }
   .listContainer {
     padding: 0 calc(0.4 * var(--square-size-m));
@@ -299,9 +304,11 @@
   }
   .paraContainer {
     padding: calc(0.08 * var(--square-size-s)) 0;
+    gap: calc(var(--square-size-s) * 0.1);
   }
-  .listContainer {
-    padding: 0 calc(0.4 * var(--square-size-s));
+  .paraContainer1 {
+    padding: calc(0.08 * var(--square-size-s)) 0;
+    gap: calc(var(--square-size-s) * 0.05);
   }
   .listContainer1 {
     padding: 0 calc(0.2 * var(--square-size-s));
