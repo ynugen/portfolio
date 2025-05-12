@@ -5,20 +5,26 @@ import Link from "next/link";
 import config from "../../../next.config.js";
 import { usePathname } from "next/navigation";
 import { navLinks } from "../data/links";
+import { useEffect, useState } from "react";
 
 const basePath = config.basePath;
 
 const MobileHeader: React.FC = () => {
   const pathname = usePathname();
+  const [handleClick, setHandleClick] = useState<(() => void) | null>(null);
+
+  useEffect(() => {
+    setHandleClick(() => () => {
+      window.location.href = `${basePath}${navLinks.contact[0].href}`;
+    });
+  }, []);
   return (
     <div className={styles.header}>
       <div className={styles.titleContainer}>
         {/* Scrolling container */}
         <div
           className={`scrolling-container grey`}
-          onClick={() =>
-            (window.location.href = `${basePath}${navLinks.contact[0].href}`)
-          }
+          onClick={handleClick ?? undefined}
           style={{ cursor: "pointer" }}
         >
           <span
