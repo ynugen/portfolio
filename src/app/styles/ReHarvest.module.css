@@ -24,7 +24,7 @@
   /* Display Heading Small */
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--Text, #3c3c3b);
-  font-family: "Milky Vintage";
+  font-family: var(--font-milky);
   font-size: calc(var(--title-font-size));
   font-style: bold;
   font-weight: 400;
@@ -47,7 +47,7 @@
 }
 
 .subtitle {
-  font-family: "EB Garamond", serif;
+  font-family: var(--font-helvetica), sans-serif;
   font-optical-sizing: auto;
   font-size: calc(var(--title-font-size) / (1.618 * 2));
   font-style: normal;
@@ -57,21 +57,21 @@
 }
 
 .heading {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-helvetica), sans-serif;
   font-size: calc(var(--title-font-size) / (1.618 * 2));
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .heading1 {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-helvetica), sans-serif;
   font-size: calc(var(--title-font-size) / (1.618 * 2));
   font-weight: 700;
   text-transform: capitalize;
 }
 
 .heading2 {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-helvetica), sans-serif;
   font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-weight: 700;
   text-transform: uppercase;
@@ -82,7 +82,7 @@
 }
 
 .body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-helvetica), sans-serif;
   font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-weight: 300;
   line-height: 1.6;
@@ -90,7 +90,7 @@
 }
 
 .bodyi {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-helvetica), sans-serif;
   font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-weight: 400;
   line-height: 1.6;
@@ -99,7 +99,7 @@
 }
 
 .bodybi {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-helvetica), sans-serif;
   font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-weight: 500;
   line-height: 1.2;
@@ -108,7 +108,7 @@
 }
 
 .bodyb {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-helvetica), sans-serif;
   font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-weight: 500;
   line-height: 1.2;
