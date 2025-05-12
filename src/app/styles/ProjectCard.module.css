@@ -74,6 +74,9 @@
   .descContainer {
     gap: calc((0.002 * var(--square-size-m)));
   }
+  .bodyContainer {
+    padding: calc(0.3 * var(--square-size-m)) calc(var(--square-size-m) * 0.8);
+  }
 }
 
 @media (max-width: 640px) {
@@ -91,5 +94,8 @@
 
   .descContainer {
     gap: calc((0.002 * var(--square-size-s)));
+  }
+  .bodyContainer {
+    padding: calc(0.3 * var(--square-size-s)) calc(var(--square-size-s) * 0.8);
   }
 }
