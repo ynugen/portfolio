@@ -45,7 +45,7 @@
 .subtitle {
   font-family: "Helvetica Neue", sans-serif;
   font-size: calc(var(--title-font-size) / (1.618 * 2));
-  font-style: italic;
+  font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-transform: Captialize;
@@ -55,6 +55,13 @@
   font-family: "Helvetica Neue", sans-serif;
   font-size: calc(var(--title-font-size) / (1.618 * 2));
   font-weight: 600;
+  text-transform: uppercase;
+}
+
+.heading1 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: calc(var(--title-font-size) / (1.618 * 3));
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -103,9 +110,6 @@
 }
 
 .titleContainer {
-  position: sticky;
-  top: 0;
-  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,13 +131,13 @@
 
 .headingContainer {
   width: 100%;
-  /* padding: calc(0.08 * var(--square-size)) 0; */
 }
 .paraContainer {
   display: flex;
   flex-direction: column;
   padding: calc(0.08 * var(--square-size)) 0;
   gap: calc(var(--square-size) * 0.1);
+  width: 100%;
 }
 
 .listContainer {
@@ -143,6 +147,38 @@
   align-items: start;
   padding: 0 calc(0.4 * var(--square-size));
   gap: calc(var(--square-size) * 0.05);
+}
+
+.personaContainer {
+  display: flex;
+  gap: calc(var(--square-size) * 0.2);
+  justify-content: start;
+  align-items: center;
+}
+
+.profileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 calc(0.2 * var(--square-size));
+}
+
+.iconText {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: calc(var(--square-size) * 0.05);
+}
+
+.icon {
+  display: flex;
+  width: 24px;
+  align-items: center;
+  padding-top: calc(0.01 * var(--square-size));
+}
+
+.image {
+  width: calc(var(--square-size));
 }
 
 /* Responsiveness */
@@ -160,5 +196,23 @@
   }
   .subtitle {
     font-size: calc(var(--title-font-size-mb) / (1.618 * 2));
+  }
+  .heading {
+    font-size: calc(var(--title-font-size-mb) / (1.618 * 2));
+  }
+  .body {
+    font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
+  }
+  .bodyi {
+    font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
+  }
+  .bodybi {
+    font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
+  }
+  .bodyb {
+    font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
+  }
+  .bodyContainer {
+    padding: calc(0.1 * var(--square-size-mb)) calc(var(--square-size-mb) * 0.4);
   }
 }

@@ -27,25 +27,29 @@ export default function ProjectCard({
     <div>
       <Link href={projectLink}>
         <div className={styles.mainContainer}>
-          {/* Image */}
-          <div className={styles.imageContainer}>
-            <Image
-              src={`${basePath}${src}`}
-              alt={`${alt}`}
-              layout="responsive"
-              width={8} // Aspect ratio width
-              height={5} // Aspect ratio height
-            />
-          </div>
-
-          {/* Title */}
-          <div className={styles.descContainer}>
-            <div className={`${styles.titleContainer} ${styles.projectTitle}`}>
-              <div>{projectTitle}</div>
+          <div className={`${styles.bodyContainer}`}>
+            {/* Image */}
+            <div className={styles.imageContainer}>
+              <Image
+                src={`${basePath}${src}`}
+                alt={`${alt}`}
+                layout="responsive"
+                width={8} // Aspect ratio width
+                height={5} // Aspect ratio height
+              />
             </div>
 
-            <div className={styles.projectDesc}>
-              {projectDate} • {projectType.join(" • ")}
+            {/* Title */}
+            <div className={styles.descContainer}>
+              <div
+                className={`${styles.titleContainer} ${styles.projectTitle}`}
+              >
+                <div>{projectTitle}</div>
+              </div>
+
+              <div className={`${styles.projectDesc}`}>
+                {projectDate} • {projectType.join(" • ")}
+              </div>
             </div>
           </div>
         </div>

@@ -7,19 +7,24 @@
   gap: calc((0.1 * var(--square-size)));
 }
 
+.bodyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: calc((0.1 * var(--square-size)));
+}
+
 .titleContainer {
   display: flex;
-  justify-content: center;
   height: fit-content;
   width: stretch;
-  padding: 0 0.5rem 0 0.5rem;
 }
 
 .descContainer {
   display: flex;
   flex-direction: column;
   align-items: start;
-  align-items: center;
+  align-items: start;
   gap: calc((0.002 * var(--square-size)));
 }
 
@@ -30,6 +35,11 @@
   max-width: 600px;
   max-height: 500px;
   overflow: hidden;
+  transition: transform 0.2s ease-out;
+}
+
+.imageContainer:hover {
+  transform: scale(1.05);
 }
 
 .projectTitle {
@@ -37,8 +47,6 @@
   font-weight: 600;
   color: var(--slate-grey);
   font-size: calc(var(--title-font-size) / (1.618 * 2));
-  /* -webkit-text-stroke-color: var(--slate-grey); */
-  /* -webkit-text-stroke-width: 1px; */
   text-transform: uppercase;
 }
 

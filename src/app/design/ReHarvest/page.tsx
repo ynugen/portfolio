@@ -1,13 +1,29 @@
+"use client";
 import styles from "@/app/styles/ReHarvest.module.css";
+import config from "../../../../next.config.js";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import {
+  MapPin,
+  User,
+  Briefcase,
+  DeviceMobile,
+  Target,
+  ShoppingCartSimple,
+  WarningCircle,
+  CheckCircle,
+} from "@phosphor-icons/react";
 
 export default function ReHarvest() {
+  const basePath = config.basePath;
   return (
     <div className="page">
       <div className={styles.container}></div>
       {/* Title */}
       <div className={`${styles.titleContainer}`}>
         <span className={`${styles.title}`}>
-          <h2>ReHarvest:</h2>
+          <h2>ReHarvest</h2>
         </span>{" "}
         <span className={`${styles.subtitle} ${styles.forestGreen}`}>
           Rethinking Food Waste for Good
@@ -62,32 +78,32 @@ export default function ReHarvest() {
 
           <div className={`${styles.body} grey`}>
             {" "}
-            Here's how current solutions fall short:
+            Here&#39;s how current solutions fall short:
           </div>
 
           <ul className={`p-3 ${styles.body} ${styles.listContainer} grey`}>
             <li>
               Surplus food apps (e.g.{" "}
-              <a
+              <Link
                 href="https://toogoodtogo.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${styles.link} ${styles.bodyi} ${styles.forestGreen}`}
               >
                 Too Good To Go
-              </a>
+              </Link>
               ) <span className={styles.bodyb}>ignore upstream waste</span>.
             </li>
             <li>
               Ugly produce boxes (e.g.{" "}
-              <a
+              <Link
                 href="https://www.farmerspick.com.au/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${styles.link} ${styles.bodyi} ${styles.forestGreen}`}
               >
-                Farmer’s Pick
-              </a>
+                Farmer&#39;s Pick
+              </Link>
               ) have <span className={styles.bodyb}>limited options</span> and
               <span className={styles.bodyb}> subscriptions</span>.
             </li>
@@ -97,23 +113,23 @@ export default function ReHarvest() {
             </li>
             <li>
               Supermarkets like{" "}
-              <a
+              <Link
                 href="https://www.woolworths.com.au/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${styles.link} ${styles.bodyi} ${styles.forestGreen}`}
               >
                 Woolworths
-              </a>{" "}
+              </Link>{" "}
               and{" "}
-              <a
+              <Link
                 href="https://www.coles.com.au/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${styles.link} ${styles.bodyi} ${styles.forestGreen}`}
               >
                 Coles
-              </a>{" "}
+              </Link>{" "}
               focus on <span className={styles.bodyb}>appearance</span>,
               contributing to
               <span className={styles.bodyb}> waste</span>.
@@ -127,7 +143,57 @@ export default function ReHarvest() {
         </div>
 
         {/* User Personas */}
-        <div className={styles.paraContainer}></div>
+        <div className={styles.paraContainer}>
+          <div
+            className={`${styles.heading} ${styles.headingContainer} ${styles.forestGreen}`}
+          >
+            User Personas
+          </div>
+
+          <div className={`${styles.body} grey`}>
+            <div className={styles.personaContainer}>
+              <div className={styles.profileContainer}>
+                <Image
+                  src={`${basePath}/images/Jess.png`}
+                  alt="Jess Nguyen"
+                  width={704}
+                  height={753}
+                  className={styles.image}
+                />
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <div className={`${styles.heading1}`}>Jess Nguyen</div>
+                <div className={`${styles.iconText}`}>
+                  {" "}
+                  <div className={`${styles.icon}`}>
+                    <MapPin size={24} color="#82a36b" weight="fill" />
+                  </div>{" "}
+                  Melbourne, VIC
+                </div>
+                <div className={`${styles.iconText}`}>
+                  <div className={`${styles.icon}`}>
+                    <User size={24} color="#82a36b" weight="fill" />
+                  </div>{" "}
+                  Age: 25
+                </div>
+                <div className={`${styles.iconText}`}>
+                  {" "}
+                  <div className={`${styles.icon}`}>
+                    <Briefcase size={24} color="#82a36b" weight="fill" />
+                  </div>{" "}
+                  Graduate Nurse
+                </div>
+                <div className={`${styles.iconText}`}>
+                  <div className={`${styles.icon}`}>
+                    <DeviceMobile size={24} color="#82a36b" weight="fill" />
+                  </div>{" "}
+                  Tech-savvy — frequently uses shopping and budgeting apps
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
