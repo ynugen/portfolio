@@ -6,11 +6,20 @@ import Image from "next/image";
 import config from "../../../next.config.js";
 import { usePathname } from "next/navigation";
 import { navLinks } from "../data/links";
+import { useEffect, useState } from "react";
 
 const basePath = config.basePath;
 
 const Sidebar: React.FC = () => {
   const pathname = usePathname();
+  const [handleClick, setHandleClick] = useState<(() => void) | null>(null);
+
+  useEffect(() => {
+    // Only set the click handler on the client
+    setHandleClick(() => () => {
+      window.location.href = `${basePath}${navLinks.contact[0].href}`;
+    });
+  }, []);
   return (
     <div className={styles.sidebar}>
       {/* Title container */}
@@ -18,9 +27,7 @@ const Sidebar: React.FC = () => {
         {/* Scrolling animated text */}
         <div
           className={`scrolling-container`}
-          onClick={() =>
-            (window.location.href = `${basePath}${navLinks.contact[0].href}`)
-          }
+          onClick={handleClick ?? undefined}
           style={{ cursor: "pointer" }}
         >
           <span
