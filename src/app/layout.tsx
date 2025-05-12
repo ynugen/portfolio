@@ -15,6 +15,7 @@ export default function RootLayout({
         style={{
           backgroundColor: "var(--matcha)",
           border: "var(--slate-grey) 1px solid",
+          height: "100vh",
         }}
       >
         <DynamicCSS />
