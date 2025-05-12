@@ -81,18 +81,18 @@ const MobileHeader: React.FC = () => {
                   style={{
                     textShadow:
                       pathname === link.href
-                        ? `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`
+                        ? `calc(var(--square-size-m) * 0.02) 0px 0px ${link.color}`
                         : "var(--slate-grey)",
                     color: `var(--slate-grey)`,
                     transition: "text-shadow 0.3s ease", // Add transition for smooth animation
                   }}
                   onMouseEnter={(e) =>
-                    (e.currentTarget.style.textShadow = `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`)
+                    (e.currentTarget.style.textShadow = `calc(var(--square-size-m) * 0.02) 0px 0px ${link.color}`)
                   }
                   onMouseLeave={(e) =>
                     (e.currentTarget.style.textShadow =
                       pathname === link.href
-                        ? `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`
+                        ? `calc(var(--square-size-m) * 0.02) 0px 0px ${link.color}`
                         : "none")
                   }
                 >
@@ -111,18 +111,18 @@ const MobileHeader: React.FC = () => {
                   style={{
                     textShadow:
                       pathname === link.href
-                        ? `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`
+                        ? `calc(var(--square-size-m) * 0.02) 0px 0px ${link.color}`
                         : "var(--slate-grey)",
                     color: `var(--slate-grey)`,
                     transition: "text-shadow 0.3s ease", // Add transition for smooth animation
                   }}
                   onMouseEnter={(e) =>
-                    (e.currentTarget.style.textShadow = `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`)
+                    (e.currentTarget.style.textShadow = `calc(var(--square-size-m) * 0.02) 0px 0px ${link.color}`)
                   }
                   onMouseLeave={(e) =>
                     (e.currentTarget.style.textShadow =
                       pathname === link.href
-                        ? `calc(var(--square-size-mb) * 0.02) 0px 0px ${link.color}`
+                        ? `calc(var(--square-size-m) * 0.02) 0px 0px ${link.color}`
                         : "none")
                   }
                 >
