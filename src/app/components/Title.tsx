@@ -29,40 +29,38 @@ export default function Title({
       // Only offset the shadow in the x direction based on cursor position
       let offsetX = (event.clientX - centerX) / 20;
 
-      // Dynamically set the maximum offset based on my golden ratio unit square size\
+      // Dynamically set the maximum offset based on my golden ratio unit square size
       const squareSize = Math.min(
         window.innerHeight / 5,
         window.innerWidth / 8
       );
 
-      // console.log("squareSize", squareSize);
-
-      if (window.innerWidth > 768) {
-        const maxOffset = squareSize * 0.06;
-        // Limit the offset to a maximum of 11 pixels (or depending on the title font size so that it doesn't look weird)
-        if (offsetX > maxOffset) {
-          offsetX = maxOffset;
-        } else if (offsetX < -maxOffset) {
-          offsetX = -maxOffset;
-        }
-
-        setShadowStyle({
-          textShadow: `${offsetX}px 0px 0px ${color}`,
-        });
-      } else {
-        setShadowStyle({
-          textShadow: `10px 0px 0px ${color}`,
-        });
+      const maxOffset = squareSize * 0.06;
+      // Limit the offset to a maximum of 11 pixels (or depending on the title font size so that it doesn't look weird)
+      if (offsetX > maxOffset) {
+        offsetX = maxOffset;
+      } else if (offsetX < -maxOffset) {
+        offsetX = -maxOffset;
       }
+
+      setShadowStyle({
+        textShadow: `${offsetX}px 0px 0px ${color}`,
+      });
     };
 
-    // Mouse movement event listener
-    window.addEventListener("mousemove", handleMouseMove);
-
-    // Cleanup function to remove the event listener
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
+    if (window.innerWidth > 768) {
+      // Mouse movement event listener
+      window.addEventListener("mousemove", handleMouseMove);
+      return () => {
+        // Cleanup function to remove the event listener
+        window.removeEventListener("mousemove", handleMouseMove);
+      };
+    } else {
+      // For mobile, set a fixed shadow style
+      setShadowStyle({
+        textShadow: `10px 0px 0px ${color}`,
+      });
+    }
   }, [color]);
 
   return (
