@@ -9,6 +9,10 @@
   color: #2d5948;
 }
 
+.text {
+  color: #3c3c3b;
+}
+
 /* Fonts */
 
 .title {
@@ -43,12 +47,13 @@
 }
 
 .subtitle {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
   font-size: calc(var(--title-font-size) / (1.618 * 2));
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
-  text-transform: captialize;
+  text-transform: uppercase;
 }
 
 .heading {
@@ -70,6 +75,10 @@
   font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.h2Padding {
+  padding-bottom: calc(var(--title-font-size) * 0.01);
 }
 
 .body {
@@ -133,7 +142,7 @@
   justify-content: center;
   align-items: center;
   padding: calc(0.3 * var(--square-size)) calc(var(--square-size) * 0.8);
-  gap: calc(var(--square-size) * 0.05);
+  gap: calc(var(--square-size) * 0.3);
 }
 
 .headingContainer {
@@ -144,6 +153,14 @@
   flex-direction: column;
   padding: calc(0.08 * var(--square-size)) 0;
   gap: calc(var(--square-size) * 0.1);
+  width: 100%;
+}
+
+.paraContainer1 {
+  display: flex;
+  flex-direction: column;
+  padding: calc(0.08 * var(--square-size)) 0;
+  gap: calc(var(--square-size) * 0.05);
   width: 100%;
 }
 
@@ -161,7 +178,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding: 0 calc(0.2 * var(--square-size));
+  padding: 0 calc(0.3 * var(--square-size));
   gap: calc(var(--square-size) * 0.05);
 }
 
@@ -203,6 +220,10 @@
   width: calc(var(--square-size));
 }
 
+.image1 {
+  width: calc(var(--square-size) * 2);
+}
+
 .people {
   display: flex;
   flex-direction: column;
@@ -228,6 +249,15 @@
   .heading {
     font-size: calc(var(--title-font-size-mb) / (1.618 * 2));
   }
+  .heading1 {
+    font-size: calc(var(--title-font-size-mb) / (1.618 * 2));
+  }
+  .heading2 {
+    font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
+  }
+  .h2Padding {
+    padding-bottom: calc(var(--title-font-size-mb) * 0.01);
+  }
   .body {
     font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
   }
@@ -242,5 +272,17 @@
   }
   .bodyContainer {
     padding: calc(0.1 * var(--square-size-mb)) calc(var(--square-size-mb) * 0.4);
+  }
+  .paraContainer {
+    padding: calc(0.08 * var(--square-size-mb)) 0;
+  }
+  .listContainer {
+    padding: 0 calc(0.4 * var(--square-size-mb));
+  }
+  .listContainer1 {
+    padding: 0 calc(0.2 * var(--square-size-mb));
+  }
+  .profileContainer {
+    padding: 0 calc(0.2 * var(--square-size-mb));
   }
 }
