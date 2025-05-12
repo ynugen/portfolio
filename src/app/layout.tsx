@@ -3,6 +3,13 @@ import "./globals.css";
 import Sidebar from "./components/Sidebar";
 import MobileHeader from "./components/MobileHeader";
 import DynamicCSS from "./components/DynamicCSS";
+import "./globals.css";
+import {
+  pixeloid,
+  timetwist,
+  helveticaNeue,
+  milkyVintage,
+} from "@/app/fonts/fonts";
 
 export default function RootLayout({
   children,
@@ -10,7 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${pixeloid.variable} ${timetwist.variable} ${helveticaNeue.variable} ${milkyVintage.variable}`}
+    >
       <body
         style={{
           backgroundColor: "var(--matcha)",

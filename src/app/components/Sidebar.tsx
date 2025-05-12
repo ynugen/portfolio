@@ -22,7 +22,7 @@ const Sidebar: React.FC = () => {
           style={{ cursor: "pointer" }}
         >
           <span
-            className={`scrolling-text  body`}
+            className={`scrolling-text  body grey`}
             style={{ cursor: "pointer" }}
           >
             NGUYEN MT A. (AKA <span className="body-b">AYIMA</span>) IS AN
@@ -95,7 +95,7 @@ const Sidebar: React.FC = () => {
           </div>
 
           {/* About me text */}
-          <div className={`body-small text-justify`}>
+          <div className={`body-small text-justify grey`}>
             I&#39;ve been orbiting around design my entire life - realised it as
             an afterthought and not a possibility. But time is much too a fickle
             thing for me to mull and ponder over if only&#39;s. Imagination

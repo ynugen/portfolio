@@ -23,168 +23,6 @@
 
 }
 
-
-
-/* Pixeloid font face */
-@font-face {
-  font-family: "Pixeloid";
-  src: url("/fonts/PixeloidSans-mLxMm.ttf") format("truetype");
-  font-weight: normal;
-  font-display: swap;
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: auto;
-}
-
-@font-face {
-  font-family: "Pixeloid";
-  src: url("/fonts/PixeloidSansBold-PKnYd.ttf") format("truetype");
-  font-weight: bold;
-  font-display: swap;
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: auto;
-}
-
-/* Timetwist font face */
-@font-face {
-  font-family: "Timetwist";
-  src: url("/fonts/Timetwist-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: auto;
-}
-@font-face {
-  font-family: "Timetwist";
-  src: url("/fonts/Timetwist-Bold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: auto;
-}
-@font-face {
-  font-family: "Timetwist";
-  src: url("/fonts/Timetwist-Italic.otf") format("opentype");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: auto;
-}
-
-/* Helvetica Neue font face */
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueBlack.otf") format("opentype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueBlackItalic.otf") format("opentype");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueBold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueBoldItalic.otf") format("opentype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueHeavy.otf") format("opentype");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueHeavyItalic.otf") format("opentype");
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueMedium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueMediumItalic.otf") format("opentype");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueRoman.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueItalic.otf") format("opentype");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueLight.otf") format("opentype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueLightItalic.otf") format("opentype");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueUltraLight.otf") format("opentype");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueUltraLightItalic.otf") format("opentype");
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
-}
-
-
-/* Milky Vintage */
-@font-face {
-  font-family: "Milky Vintage";
-  src: url("/fonts/MilkyVintage.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: auto;
-}
-
 .grey {
   color: var(--slate-grey);
 }
@@ -203,79 +41,52 @@
 
 /* Font Styles */
 .title-1 {
-  font-family: "Timetwist", serif;
+  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
   font-size: var(--title-font-size);
   font-weight: bold;
   text-transform: uppercase;
   vertical-align: middle;
-  /* -webkit-text-stroke-color: var(--marigold); */
-  /* -webkit-text-stroke-width: 2px; */
 }
 
 .title-2 {
-  font-family: "Timetwist", serif;
+  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
   font-size: calc(var(--title-font-size) / 1.618);
   font-weight: normal;
   line-height: normal;
   font-style: italic;
 }
 
-.matcha-dropshadow {
-  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--matcha), 0px calc(var(--square-size) * 0.072) 0px var(--matcha), 0px calc(var(--square-size) * 0.038) 0px var(--matcha);
-}
-.grey-dropshadow {
-  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--slate-grey), 0px calc(var(--square-size) * 0.072) 0px var(--slate-grey), 0px calc(var(--square-size) * 0.038) 0px var(--slate-grey);
-}
-.lavender-dropshadow {
-  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--lavender-mauve), 0px calc(var(--square-size) * 0.072) 0px var(--lavender-mauve), 0px calc(var(--square-size) * 0.038) 0px var(--lavender-mauve);
-}
-.periwinkle-dropshadow {
-  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--periwinkle), 0px calc(var(--square-size) * 0.072) 0px var(--periwinkle), 0px calc(var(--square-size) * 0.038) 0px var(--periwinkle);
-}
-.peach-dropshadow {
-  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--peach), 0px calc(var(--square-size) * 0.072) 0px var(--peach), 0px calc(var(--square-size) * 0.038) 0px var(--peach);
-}
-.marigold-dropshadow {
-  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--marigold), 0px calc(var(--square-size) * 0.072) 0px var(--marigold), 0px calc(var(--square-size) * 0.038) 0px var(--marigold);
-}
-
 .subtitle-1 {
-  font-family: "Timetwist", serif;
+  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
   font-size: calc(var(--title-font-size) / (1.618 * 2));
   font-weight: bold;
   line-height: normal;
   text-transform: uppercase;
-
   color: var(--slate-grey);
 }
 
 .subtitle-2 {
-  font-family: "Timetwist", serif;
+  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
   font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-weight: normal;
   line-height: normal;
   text-transform: capitalize;
-
   color: var(--slate-grey);
 }
 
 .link {
-  font-family: "Timetwist", serif;
+  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
   font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-weight: bold;
   line-height: normal;
   text-transform: capitalize;
-
   color: var(--marigold);
-
   will-change: filter, text-shadow;
   transition: filter 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
 }
 
 .body {
-  color: var(--slate-grey);
-
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-helvetica), sans-serif; /* Use Helvetica Neue variable */
   font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-style: normal;
   font-weight: 300;
@@ -283,8 +94,7 @@
 }
 
 .body-b {
-  color: var(--slate-grey);
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-helvetica), sans-serif; /* Use Helvetica Neue variable */
   font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-style: normal;
   font-weight: 500;
@@ -292,8 +102,7 @@
 }
 
 .body-bi {
-  color: var(--slate-grey);
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-helvetica), sans-serif; /* Use Helvetica Neue variable */
   font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-style: italic;
   font-weight: 500;
@@ -301,39 +110,54 @@
 }
 
 .body-small {
-  color: var(--slate-grey);
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-helvetica), sans-serif; /* Use Helvetica Neue variable */
   font-size: calc(var(--title-font-size) / (1.618 * 4));
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
 
-@media (max-width: 768px) {
-  .title-1 {
-    font-size: var(--title-font-size-mb);
-  }
-  .title-2 {
-    font-size: calc(var(--title-font-size-mb) / 1.618);
-  }
-  .matcha-dropshadow {
-    text-shadow: 0px calc(var(--square-size-mb) * 0.068) 0px var(--matcha), 0px calc(var(--square-size-mb) * 0.047) 0px var(--matcha), 0px calc(var(--square-size-mb) * 0.024) 0px var(--matcha);
-  }
-  .grey-dropshadow {
-    text-shadow: 0px calc(var(--square-size-mb) * 0.068) 0px var(--slate-grey), 0px calc(var(--square-size-mb) * 0.047) 0px var(--slate-grey), 0px calc(var(--square-size-mb) * 0.024) 0px var(--slate-grey);
-  }
-  .lavender-dropshadow {
-    text-shadow: 0px calc(var(--square-size-mb) * 0.068) 0px var(--lavender-mauve), 0px calc(var(--square-size-mb) * 0.047) 0px var(--lavender-mauve), 0px calc(var(--square-size-mb) * 0.024) 0px var(--lavender-mauve);
-  }
-  .periwinkle-dropshadow {
-    text-shadow: 0px calc(var(--square-size-mb) * 0.068) 0px var(--periwinkle), 0px calc(var(--square-size-mb) * 0.047) 0px var(--periwinkle), 0px calc(var(--square-size-mb) * 0.024) 0px var(--periwinkle);
-  }
-  .peach-dropshadow {
-    text-shadow: 0px calc(var(--square-size-mb) * 0.068) 0px var(--peach), 0px calc(var(--square-size-mb) * 0.047) 0px var(--peach), 0px calc(var(--square-size-mb) * 0.024) 0px var(--peach);
-  }
-  .marigold-dropshadow {
-    text-shadow: 0px calc(var(--square-size-mb) * 0.068) 0px var(--marigold), 0px calc(var(--square-size-mb) * 0.047) 0px var(--marigold), 0px calc(var(--square-size-mb) * 0.024) 0px var(--marigold);
-  }
+.matcha-dropshadow {
+  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
+  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--matcha),
+    0px calc(var(--square-size) * 0.072) 0px var(--matcha),
+    0px calc(var(--square-size) * 0.038) 0px var(--matcha);
+}
+
+.grey-dropshadow {
+  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
+  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--slate-grey),
+    0px calc(var(--square-size) * 0.072) 0px var(--slate-grey),
+    0px calc(var(--square-size) * 0.038) 0px var(--slate-grey);
+}
+
+.lavender-dropshadow {
+  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
+  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--lavender-mauve),
+    0px calc(var(--square-size) * 0.072) 0px var(--lavender-mauve),
+    0px calc(var(--square-size) * 0.038) 0px var(--lavender-mauve);
+}
+
+.periwinkle-dropshadow {
+  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
+  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--periwinkle),
+    0px calc(var(--square-size) * 0.072) 0px var(--periwinkle),
+    0px calc(var(--square-size) * 0.038) 0px var(--periwinkle);
+}
+
+.peach-dropshadow {
+  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
+  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--peach),
+    0px calc(var(--square-size) * 0.072) 0px var(--peach),
+    0px calc(var(--square-size) * 0.038) 0px var(--peach);
+}
+
+.marigold-dropshadow {
+  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
+  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--marigold),
+    0px calc(var(--square-size) * 0.072) 0px var(--marigold),
+    0px calc(var(--square-size) * 0.038) 0px var(--marigold);
+}
   .link {
     font-size: calc(var(--title-font-size-mb) / (1.618 * 3));;
   }
@@ -346,7 +170,7 @@
  .body-bi {
   font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
  }
-}
+
 
 /* Container Styles */
  .page-layout {
