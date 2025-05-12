@@ -316,6 +316,13 @@
       (var(--title-font-size-m) / (1.618 * 2))
     );
   }
+  .page-title-container {
+    padding: calc(var(--square-size-m) * 0.4) 0 0 0;
+  }
+  .projects-container {
+    padding: calc(var(--square-size-m) * 0.2) calc(var(--square-size-m) * 0.4);
+    gap: calc(var(--square-size-m) * 0.2);
+  }
 }
 
 @media (max-width: 640px) {
@@ -326,6 +333,13 @@
     height: calc(
       (var(--title-font-size-s) / (1.618 * 2))
     );
+  }
+  .page-title-container {
+    padding: calc(var(--square-size-s) * 0.4) 0 0 0;
+  }
+  .projects-container {
+    padding: calc(var(--square-size-s) * 0.2) calc(var(--square-size-s) * 0.4);
+    gap: calc(var(--square-size-s) * 0.2);
   }
 }
 
