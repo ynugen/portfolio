@@ -23,13 +23,13 @@
   justify-content: center;
   align-items: center;
   padding: calc(0.11 * var(--square-size-mb));
-  gap: calc(var(--square-size-mb) * 0.11);
+  /* gap: calc(var(--square-size-mb) * 0.11); */
   height: var(--square-size-mb);
   border-bottom: var(--slate-grey) 1px solid;
 }
 
 .nameContainer {
-  height: calc(var(--title-font-size-mb) * 1.2);
+  height: calc(var(--title-font-size-mb) / 1.618);
 }
 
 .linksContainer {

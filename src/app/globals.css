@@ -182,12 +182,6 @@
   flex-direction: row;;
  }
 
- @media (max-width: 768px) {
-  .page-layout {
-    flex-direction: column;
-  }
-}
-
 .page {
   position: relative;
   overflow-y: auto;
@@ -233,6 +227,17 @@
     (var(--title-font-size) / (1.618 * 2) + 0.025 * var(--square-size))
   );
   padding-top: calc(0.025 * var(--square-size));
+}
+
+@media (max-width: 768px) {
+  .page-layout {
+    flex-direction: column;
+  }
+  .scrolling-container {
+    height: calc(
+      (var(--title-font-size-mb) / (1.618) + 0.025 * var(--square-size-mb))
+    );
+  }
 }
 
 ul {

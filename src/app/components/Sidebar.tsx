@@ -18,11 +18,13 @@ const Sidebar: React.FC = () => {
         {/* Scrolling animated text */}
         <div
           className={`scrolling-container`}
-          onClick={() => (window.location.href = navLinks.contact[0].href)}
+          onClick={() =>
+            (window.location.href = `${basePath}${navLinks.contact[0].href}`)
+          }
           style={{ cursor: "pointer" }}
         >
           <span
-            className={`scrolling-text  body grey`}
+            className={`scrolling-text body grey`}
             style={{ cursor: "pointer" }}
           >
             NGUYEN MT A. (AKA <span className="body-b">AYIMA</span>) IS AN

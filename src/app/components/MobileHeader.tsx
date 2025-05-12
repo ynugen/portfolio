@@ -2,11 +2,11 @@ import styles from "@/app/styles/MobileHeader.module.css";
 import NavLink from "./NavLink";
 import Title from "./Title";
 import Link from "next/link";
-// import config from "../../../next.config.js";
+import config from "../../../next.config.js";
 import { usePathname } from "next/navigation";
 import { navLinks } from "../data/links";
 
-// const basePath = config.basePath;
+const basePath = config.basePath;
 
 const MobileHeader: React.FC = () => {
   const pathname = usePathname();
@@ -15,12 +15,14 @@ const MobileHeader: React.FC = () => {
       <div className={styles.titleContainer}>
         {/* Scrolling container */}
         <div
-          className={`scrolling-container`}
-          onClick={() => (window.location.href = navLinks.contact[0].href)}
+          className={`scrolling-container grey`}
+          onClick={() =>
+            (window.location.href = `${basePath}${navLinks.contact[0].href}`)
+          }
           style={{ cursor: "pointer" }}
         >
           <span
-            className={`scrolling-text  body`}
+            className={`scrolling-text body grey`}
             style={{ cursor: "pointer" }}
           >
             NGUYEN MT A. (AKA <span className="body-b">AYIMA</span>) IS AN
