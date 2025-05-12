@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <div className="page">
       <div
-        className="title-2 marigold-dropshadow page-title-container h-[var(--title-font-size)]"
+        className="title-2 marigold-dropshadow page-title-container h-[var(--title-font-size)] text-center"
         style={{ color: "var(--slate-grey)" }}
       >
         <h2>Let&#39;s Connect</h2>

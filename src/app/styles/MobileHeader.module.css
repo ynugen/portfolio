@@ -22,14 +22,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: calc(0.11 * var(--square-size-mb));
-  /* gap: calc(var(--square-size-mb) * 0.11); */
-  height: var(--square-size-mb);
+  padding: calc(0.11 * var(--square-size-m));
+  height: var(--square-size-m);
   border-bottom: var(--slate-grey) 1px solid;
 }
 
 .nameContainer {
-  height: calc(var(--title-font-size-mb) / 1.618);
+  height: calc(var(--title-font-size-m));
 }
 
 .linksContainer {
@@ -37,8 +36,21 @@
   /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  padding: calc(0.012 * var(--square-size-mb))
-    calc(0.08 * var(--square-size-mb));
-  gap: calc(var(--square-size-mb) * 0.11);
+  padding: calc(0.08 * var(--square-size-m)) calc(0.08 * var(--square-size-m));
+  gap: calc(var(--square-size-m) * 0.06);
   flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .linksContainer {
+    padding: calc(0.08 * var(--square-size-s)) calc(0.08 * var(--square-size-s));
+    gap: calc(var(--square-size-s) * 0.06);
+  }
+  .nameContainer {
+    height: calc(var(--title-font-size-s));
+  }
+  .titleContainer {
+    padding: calc(0.11 * var(--square-size-s));
+    height: var(--square-size-s);
+  }
 }

@@ -40,11 +40,11 @@ export default function ProjectCard({
             </div>
 
             {/* Title */}
-            <div className={styles.descContainer}>
+            <div className={`${styles.descContainer} grey`}>
               <div
                 className={`${styles.titleContainer} ${styles.projectTitle}`}
               >
-                <div>{projectTitle}</div>
+                {projectTitle}
               </div>
 
               <div className={`${styles.projectDesc}`}>

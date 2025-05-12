@@ -233,56 +233,56 @@
 /* Responsiveness */
 @media (max-width: 768px) {
   .titleContainer {
-    padding: calc(0.3 * var(--square-size-mb));
-    gap: calc(var(--square-size-mb) * 0.05);
+    padding: calc(0.3 * var(--square-size-m));
+    gap: calc(var(--square-size-m) * 0.05);
   }
   .title {
-    font-size: var(--title-font-size-mb);
-    text-shadow: calc(var(--square-size-mb) * 0.03)
-        calc(var(--square-size-mb) * 0.03) 0px var(--slate-grey),
-      calc(var(--square-size-mb) * 0.055) calc(var(--square-size-mb) * 0.055)
-        0px #e9b44c;
+    font-size: var(--title-font-size-m);
+    text-shadow: calc(var(--square-size-m) * 0.03)
+        calc(var(--square-size-m) * 0.03) 0px var(--slate-grey),
+      calc(var(--square-size-m) * 0.055) calc(var(--square-size-m) * 0.055) 0px
+        #e9b44c;
   }
   .subtitle {
-    font-size: calc(var(--title-font-size-mb) / (1.618 * 2));
+    font-size: calc(var(--title-font-size-m) / (1.618 * 2));
   }
   .heading {
-    font-size: calc(var(--title-font-size-mb) / (1.618 * 2));
+    font-size: calc(var(--title-font-size-m) / (1.618 * 2));
   }
   .heading1 {
-    font-size: calc(var(--title-font-size-mb) / (1.618 * 2));
+    font-size: calc(var(--title-font-size-m) / (1.618 * 2));
   }
   .heading2 {
-    font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
+    font-size: calc(var(--title-font-size-m) / (1.618 * 3));
   }
   .h2Padding {
-    padding-bottom: calc(var(--title-font-size-mb) * 0.01);
+    padding-bottom: calc(var(--title-font-size-m) * 0.01);
   }
   .body {
-    font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
+    font-size: calc(var(--title-font-size-m) / (1.618 * 3));
   }
   .bodyi {
-    font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
+    font-size: calc(var(--title-font-size-m) / (1.618 * 3));
   }
   .bodybi {
-    font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
+    font-size: calc(var(--title-font-size-m) / (1.618 * 3));
   }
   .bodyb {
-    font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
+    font-size: calc(var(--title-font-size-m) / (1.618 * 3));
   }
   .bodyContainer {
-    padding: calc(0.1 * var(--square-size-mb)) calc(var(--square-size-mb) * 0.4);
+    padding: calc(0.1 * var(--square-size-m)) calc(var(--square-size-m) * 0.4);
   }
   .paraContainer {
-    padding: calc(0.08 * var(--square-size-mb)) 0;
+    padding: calc(0.08 * var(--square-size-m)) 0;
   }
   .listContainer {
-    padding: 0 calc(0.4 * var(--square-size-mb));
+    padding: 0 calc(0.4 * var(--square-size-m));
   }
   .listContainer1 {
-    padding: 0 calc(0.2 * var(--square-size-mb));
+    padding: 0 calc(0.2 * var(--square-size-m));
   }
   .profileContainer {
-    padding: 0 calc(0.2 * var(--square-size-mb));
+    padding: 0 calc(0.2 * var(--square-size-m));
   }
 }

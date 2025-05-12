@@ -18,8 +18,11 @@
   --square-size: min(calc(100vh / 5), calc(100vw / 8));
   --title-font-size: calc(var(--square-size) * 0.463768116);
 
-  --title-font-size-mb: calc(var(--square-size-mb) * 0.48);
-  --square-size-mb: calc(768px/5);
+  --title-font-size-m: calc(var(--square-size-m) * 0.48);
+  --square-size-m: calc(768px/5);
+
+  --title-font-size-s: calc(var(--square-size-s) * 0.48);
+  --square-size-s: calc(640px/5);
 
 }
 
@@ -118,42 +121,36 @@
 }
 
 .matcha-dropshadow {
-  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
   text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--matcha),
     0px calc(var(--square-size) * 0.072) 0px var(--matcha),
     0px calc(var(--square-size) * 0.038) 0px var(--matcha);
 }
 
 .grey-dropshadow {
-  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
   text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--slate-grey),
     0px calc(var(--square-size) * 0.072) 0px var(--slate-grey),
     0px calc(var(--square-size) * 0.038) 0px var(--slate-grey);
 }
 
 .lavender-dropshadow {
-  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
   text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--lavender-mauve),
     0px calc(var(--square-size) * 0.072) 0px var(--lavender-mauve),
     0px calc(var(--square-size) * 0.038) 0px var(--lavender-mauve);
 }
 
 .periwinkle-dropshadow {
-  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
   text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--periwinkle),
     0px calc(var(--square-size) * 0.072) 0px var(--periwinkle),
     0px calc(var(--square-size) * 0.038) 0px var(--periwinkle);
 }
 
 .peach-dropshadow {
-  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
   text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--peach),
     0px calc(var(--square-size) * 0.072) 0px var(--peach),
     0px calc(var(--square-size) * 0.038) 0px var(--peach);
 }
 
 .marigold-dropshadow {
-  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
   text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--marigold),
     0px calc(var(--square-size) * 0.072) 0px var(--marigold),
     0px calc(var(--square-size) * 0.038) 0px var(--marigold);
@@ -161,18 +158,99 @@
 
 /* Font Size Adjustments for Mobile */
 @media (max-width: 768px) {
+  .title-1 {
+    font-size: var(--title-font-size-m);
+  }
+  .title-2 {
+    font-size: calc(var(--title-font-size-m) / 1.618);
+
+  }
   .link {
-    font-size: calc(var(--title-font-size-mb) / (1.618 * 3));;
+    font-size: calc(var(--title-font-size-m) / (1.618 * 3));;
   }
  .body {
-  font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
+  font-size: calc(var(--title-font-size-m) / (1.618 * 3));
  }
  .body-b {
-  font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
+  font-size: calc(var(--title-font-size-m) / (1.618 * 3));
  }
  .body-bi {
-  font-size: calc(var(--title-font-size-mb) / (1.618 * 3));
+  font-size: calc(var(--title-font-size-m) / (1.618 * 3));
  }
+
+ .matcha-dropshadow {
+  text-shadow: 0px calc(var(--square-size-m) * 0.105) 0px var(--matcha),
+    0px calc(var(--square-size-m) * 0.072) 0px var(--matcha),
+    0px calc(var(--square-size-m) * 0.038) 0px var(--matcha);
+ }
+  .grey-dropshadow {
+    text-shadow: 0px calc(var(--square-size-m) * 0.105) 0px var(--slate-grey),
+      0px calc(var(--square-size-m) * 0.072) 0px var(--slate-grey),
+      0px calc(var(--square-size-m) * 0.038) 0px var(--slate-grey);
+  }
+  .lavender-dropshadow {
+    text-shadow: 0px calc(var(--square-size-m) * 0.105) 0px var(--lavender-mauve),
+      0px calc(var(--square-size-m) * 0.072) 0px var(--lavender-mauve),
+      0px calc(var(--square-size-m) * 0.038) 0px var(--lavender-mauve);
+  }
+  .periwinkle-dropshadow {
+    text-shadow: 0px calc(var(--square-size-m) * 0.105) 0px var(--periwinkle),
+      0px calc(var(--square-size-m) * 0.072) 0px var(--periwinkle),
+      0px calc(var(--square-size-m) * 0.038) 0px var(--periwinkle);
+  }
+  .peach-dropshadow {
+    text-shadow: 0px calc(var(--square-size-m) * 0.105) 0px var(--peach),
+      0px calc(var(--square-size-m) * 0.072) 0px var(--peach),
+      0px calc(var(--square-size-m) * 0.038) 0px var(--peach);
+  }
+  .marigold-dropshadow {
+    text-shadow: 0px calc(var(--square-size-m) * 0.105) 0px var(--marigold),
+      0px calc(var(--square-size-m) * 0.072) 0px var(--marigold),
+      0px calc(var(--square-size-m) * 0.038) 0px var(--marigold);
+  }
+
+}
+
+@media (max-width: 640px) {
+  .title-1 {
+    font-size: var(--title-font-size-s);
+  }
+  .title-2 {
+    font-size: calc(var(--title-font-size-s) / 1.618);
+  }
+  .link {
+    font-size: calc(var(--title-font-size-s) / (1.618 * 3));
+  }
+ .body {
+  font-size: calc(var(--title-font-size-s) / (1.618 * 3));
+ }
+ .body-b {
+  font-size: calc(var(--title-font-size-s) / (1.618 * 3));
+ }
+ .body-bi {
+  font-size: calc(var(--title-font-size-s) / (1.618 * 3));
+ }
+
+ .matcha-dropshadow {
+  text-shadow: 0px calc(var(--square-size-s) * 0.105) 0px var(--matcha),
+    0px calc(var(--square-size-s) * 0.072) 0px var(--matcha),
+    0px calc(var(--square-size-s) * 0.038) 0px var(--matcha);
+ }
+ .grey-dropshadow {
+    text-shadow: 0px calc(var(--square-size-s) * 0.105) 0px var(--slate-grey),
+      0px calc(var(--square-size-s) * 0.072) 0px var(--slate-grey),
+      0px calc(var(--square-size-s) * 0.038) 0px var (--slate-grey);
+ }
+ .lavender-dropshadow {
+    text-shadow: 0px calc(var(--square-size-s) * 0.105) 0px var(--lavender-mauve),
+      0px calc(var(--square-size-s) * 0.072) 0px var(--lavender-mauve),
+      0px calc(var(--square-size-s) * 0.038) 0px var(--lavender-mauve);
+ }
+ .periwinkle-dropshadow {
+  text-shadow: 0px calc(var(--square-size-s) * 0.105) 0px var(--periwinkle),
+    0px calc(var(--square-size-s) * 0.072) 0px var(--periwinkle),
+    0px calc(var(--square-size-s) * 0.038) 0px var(--periwinkle);
+}
 }
 
 
@@ -235,7 +313,18 @@
   }
   .scrolling-container {
     height: calc(
-      (var(--title-font-size-mb) / (1.618) + 0.025 * var(--square-size-mb))
+      (var(--title-font-size-m) / (1.618 * 2))
+    );
+  }
+}
+
+@media (max-width: 640px) {
+  .page-layout {
+    flex-direction: column;
+  }
+  .scrolling-container {
+    height: calc(
+      (var(--title-font-size-s) / (1.618 * 2))
     );
   }
 }

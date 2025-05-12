@@ -21,7 +21,7 @@ export default function ReHarvest() {
     <div className="page">
       <div className={styles.container}></div>
       {/* Title */}
-      <div className={`${styles.titleContainer}`}>
+      <div className={`${styles.titleContainer} text-center`}>
         <span className={`${styles.title}`}>
           <h2>ReHarvest</h2>
         </span>

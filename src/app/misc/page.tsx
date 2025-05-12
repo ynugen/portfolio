@@ -7,7 +7,7 @@ export default function Misc() {
   return (
     <div className="page">
       <div
-        className="title-2 peach-dropshadow page-title-container h-[var(--title-font-size)]"
+        className="title-2 peach-dropshadow page-title-container h-[var(--title-font-size)] text-center"
         style={{ color: "var(--slate-grey)" }}
       >
         <h2>Miscellaneous</h2>

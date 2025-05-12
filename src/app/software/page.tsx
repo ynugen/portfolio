@@ -9,7 +9,7 @@ export default function Software() {
   return (
     <div className="page">
       <div
-        className="title-2 periwinkle-dropshadow page-title-container h-[var(--title-font-size)]"
+        className="title-2 periwinkle-dropshadow page-title-container h-[var(--title-font-size)] text-center"
         style={{ color: "var(--slate-grey)" }}
       >
         <h2>Software</h2>
