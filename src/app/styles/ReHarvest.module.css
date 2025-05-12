@@ -283,9 +283,11 @@
   }
   .listContainer {
     padding: 0 calc(0.4 * var(--square-size-m));
+    gap: calc(var(--square-size-m) * 0.05);
   }
   .listContainer1 {
     padding: 0 calc(0.2 * var(--square-size-m));
+    gap: calc(var(--square-size-m) * 0.05);
   }
   .profileContainer {
     padding: 0 calc(0.2 * var(--square-size-m));
@@ -312,11 +314,24 @@
   }
   .listContainer1 {
     padding: 0 calc(0.2 * var(--square-size-s));
+    gap: calc(var(--square-size-s) * 0.05);
+  }
+  .listContainer {
+    padding: 0 calc(0.3 * var(--square-size-s));
+    gap: calc(var(--square-size-s) * 0.05);
   }
   .profileContainer {
     padding: 0 calc(0.2 * var(--square-size-s));
   }
   .person {
     gap: calc(var(--square-size-s) * 0.1);
+  }
+}
+
+@media (max-width: 480px) {
+  .personaContainer {
+    flex-direction: column;
+    padding: calc(var(--square-size-s) * 0.2);
+    gap: calc(var(--square-size-s) * 0.3);
   }
 }
