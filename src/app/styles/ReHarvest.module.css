@@ -26,8 +26,7 @@
   -webkit-text-stroke-color: var(--Text, #3c3c3b);
   font-family: var(--font-milky), serif;
   font-size: calc(var(--title-font-size));
-  font-style: bold;
-  font-weight: 600;
+  font-weight: normal;
   line-height: normal;
 
   /* Animation */

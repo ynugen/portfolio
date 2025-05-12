@@ -193,7 +193,7 @@ export default function ReHarvest() {
                 <div className={styles.personaContainer}>
                   <div className={styles.profileContainer}>
                     <Image
-                      src={`${basePath}/images/Jess.png`}
+                      src={`${basePath}/images/ReHarvestJess.png`}
                       alt="Jess Nguyen"
                       width={704}
                       height={753}
@@ -341,7 +341,7 @@ export default function ReHarvest() {
                 <div className={styles.personaContainer}>
                   <div className={styles.profileContainer}>
                     <Image
-                      src={`${basePath}/images/Paul.png`}
+                      src={`${basePath}/images/ReHarvestPaul.png`}
                       alt="Jess Nguyen"
                       width={704}
                       height={753}
@@ -492,7 +492,7 @@ export default function ReHarvest() {
               <div>Customer</div>
               <div>
                 <Image
-                  src={`${basePath}/images/JessUJ.png`}
+                  src={`${basePath}/images/ReHarvestJessUJ.png`}
                   alt="Customer User Journey"
                   width={574}
                   height={1098}
@@ -508,7 +508,7 @@ export default function ReHarvest() {
               <div>
                 {" "}
                 <Image
-                  src={`${basePath}/images/PaulUJ.png`}
+                  src={`${basePath}/images/ReHarvestPaulUJ.png`}
                   alt="Wholesaler User Journey"
                   width={572}
                   height={1932}
