@@ -58,7 +58,7 @@ export default function Title({
     } else {
       // For mobile, set a fixed shadow style
       setShadowStyle({
-        textShadow: `9px 0px 0px ${color}`,
+        textShadow: `8px 0px 0px ${color}`,
       });
     }
   }, [color]);
