@@ -302,8 +302,8 @@
   color: var(--slate-grey);
   image-rendering: crisp-edges; /* Fallback for older browsers */
   image-rendering: pixelated; /* Preferred for nearest-neighbor resizing */
-  width: calc(var(--square-size) * 0.1);
-  height: calc(var(--square-size) * 0.1);
+  max-width: calc(var(--title-font-size) / (1.618 * 5));
+  max-height: calc(var(--title-font-size) / (1.618 * 5));
 }
 
 .scrolling-container {
@@ -333,6 +333,10 @@
     padding: calc(var(--square-size-m) * 0.2) calc(var(--square-size-m) * 0.4);
     gap: calc(var(--square-size-m) * 0.2);
   }
+  .arrow {
+    width: calc(var(--square-size-m) * 0.1);
+    height: calc(var(--square-size-m) * 0.1);
+  }
 }
 
 @media (max-width: 640px) {
@@ -350,6 +354,10 @@
   .projects-container {
     padding: calc(var(--square-size-s) * 0.2) calc(var(--square-size-s) * 0.3);
     gap: calc(var(--square-size-s) * 0.2);
+  }
+  .arrow {
+    width: calc(var(--square-size-s) * 0.1);
+    height: calc(var(--square-size-s) * 0.1);
   }
 }
 

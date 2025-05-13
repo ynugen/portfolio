@@ -30,10 +30,10 @@
   line-height: normal;
 
   /* Animation */
-  animation: textShadowEaseIn 1s ease-out;
+  animation: textShadowEaseOut 1s ease-out;
 }
 
-@keyframes textShadowEaseIn {
+@keyframes textShadowEaseOut {
   0% {
     text-shadow: 0 0 0px var(--slate-grey), 0 0 0px #e9b44c;
   }
@@ -41,6 +41,18 @@
     text-shadow: calc(var(--square-size) * 0.025)
         calc(var(--square-size) * 0.025) 0px var(--slate-grey),
       calc(var(--square-size) * 0.05) calc(var(--square-size) * 0.05) 0px
+        #e9b44c;
+  }
+}
+
+@keyframes textShadowEaseOutMed {
+  0% {
+    text-shadow: 0 0 0px var(--slate-grey), 0 0 0px #e9b44c;
+  }
+  100% {
+    text-shadow: calc(var(--square-size-m) * 0.025)
+        calc(var(--square-size-m) * 0.025) 0px var(--slate-grey),
+      calc(var(--square-size-m) * 0.05) calc(var(--square-size-m) * 0.05) 0px
         #e9b44c;
   }
 }
@@ -241,6 +253,7 @@
         calc(var(--square-size-m) * 0.03) 0px var(--slate-grey),
       calc(var(--square-size-m) * 0.055) calc(var(--square-size-m) * 0.055) 0px
         #e9b44c;
+    animation: textShadowEaseOutMed 1s ease-out;
   }
   .subtitle {
     font-size: calc(var(--title-font-size-m) / (1.618 * 2));

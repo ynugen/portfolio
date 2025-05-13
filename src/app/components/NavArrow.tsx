@@ -22,9 +22,7 @@ export default function NavArrow({
       : `${basePath}/icons/arrow-diagonal.png`;
 
   return (
-    <div
-      className={`relative lg:w-6 md:w-5 aspect-square ${className} min-w-5`}
-    >
+    <div className={`relative aspect-square ${className} min-w-3`}>
       <Image
         src={src}
         alt={alt}

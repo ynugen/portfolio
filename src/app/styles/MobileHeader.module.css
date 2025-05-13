@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
   height: fit-content;
-  border-bottom: var(--slate-grey) 1px solid;
+  border-top: var(--slate-grey) 1px solid;
+  border-left: var(--slate-grey) 1px solid;
+  border-right: var(--slate-grey) 1px solid;
 }
 
 @media (max-width: 768px) {

@@ -24,8 +24,11 @@ export default function RootLayout({
       <body
         style={{
           backgroundColor: "var(--matcha)",
-          border: "var(--slate-grey) 1px solid",
           height: "100vh",
+          scrollBehavior: "smooth",
+          overflowY: "scroll",
+          maxHeight: "100vh",
+          position: "relative",
         }}
       >
         <DynamicCSS />
@@ -35,7 +38,10 @@ export default function RootLayout({
 
           <main
             className="flex-1"
-            style={{ backgroundColor: "var(--background)" }}
+            style={{
+              backgroundColor: "var(--background)",
+              border: "var(--slate-grey) 1px solid",
+            }}
           >
             {children}
           </main>

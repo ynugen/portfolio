@@ -3,7 +3,9 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  border-right: var(--slate-grey) 1px solid;
+  border-left: var(--slate-grey) 1px solid;
+  border-top: var(--slate-grey) 1px solid;
+  border-bottom: var(--slate-grey) 1px solid;
   width: fit-content;
   aspect-ratio: auto;
   /* height: 100vh; */
@@ -40,7 +42,7 @@
 }
 
 .subContainer {
-  border-bottom: var(--slate-grey) 1px solid;
+  /* border-bottom: var(--slate-grey) 1px solid; */
   display: flex;
 }
 
