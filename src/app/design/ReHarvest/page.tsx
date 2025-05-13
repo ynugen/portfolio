@@ -239,7 +239,7 @@ export default function ReHarvest() {
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
                 >
                   <Target size={24} color="#82a36b" weight="fill" />
-                  <div className={`${styles.h2Padding}`}>Goals</div>
+                  <div className={`${styles.h2Height}`}>Goals</div>
                 </div>
                 <div className={`${styles.body} grey`}>
                   <ul className={`${styles.listContainer1}`}>
@@ -261,7 +261,7 @@ export default function ReHarvest() {
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
                 >
                   <ShoppingCartSimple size={24} color="#82a36b" weight="fill" />
-                  <div className={`${styles.h2Padding}`}>Behavioural</div>
+                  <div className={`${styles.h2Height}`}>Behavioural</div>
                 </div>
                 <div className={`${styles.body} grey`}>
                   <ul className={`${styles.listContainer1}`}>
@@ -285,7 +285,7 @@ export default function ReHarvest() {
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
                 >
                   <WarningCircle size={24} color="#82a36b" weight="fill" />
-                  <div className={`${styles.h2Padding}`}>Pain Points</div>
+                  <div className={`${styles.h2Height}`}>Pain Points</div>
                 </div>
                 <div className={`${styles.body} grey`}>
                   <ul className={`${styles.listContainer1}`}>
@@ -312,7 +312,7 @@ export default function ReHarvest() {
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
                 >
                   <CheckCircle size={24} color="#82a36b" weight="fill" />
-                  <div className={`${styles.h2Padding}`}>Needs</div>
+                  <div className={`${styles.h2Height}`}>Needs</div>
                 </div>
                 <div className={`${styles.body} grey`}>
                   <ul className={`${styles.listContainer1}`}>
@@ -388,7 +388,7 @@ export default function ReHarvest() {
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
                 >
                   <Target size={24} color="#82a36b" weight="fill" />
-                  <div className={`${styles.h2Padding}`}>Goals</div>
+                  <div className={`${styles.h2Height}`}>Goals</div>
                 </div>
                 <div className={`${styles.body} grey`}>
                   <ul className={`${styles.listContainer1}`}>
@@ -408,7 +408,7 @@ export default function ReHarvest() {
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
                 >
                   <ShoppingCartSimple size={24} color="#82a36b" weight="fill" />
-                  <div className={`${styles.h2Padding}`}>Behavioural</div>
+                  <div className={`${styles.h2Height}`}>Behavioural</div>
                 </div>
                 <div className={`${styles.body} grey`}>
                   <ul className={`${styles.listContainer1}`}>
@@ -430,7 +430,7 @@ export default function ReHarvest() {
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
                 >
                   <WarningCircle size={24} color="#82a36b" weight="fill" />
-                  <div className={`${styles.h2Padding}`}>Pain Points</div>
+                  <div className={`${styles.h2Height}`}>Pain Points</div>
                 </div>
                 <div className={`${styles.body} grey`}>
                   <ul className={`${styles.listContainer1}`}>
@@ -454,7 +454,7 @@ export default function ReHarvest() {
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
                 >
                   <CheckCircle size={24} color="#82a36b" weight="fill" />
-                  <div className={`${styles.h2Padding}`}>Needs</div>
+                  <div className={`${styles.h2Height}`}>Needs</div>
                 </div>
                 <div className={`${styles.body} grey`}>
                   <ul className={`${styles.listContainer1}`}>

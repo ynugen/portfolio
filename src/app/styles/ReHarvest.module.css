@@ -88,8 +88,9 @@
   text-transform: uppercase;
 }
 
-.h2Padding {
-  padding-bottom: calc(var(--title-font-size) * 0.01);
+.h2Height {
+  padding-top: calc(var(--title-font-size) * 0.02);
+  height: calc(var(--title-font-size) / (1.618 * 2));
 }
 
 .body {
@@ -217,7 +218,7 @@
   display: flex;
   align-items: start;
   justify-content: start;
-  gap: calc(var(--square-size) * 0.05);
+  gap: calc(var(--square-size) * 0.08);
 }
 
 .icon {
@@ -228,7 +229,8 @@
 }
 
 .image {
-  width: calc(var(--square-size));
+  min-width: calc(var(--square-size));
+  min-height: calc(var(--square-size));
 }
 
 .image1 {
@@ -267,8 +269,9 @@
   .heading2 {
     font-size: calc(var(--title-font-size-m) / (1.618 * 3));
   }
-  .h2Padding {
-    padding-bottom: calc(var(--title-font-size-m) * 0.01);
+  .h2Height {
+    height: calc(var(--title-font-size-m) / (1.618 * 2) * 0.8);
+    padding-top: calc(var(--title-font-size-m) * 0.02);
   }
   .body {
     font-size: calc(var(--title-font-size-m) / (1.618 * 3));
@@ -291,14 +294,14 @@
   }
   .paraContainer1 {
     padding: calc(0.08 * var(--square-size-m)) 0;
-    gap: calc(var(--square-size-m) * 0.05);
+    gap: calc(var(--square-size-m) * 0.1);
   }
   .listContainer {
     padding: 0 calc(0.4 * var(--square-size-m));
     gap: calc(var(--square-size-m) * 0.05);
   }
   .listContainer1 {
-    padding: 0 calc(0.2 * var(--square-size-m));
+    padding: 0 calc(0.3 * var(--square-size-m));
     gap: calc(var(--square-size-m) * 0.05);
   }
   .profileContainer {
@@ -310,6 +313,9 @@
   }
   .people {
     gap: calc(var(--square-size-m) * 0.3);
+  }
+  .icon {
+    width: 20px;
   }
 }
 
@@ -323,10 +329,10 @@
   }
   .paraContainer1 {
     padding: calc(0.08 * var(--square-size-s)) 0;
-    gap: calc(var(--square-size-s) * 0.05);
+    gap: calc(var(--square-size-s) * 0.08);
   }
   .listContainer1 {
-    padding: 0 calc(0.2 * var(--square-size-s));
+    padding: 0 calc(0.3 * var(--square-size-s));
     gap: calc(var(--square-size-s) * 0.05);
   }
   .listContainer {
@@ -338,6 +344,12 @@
   }
   .person {
     gap: calc(var(--square-size-s) * 0.1);
+  }
+  .iconText {
+    gap: calc(var(--square-size-s) * 0.08);
+  }
+  .icon {
+    width: 18px;
   }
 }
 
