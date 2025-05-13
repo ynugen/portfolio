@@ -303,6 +303,7 @@
   }
   .profileContainer {
     padding: 0 calc(0.2 * var(--square-size-m));
+    max-width: calc(var(--square-size-m) * 1.618);
   }
   .person {
     gap: calc(var(--square-size-m) * 0.1);
