@@ -7,6 +7,13 @@ export default function Whimsy() {
       >
         <h2>Whimiscal Musings</h2>
       </div>
+
+      <div
+        className={`p-[6rem] flex subtitle-1 grey justify-center items-center`}
+      >
+        {" "}
+        Magic in progress...
+      </div>
     </div>
   );
 }
