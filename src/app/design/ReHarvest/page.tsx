@@ -4,6 +4,7 @@ import config from "../../../../next.config.js";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ZoomableImage from "../../components/ZoomableImage";
 import {
   MapPin,
   User,
@@ -13,6 +14,7 @@ import {
   ShoppingCartSimple,
   WarningCircle,
   CheckCircle,
+  Student,
 } from "@phosphor-icons/react";
 
 export default function ReHarvest() {
@@ -195,8 +197,8 @@ export default function ReHarvest() {
                     <Image
                       src={`${basePath}/images/ReHarvestJess.png`}
                       alt="Jess Nguyen"
-                      width={704}
-                      height={753}
+                      width={352}
+                      height={376.5}
                       className={styles.image}
                     />
                   </div>
@@ -343,8 +345,8 @@ export default function ReHarvest() {
                     <Image
                       src={`${basePath}/images/ReHarvestPaul.png`}
                       alt="Jess Nguyen"
-                      width={704}
-                      height={753}
+                      width={352}
+                      height={376.5}
                       className={styles.image}
                     />
                   </div>
@@ -485,13 +487,13 @@ export default function ReHarvest() {
             User Journeys
           </div>
 
-          <div className={`flex justify-around`}>
+          <div className={`${styles.flowContainer}`}>
             <div
               className={`flex flex-col items-center ${styles.heading2} ${styles.forestGreen} gap-3`}
             >
               <div>Customer</div>
               <div>
-                <Image
+                <ZoomableImage
                   src={`${basePath}/images/ReHarvestJessUJ.png`}
                   alt="Customer User Journey"
                   width={574}
@@ -507,7 +509,7 @@ export default function ReHarvest() {
               <div>Wholesaler</div>
               <div>
                 {" "}
-                <Image
+                <ZoomableImage
                   src={`${basePath}/images/ReHarvestPaulUJ.png`}
                   alt="Wholesaler User Journey"
                   width={572}
@@ -521,6 +523,191 @@ export default function ReHarvest() {
           <div className={`${styles.paraContainer}`}>
             <div className={`${styles.heading} ${styles.forestGreen}`}>
               Ideation
+            </div>
+
+            <div className={`${styles.body}`}>
+              To address the challenges surrounding food waste, limited access
+              to ethical produce, and a lack of support for our local Aussie
+              growers, our team explored a range directions. After narrowing
+              down our ideas, we focused on two potential solutions that aligned
+              closely with our goals and user needs:
+            </div>
+
+            <div className={`${styles.heading2} ${styles.forestGreen}`}>
+              1. Seasonal Produce Tracker
+            </div>
+
+            <div className={`${styles.body}`}>
+              A visual and educational tool designed to help users easily
+              identify which produce is in season, encouraging sustainable and
+              informed shopping decisions.
+            </div>
+            <div className={`${styles.body}`}>
+              <ul className={`${styles.listContainer}`}>
+                <li>
+                  Reduces demand for imported goods by promoting seasonal eating
+                  habits
+                </li>
+                <li>
+                  Helps consumers save money by highlighting in-season produce,
+                  which is typically fresher, more abundant, and more affordable
+                  than out-of-season alternatives
+                </li>
+                <li>
+                  Supports local farmers by aligning consumer demand with
+                  harvest cycles
+                </li>
+                <li>
+                  Minimises the environmental costs associated with
+                  long-distance transport and refrigeration
+                </li>
+                <li>
+                  Acts as a low-barrier educational entry point, building
+                  long-term awareness of food systems
+                </li>
+                <li>
+                  Can be integrated into other platforms to help users compare
+                  produce availability and pricing, loosely tying into the idea
+                  of a centralised price comparison app
+                </li>
+              </ul>
+            </div>
+
+            <div className={`${styles.heading2} ${styles.forestGreen}`}>
+              2. Marketplace for Rescued Produce{" "}
+              <span className={`${styles.bodyi} ${styles.goldenSquash}`}>
+                (Chosen Solution)
+              </span>
+            </div>
+
+            <div className={`${styles.body}`}>
+              A platform where users can browse, reserve, and purchase
+              discounted surplus or imperfect produce from nearby farmers and
+              suppliers.
+            </div>
+            <div className={`${styles.body}`}>
+              <ul className={`${styles.listContainer}`}>
+                <li>
+                  Tackles food waste at the{" "}
+                  <span className={`${styles.bodybi}`}>
+                    production and distribution level
+                  </span>{" "}
+                  by giving excess or cosmetically imperfect stock a second
+                  chance
+                </li>
+                <li>
+                  Provides an{" "}
+                  <span className={`${styles.bodybi}`}>
+                    alternative to supermarkets
+                  </span>{" "}
+                  during periods of shortage or boycott, helping users access
+                  fresh, local produce while{" "}
+                  <span className={`${styles.bodybi}`}>
+                    supporting fair pricing
+                  </span>{" "}
+                  for growers
+                </li>
+                <li>
+                  <span className={`${styles.bodybi}`}>Directly</span> supports
+                  farmers affected by food waste by offering them a channel to
+                  <span className={`${styles.bodybi}`}> recoup losses</span> on
+                  unsold goods (e.g., labour, fuel, water)
+                </li>
+                <li>
+                  Embeds the principles of an aesthetic standards bypass,{" "}
+                  <span className={`${styles.bodybi}`}>
+                    valuing nutritional quality and freshness
+                  </span>{" "}
+                  over appearance
+                </li>
+                <li>
+                  Includes an{" "}
+                  <span className={`${styles.bodybi}`}>co-impact tracker </span>
+                  so users can visualise the{" "}
+                  <span className={`${styles.bodybi}`}>
+                    positive outcomes
+                  </span>{" "}
+                  of their purchases (e.g., kilograms of food saved, emissions
+                  avoided)
+                </li>
+                <li>
+                  Designed with{" "}
+                  <span className={`${styles.bodybi}`}>
+                    bulk-buying features
+                  </span>{" "}
+                  in mind, allowing for{" "}
+                  <span className={`${styles.bodybi}`}>future scalability</span>{" "}
+                  to support small businesses, restaurants, and community
+                  kitchens
+                </li>
+                <li>
+                  Builds <span className={`${styles.bodybi}`}>user trust </span>
+                  through{" "}
+                  <span className={`${styles.bodybi}`}>
+                    transparent sourcing
+                  </span>{" "}
+                  showing where produce comes from, what farm it supports, and
+                  how much the grower earns
+                </li>
+              </ul>
+            </div>
+
+            <div className={`${styles.body}`}>
+              Ultimately, we decided to move forward with the{" "}
+              <span className={`${styles.bodyb} ${styles.grassGreen}`}>
+                Marketplace for Rescued Produce
+              </span>
+              . Compared with the Seasonal Food Tracker, it offered a stronger
+              potential to create lasting, systemic change through a single,
+              user-friendly platform. The solution not only addresses waste and
+              affordability but also strengthens farmer-consumer relationships,
+              improves supply chain transparency, and promotes more ethical,
+              accessible food practices through a scalable, intuitive
+              experience.
+            </div>
+          </div>
+        </div>
+
+        {/* Delivery */}
+        <div className={`${styles.paraContainer}`}>
+          <div className={`${styles.heading} ${styles.forestGreen}`}>
+            Deliverables
+          </div>
+
+          <div className={`${styles.heading1} ${styles.forestGreen}`}>
+            User Flows
+          </div>
+
+          <div className={`${styles.flowContainer}`}>
+            <div
+              className={`flex flex-col items-center ${styles.heading2} ${styles.forestGreen} gap-3`}
+            >
+              <div>Customer</div>
+              <div>
+                {" "}
+                <ZoomableImage
+                  src={`${basePath}/images/ReHarvestCustomerUserFlow.png`}
+                  alt="Wholesaler User Journey"
+                  width={3088}
+                  height={7120}
+                  className={styles.image1}
+                />
+              </div>
+            </div>
+            <div
+              className={`flex flex-col items-center ${styles.heading2} ${styles.forestGreen} gap-3`}
+            >
+              <div>Wholesaler</div>
+              <div>
+                {" "}
+                <ZoomableImage
+                  src={`${basePath}/images/ReHarvestWholesalerUserFlow.png`}
+                  alt="Wholesaler User Journey"
+                  width={4648}
+                  height={6496}
+                  className={styles.image1}
+                />
+              </div>
             </div>
           </div>
         </div>

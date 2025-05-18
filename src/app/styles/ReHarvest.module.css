@@ -214,6 +214,11 @@
   gap: calc(var(--square-size) * 0.1);
 }
 
+.flowContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
 .iconText {
   display: flex;
   align-items: start;
@@ -350,6 +355,12 @@
   }
   .icon {
     width: 18px;
+  }
+  .flowContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--square-size-s) * 0.5);
   }
 }
 
