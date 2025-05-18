@@ -178,6 +178,9 @@
   .link {
     font-size: calc(var(--title-font-size-m) / (1.618 * 3));;
   }
+  .link2 {
+    font-size: calc(var(--title-font-size-m) / (1.618 * 3));
+  }
  .body {
   font-size: calc(var(--title-font-size-m) / (1.618 * 3));
  }
@@ -229,6 +232,9 @@
     font-size: calc(var(--title-font-size-s) / 1.618);
   }
   .link {
+    font-size: calc(var(--title-font-size-s) / (1.618 * 3));
+  }
+  .link2 {
     font-size: calc(var(--title-font-size-s) / (1.618 * 3));
   }
  .body {
