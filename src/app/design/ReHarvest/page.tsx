@@ -670,7 +670,7 @@ export default function ReHarvest() {
         {/* Delivery */}
         <div className={`${styles.paraContainer}`}>
           <div className={`${styles.heading} ${styles.forestGreen}`}>
-            Deliverables
+            Designs
           </div>
 
           <div className={`${styles.heading1} ${styles.forestGreen}`}>
@@ -729,6 +729,16 @@ export default function ReHarvest() {
             High-Fidelity Prototypes
           </div>
 
+          <div className={`${styles.body}`}>
+            For ReHarvest’s high-fidelity designs, I chose a retro-inspired
+            colour palette and typeface to give the site a warm, nostalgic vibe
+            inspired by the hackathon's theme of{" "}
+            <span className={`${styles.bodybi}`}>Revisiting the Past</span>.
+            This was also a deliberate contrast to the sterile and impersonal
+            feel of many modern ecommerce platforms as I wanted something more
+            inviting and approachable.
+          </div>
+
           <div className={`flex`}>
             <iframe
               style={{
@@ -743,6 +753,49 @@ export default function ReHarvest() {
               loading="lazy"
               title="High-Fidelity Prototypes"
             />
+          </div>
+
+          <div className={`${styles.heading1} ${styles.forestGreen}`}>
+            Customer Flow
+          </div>
+
+          <div className={`${styles.body}`}>
+            The site is designed for quick, intuitive browsing. A prominent CTA
+            on the landing page guides customers straight to shopping for
+            produce. From there, they can easily{" "}
+            <span className={`${styles.bodybi}`}>filter and sort</span>, use the
+            search bar, and view curated seasonal produce. The checkout process
+            is streamlined, and once a purchase is made, customers are shown a
+            clear summary of their{" "}
+            <span className={`${styles.bodybi}`}>environmental impact</span>{" "}
+            including how much food they’ve helped save.
+          </div>
+
+          <div className={`${styles.heading1} ${styles.forestGreen}`}>
+            Wholesaler Flow
+          </div>
+
+          <div className={`${styles.body}`}>
+            For wholesalers, everything is{" "}
+            <span className={`${styles.bodybi}`}>
+              centralised in a dashboard
+            </span>
+            , with a clear CTA to access it from the homepage. The dashboard UI
+            is <span className={`${styles.bodybi}`}>intentionally minimal</span>{" "}
+            and <span className={`${styles.bodybi}`}>colour-coded</span> to
+            differentiate key actions. Wholesalers can search, filter, and
+            manage their storefront with ease. Adding produce is flexible;
+            wholesalers can either use a dynamic form to add rows manually or
+            upload an existing CSV (with the right formatting). They also have
+            <span className={`${styles.bodybi}`}> access to insights</span>:
+            sales trends, popular products, total kg saved, and overall
+            environmental impact.
+          </div>
+        </div>
+
+        <div className={`${styles.paraContainer}`}>
+          <div className={`${styles.heading} ${styles.forestGreen}`}>
+            User Testing
           </div>
         </div>
       </div>
