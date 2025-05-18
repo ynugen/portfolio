@@ -14,7 +14,6 @@ import {
   ShoppingCartSimple,
   WarningCircle,
   CheckCircle,
-  Student,
 } from "@phosphor-icons/react";
 
 export default function ReHarvest() {
