@@ -17,7 +17,7 @@ export default function NavArrow({
   const basePath = config.basePath;
 
   let src = `${basePath}/icons/arrow-default.png`;
-  let imageClass = "arrow object-contain";
+  const imageClass = "arrow object-contain";
 
   if (direction === "diagonal") {
     src = `${basePath}/icons/arrow-diagonal.png`;
