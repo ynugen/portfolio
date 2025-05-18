@@ -39,14 +39,14 @@
   justify-content: center;
   align-items: center;
   padding: calc(0.08 * var(--square-size-m)) calc(0.08 * var(--square-size-m));
-  gap: calc(var(--square-size-m) * 0.06);
+  gap: calc(var(--square-size-m) * 0.12);
   flex-wrap: wrap;
 }
 
 @media (max-width: 640px) {
   .linksContainer {
     padding: calc(0.08 * var(--square-size-s)) calc(0.08 * var(--square-size-s));
-    gap: calc(var(--square-size-s) * 0.06);
+    gap: calc(var(--square-size-s) * 0.08);
   }
   .nameContainer {
     height: calc(var(--title-font-size-s));

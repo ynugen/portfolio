@@ -151,7 +151,7 @@ const Sidebar: React.FC = () => {
           {/* Contact Links */}
           <div className={`${styles.contactLinks}`}>
             {navLinks.contact.map((link) => (
-              <NavLink key={link.href} direction="default" alt="arrow">
+              <NavLink key={link.href} direction="diagonal" alt="arrow">
                 <h3>
                   <Link
                     href={link.href}
