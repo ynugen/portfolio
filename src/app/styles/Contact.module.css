@@ -1,14 +1,39 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--square-size) / (1.618 * 2));
+}
+
 .aboutContainer {
   display: flex;
   flex-direction: column;
   padding: calc(var(--square-size) / (1.618 * 2))
-    calc(var(--square-size) / 1.618 / 5);
+    calc(var(--square-size) / 1.618 / 5) 0 calc(var(--square-size) / 1.618 / 5);
   gap: calc(var(--square-size) / (1.618 * 15));
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 calc(var(--square-size) / (1.618 * 1));
 }
 
 .body {
   font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.bodyBI {
+  font-family: var(--font-helvetica);
   font-weight: 600;
+  font-style: italic;
+}
+
+.bodyI {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-style: italic;
 }
 
 .pixelBodyI {
@@ -27,7 +52,7 @@
 }
 
 .small {
-  font-size: calc(var(--title-font-size) / (1.618 * 2));
+  font-size: calc(var(--title-font-size) / (1.618 * 3));
 }
 .medium {
   font-size: calc(var(--title-font-size) / (1.618));
