@@ -545,11 +545,14 @@ export default function ReHarvest() {
             </div>
 
             <div className={`${styles.body}`}>
-              To address the challenges surrounding food waste, limited access
-              to ethical produce, and a lack of support for our local Aussie
-              growers, our team explored a range directions. After narrowing
-              down our ideas, we focused on two potential solutions that aligned
-              closely with our goals and user needs:
+              To address the challenges surrounding
+              <span className={`${styles.bodybi}`}> food waste</span>, limited
+              access to
+              <span className={`${styles.bodybi}`}> ethical produce</span>, and
+              a<span className={`${styles.bodybi}`}> lack of support</span> for
+              our local Aussie growers, our team explored a range directions.
+              After narrowing down our ideas, we focused on two potential
+              solutions that aligned closely with our goals and user needs:
             </div>
 
             <div className={`${styles.heading2} ${styles.forestGreen}`}>
@@ -564,30 +567,53 @@ export default function ReHarvest() {
             <div className={`${styles.body}`}>
               <ul className={`${styles.listContainer}`}>
                 <li>
-                  Reduces demand for imported goods by promoting seasonal eating
-                  habits
+                  <span className={`${styles.bodybi}`}>Reduces demand</span> for
+                  imported goods by promoting{" "}
+                  <span className={`${styles.bodybi}`}>
+                    seasonal eating habits
+                  </span>
                 </li>
                 <li>
-                  Helps consumers save money by highlighting in-season produce,
-                  which is typically fresher, more abundant, and more affordable
-                  than out-of-season alternatives
+                  <span className={`${styles.bodybi}`}>
+                    Helps consumers save money
+                  </span>{" "}
+                  by highlighting{" "}
+                  <span className={`${styles.bodybi}`}>in-season produce</span>,
+                  which is typically{" "}
+                  <span className={`${styles.bodybi}`}>fresher</span>, more
+                  abundant, and more affordable than out-of-season alternatives
                 </li>
                 <li>
-                  Supports local farmers by aligning consumer demand with
-                  harvest cycles
+                  <span className={`${styles.bodybi}`}>
+                    Supports local farmers
+                  </span>{" "}
+                  by aligning consumer demand with
+                  <span className={`${styles.bodybi}`}> harvest cycles</span>
                 </li>
                 <li>
-                  Minimises the environmental costs associated with
-                  long-distance transport and refrigeration
+                  <span className={`${styles.bodybi}`}>
+                    Minimises the environmental costs
+                  </span>{" "}
+                  associated with long-distance transport and refrigeration
                 </li>
                 <li>
-                  Acts as a low-barrier educational entry point, building
-                  long-term awareness of food systems
+                  Acts as a{" "}
+                  <span className={`${styles.bodybi}`}>
+                    low-barrier educational entry point
+                  </span>
+                  , building long-term awareness of{" "}
+                  <span className={`${styles.bodybi}`}>food systems</span>
                 </li>
                 <li>
                   Can be integrated into other platforms to help users compare
-                  produce availability and pricing, loosely tying into the idea
-                  of a centralised price comparison app
+                  <span className={`${styles.bodybi}`}>
+                    {" "}
+                    produce availability and pricing
+                  </span>
+                  , loosely tying into the idea of a{" "}
+                  <span className={`${styles.bodybi}`}>
+                    centralised price comparison app
+                  </span>
                 </li>
               </ul>
             </div>
