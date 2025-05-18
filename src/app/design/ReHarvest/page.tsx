@@ -506,35 +506,36 @@ export default function ReHarvest() {
             User Journeys
           </div>
 
-          <div className={`${styles.flowContainer}`}>
-            <div
-              className={`flex flex-col items-center ${styles.heading2} ${styles.forestGreen} gap-3`}
-            >
-              <div>Customer</div>
-              <div>
-                <ZoomableImage
-                  src={`${basePath}/images/ReHarvestJessUJ.png`}
-                  alt="Customer User Journey"
-                  width={574}
-                  height={1098}
-                  className={styles.image1}
-                />
+          <div className={styles.paraContainer}>
+            <div className={`${styles.flowContainer}`}>
+              <div
+                className={`flex flex-col items-center ${styles.heading2} ${styles.forestGreen} gap-3`}
+              >
+                <div>Customer</div>
+                <div>
+                  <ZoomableImage
+                    src={`${basePath}/images/ReHarvestJessUJ.png`}
+                    alt="Customer User Journey"
+                    width={574}
+                    height={1098}
+                    className={styles.image1}
+                  />
+                </div>
               </div>
-            </div>
 
-            <div
-              className={`flex flex-col items-center ${styles.heading2} ${styles.forestGreen} gap-3`}
-            >
-              <div>Wholesaler</div>
-              <div>
-                {" "}
-                <ZoomableImage
-                  src={`${basePath}/images/ReHarvestPaulUJ.png`}
-                  alt="Wholesaler User Journey"
-                  width={572}
-                  height={1932}
-                  className={styles.image1}
-                />
+              <div
+                className={`flex flex-col items-center ${styles.heading2} ${styles.forestGreen} gap-3`}
+              >
+                <div>Wholesaler</div>
+                <div>
+                  <ZoomableImage
+                    src={`${basePath}/images/ReHarvestPaulUJ.png`}
+                    alt="Wholesaler User Journey"
+                    width={572}
+                    height={1932}
+                    className={styles.image1}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -555,160 +556,178 @@ export default function ReHarvest() {
               solutions that aligned closely with our goals and user needs:
             </div>
 
-            <div className={`${styles.heading2} ${styles.forestGreen}`}>
-              1. Seasonal Produce Tracker
+            <div className={styles.paraContainer}>
+              <div className={`${styles.heading2} ${styles.forestGreen}`}>
+                1. Seasonal Produce Tracker
+              </div>
+
+              <div className={`${styles.body}`}>
+                A visual and educational tool designed to help users easily
+                identify which produce is in season, encouraging sustainable and
+                informed shopping decisions.
+              </div>
+              <div className={`${styles.body}`}>
+                <ul className={`${styles.listContainer}`}>
+                  <li>
+                    <span className={`${styles.bodybi}`}>Reduces demand</span>{" "}
+                    for imported goods by promoting{" "}
+                    <span className={`${styles.bodybi}`}>
+                      seasonal eating habits
+                    </span>
+                  </li>
+                  <li>
+                    <span className={`${styles.bodybi}`}>
+                      Helps consumers save money
+                    </span>{" "}
+                    by highlighting{" "}
+                    <span className={`${styles.bodybi}`}>
+                      in-season produce
+                    </span>
+                    , which is typically{" "}
+                    <span className={`${styles.bodybi}`}>fresher</span>, more
+                    abundant, and more affordable than out-of-season
+                    alternatives
+                  </li>
+                  <li>
+                    <span className={`${styles.bodybi}`}>
+                      Supports local farmers
+                    </span>{" "}
+                    by aligning consumer demand with
+                    <span className={`${styles.bodybi}`}> harvest cycles</span>
+                  </li>
+                  <li>
+                    <span className={`${styles.bodybi}`}>
+                      Minimises the environmental costs
+                    </span>{" "}
+                    associated with long-distance transport and refrigeration
+                  </li>
+                  <li>
+                    Acts as a{" "}
+                    <span className={`${styles.bodybi}`}>
+                      low-barrier educational entry point
+                    </span>
+                    , building long-term awareness of{" "}
+                    <span className={`${styles.bodybi}`}>food systems</span>
+                  </li>
+                  <li>
+                    Can be integrated into other platforms to help users compare
+                    <span className={`${styles.bodybi}`}>
+                      {" "}
+                      produce availability and pricing
+                    </span>
+                    , loosely tying into the idea of a{" "}
+                    <span className={`${styles.bodybi}`}>
+                      centralised price comparison app
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <div className={`${styles.body}`}>
-              A visual and educational tool designed to help users easily
-              identify which produce is in season, encouraging sustainable and
-              informed shopping decisions.
-            </div>
-            <div className={`${styles.body}`}>
-              <ul className={`${styles.listContainer}`}>
-                <li>
-                  <span className={`${styles.bodybi}`}>Reduces demand</span> for
-                  imported goods by promoting{" "}
-                  <span className={`${styles.bodybi}`}>
-                    seasonal eating habits
-                  </span>
-                </li>
-                <li>
-                  <span className={`${styles.bodybi}`}>
-                    Helps consumers save money
-                  </span>{" "}
-                  by highlighting{" "}
-                  <span className={`${styles.bodybi}`}>in-season produce</span>,
-                  which is typically{" "}
-                  <span className={`${styles.bodybi}`}>fresher</span>, more
-                  abundant, and more affordable than out-of-season alternatives
-                </li>
-                <li>
-                  <span className={`${styles.bodybi}`}>
-                    Supports local farmers
-                  </span>{" "}
-                  by aligning consumer demand with
-                  <span className={`${styles.bodybi}`}> harvest cycles</span>
-                </li>
-                <li>
-                  <span className={`${styles.bodybi}`}>
-                    Minimises the environmental costs
-                  </span>{" "}
-                  associated with long-distance transport and refrigeration
-                </li>
-                <li>
-                  Acts as a{" "}
-                  <span className={`${styles.bodybi}`}>
-                    low-barrier educational entry point
-                  </span>
-                  , building long-term awareness of{" "}
-                  <span className={`${styles.bodybi}`}>food systems</span>
-                </li>
-                <li>
-                  Can be integrated into other platforms to help users compare
-                  <span className={`${styles.bodybi}`}>
-                    {" "}
-                    produce availability and pricing
-                  </span>
-                  , loosely tying into the idea of a{" "}
-                  <span className={`${styles.bodybi}`}>
-                    centralised price comparison app
-                  </span>
-                </li>
-              </ul>
+            <div className={styles.paraContainer}>
+              <div className={`${styles.heading2} ${styles.forestGreen}`}>
+                2. Marketplace for Rescued Produce{" "}
+                <span className={`${styles.bodyi} ${styles.goldenSquash}`}>
+                  (Chosen Solution)
+                </span>
+              </div>
+
+              <div className={`${styles.body}`}>
+                A platform where users can browse, reserve, and purchase
+                discounted surplus or imperfect produce from nearby farmers and
+                suppliers.
+              </div>
+              <div className={`${styles.body}`}>
+                <ul className={`${styles.listContainer}`}>
+                  <li>
+                    Tackles food waste at the{" "}
+                    <span className={`${styles.bodybi}`}>
+                      production and distribution level
+                    </span>{" "}
+                    by giving excess or cosmetically imperfect stock a second
+                    chance
+                  </li>
+                  <li>
+                    Provides an{" "}
+                    <span className={`${styles.bodybi}`}>
+                      alternative to supermarkets
+                    </span>{" "}
+                    during periods of shortage or boycott, helping users access
+                    fresh, local produce while{" "}
+                    <span className={`${styles.bodybi}`}>
+                      supporting fair pricing
+                    </span>{" "}
+                    for growers
+                  </li>
+                  <li>
+                    <span className={`${styles.bodybi}`}>Directly</span>{" "}
+                    supports farmers affected by food waste by offering them a
+                    channel to
+                    <span className={`${styles.bodybi}`}>
+                      {" "}
+                      recoup losses
+                    </span>{" "}
+                    on unsold goods (e.g., labour, fuel, water)
+                  </li>
+                  <li>
+                    Embeds the principles of an aesthetic standards bypass,{" "}
+                    <span className={`${styles.bodybi}`}>
+                      valuing nutritional quality and freshness
+                    </span>{" "}
+                    over appearance
+                  </li>
+                  <li>
+                    Includes an{" "}
+                    <span className={`${styles.bodybi}`}>
+                      co-impact tracker{" "}
+                    </span>
+                    so users can visualise the{" "}
+                    <span className={`${styles.bodybi}`}>
+                      positive outcomes
+                    </span>{" "}
+                    of their purchases (e.g., kilograms of food saved, emissions
+                    avoided)
+                  </li>
+                  <li>
+                    Designed with{" "}
+                    <span className={`${styles.bodybi}`}>
+                      bulk-buying features
+                    </span>{" "}
+                    in mind, allowing for{" "}
+                    <span className={`${styles.bodybi}`}>
+                      future scalability
+                    </span>{" "}
+                    to support small businesses, restaurants, and community
+                    kitchens
+                  </li>
+                  <li>
+                    Builds{" "}
+                    <span className={`${styles.bodybi}`}>user trust </span>
+                    through{" "}
+                    <span className={`${styles.bodybi}`}>
+                      transparent sourcing
+                    </span>{" "}
+                    showing where produce comes from, what farm it supports, and
+                    how much the grower earns
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <div className={`${styles.heading2} ${styles.forestGreen}`}>
-              2. Marketplace for Rescued Produce{" "}
-              <span className={`${styles.bodyi} ${styles.goldenSquash}`}>
-                (Chosen Solution)
-              </span>
-            </div>
-
-            <div className={`${styles.body}`}>
-              A platform where users can browse, reserve, and purchase
-              discounted surplus or imperfect produce from nearby farmers and
-              suppliers.
-            </div>
-            <div className={`${styles.body}`}>
-              <ul className={`${styles.listContainer}`}>
-                <li>
-                  Tackles food waste at the{" "}
-                  <span className={`${styles.bodybi}`}>
-                    production and distribution level
-                  </span>{" "}
-                  by giving excess or cosmetically imperfect stock a second
-                  chance
-                </li>
-                <li>
-                  Provides an{" "}
-                  <span className={`${styles.bodybi}`}>
-                    alternative to supermarkets
-                  </span>{" "}
-                  during periods of shortage or boycott, helping users access
-                  fresh, local produce while{" "}
-                  <span className={`${styles.bodybi}`}>
-                    supporting fair pricing
-                  </span>{" "}
-                  for growers
-                </li>
-                <li>
-                  <span className={`${styles.bodybi}`}>Directly</span> supports
-                  farmers affected by food waste by offering them a channel to
-                  <span className={`${styles.bodybi}`}> recoup losses</span> on
-                  unsold goods (e.g., labour, fuel, water)
-                </li>
-                <li>
-                  Embeds the principles of an aesthetic standards bypass,{" "}
-                  <span className={`${styles.bodybi}`}>
-                    valuing nutritional quality and freshness
-                  </span>{" "}
-                  over appearance
-                </li>
-                <li>
-                  Includes an{" "}
-                  <span className={`${styles.bodybi}`}>co-impact tracker </span>
-                  so users can visualise the{" "}
-                  <span className={`${styles.bodybi}`}>
-                    positive outcomes
-                  </span>{" "}
-                  of their purchases (e.g., kilograms of food saved, emissions
-                  avoided)
-                </li>
-                <li>
-                  Designed with{" "}
-                  <span className={`${styles.bodybi}`}>
-                    bulk-buying features
-                  </span>{" "}
-                  in mind, allowing for{" "}
-                  <span className={`${styles.bodybi}`}>future scalability</span>{" "}
-                  to support small businesses, restaurants, and community
-                  kitchens
-                </li>
-                <li>
-                  Builds <span className={`${styles.bodybi}`}>user trust </span>
-                  through{" "}
-                  <span className={`${styles.bodybi}`}>
-                    transparent sourcing
-                  </span>{" "}
-                  showing where produce comes from, what farm it supports, and
-                  how much the grower earns
-                </li>
-              </ul>
-            </div>
-
-            <div className={`${styles.body}`}>
-              Ultimately, we decided to move forward with the{" "}
-              <span className={`${styles.bodyb} ${styles.grassGreen}`}>
-                Marketplace for Rescued Produce
-              </span>
-              . Compared with the Seasonal Food Tracker, it offered a stronger
-              potential to create lasting, systemic change through a single,
-              user-friendly platform. The solution not only addresses waste and
-              affordability but also strengthens farmer-consumer relationships,
-              improves supply chain transparency, and promotes more ethical,
-              accessible food practices through a scalable, intuitive
-              experience.
+            <div className={styles.paraContainer}>
+              <div className={`${styles.body}`}>
+                Ultimately, we decided to move forward with the{" "}
+                <span className={`${styles.bodyb} ${styles.grassGreen}`}>
+                  Marketplace for Rescued Produce
+                </span>
+                . Compared with the Seasonal Food Tracker, it offered a stronger
+                potential to create lasting, systemic change through a single,
+                user-friendly platform. The solution not only addresses waste
+                and affordability but also strengthens farmer-consumer
+                relationships, improves supply chain transparency, and promotes
+                more ethical, accessible food practices through a scalable,
+                intuitive experience.
+              </div>
             </div>
           </div>
         </div>
@@ -719,123 +738,137 @@ export default function ReHarvest() {
             Designs
           </div>
 
-          <div className={`${styles.heading1} ${styles.forestGreen}`}>
-            User Flows
-          </div>
+          <div className={styles.paraContainer}>
+            <div className={`${styles.heading1} ${styles.forestGreen}`}>
+              User Flows
+            </div>
 
-          <div className={`${styles.flowContainer}`}>
-            <div
-              className={`flex flex-col items-center ${styles.heading2} ${styles.forestGreen} gap-3`}
-            >
-              <div>Customer</div>
-              <div>
-                <ZoomableImage
-                  src={`${basePath}/images/ReHarvestCustomerUserFlow.png`}
-                  alt="Wholesaler User Journey"
-                  width={3088}
-                  height={7120}
-                  className={styles.image1}
-                  bgColor="#F4F1E6"
-                />
+            <div className={`${styles.flowContainer}`}>
+              <div
+                className={`flex flex-col items-center ${styles.heading2} ${styles.forestGreen} gap-3`}
+              >
+                <div>Customer</div>
+                <div>
+                  <ZoomableImage
+                    src={`${basePath}/images/ReHarvestCustomerUserFlow.png`}
+                    alt="Wholesaler User Journey"
+                    width={3088}
+                    height={7120}
+                    className={styles.image1}
+                    bgColor="#F4F1E6"
+                  />
+                </div>
+              </div>
+              <div
+                className={`flex flex-col items-center ${styles.heading2} ${styles.forestGreen} gap-3`}
+              >
+                <div>Wholesaler</div>
+                <div>
+                  <ZoomableImage
+                    src={`${basePath}/images/ReHarvestWholesalerUserFlow.png`}
+                    alt="Wholesaler User Journey"
+                    width={4648}
+                    height={6496}
+                    className={styles.image1}
+                    bgColor="#F4F1E6"
+                  />
+                </div>
               </div>
             </div>
-            <div
-              className={`flex flex-col items-center ${styles.heading2} ${styles.forestGreen} gap-3`}
-            >
-              <div>Wholesaler</div>
-              <div>
-                <ZoomableImage
-                  src={`${basePath}/images/ReHarvestWholesalerUserFlow.png`}
-                  alt="Wholesaler User Journey"
-                  width={4648}
-                  height={6496}
-                  className={styles.image1}
-                  bgColor="#F4F1E6"
-                />
-              </div>
+          </div>
+
+          <div className={styles.paraContainer}>
+            <div className={`${styles.heading1} ${styles.forestGreen}`}>
+              Low-Fidelity Prototypes
+            </div>
+
+            <div className="flex justify-center">
+              <ZoomableImage
+                src={`${basePath}/images/ReHarvestLoFiPrototypes.png`}
+                alt="Wholesaler User Journey"
+                width={1147}
+                height={510}
+                className={styles.image1}
+                bgColor="#F4F1E6"
+              />
             </div>
           </div>
 
-          <div className={`${styles.heading1} ${styles.forestGreen}`}>
-            Low-Fidelity Prototypes
-          </div>
+          <div className={styles.paraContainer}>
+            <div className={`${styles.heading1} ${styles.forestGreen}`}>
+              High-Fidelity Prototypes
+            </div>
 
-          <div className="flex justify-center">
-            <ZoomableImage
-              src={`${basePath}/images/ReHarvestLoFiPrototypes.png`}
-              alt="Wholesaler User Journey"
-              width={1147}
-              height={510}
-              className={styles.image1}
-              bgColor="#F4F1E6"
-            />
-          </div>
+            <div className={`${styles.body}`}>
+              For ReHarvest&#39;s high-fidelity designs, I chose a
+              retro-inspired colour palette and typeface to give the site a
+              warm, nostalgic vibe inspired by the hackathon&#39;s theme of{" "}
+              <span className={`${styles.bodybi}`}>Revisiting the Past</span>.
+              This was also a deliberate contrast to the sterile and impersonal
+              feel of many modern ecommerce platforms as I wanted something more
+              inviting and approachable.
+            </div>
 
-          <div className={`${styles.heading1} ${styles.forestGreen}`}>
-            High-Fidelity Prototypes
-          </div>
+            <div className={`flex`}>
+              <iframe
+                style={{
+                  width: "100%",
+                  height: "500px",
+                  border: "none",
+                }}
+                width="800"
+                height="450"
+                src="https://embed.figma.com/proto/xLa6Jm5eZW2VDCD4VGln0M/ReHarvest-CodeBrew-2025?page-id=918%3A2365&node-id=918-2868&viewport=697%2C366%2C0.06&scaling=scale-down&content-scaling=fixed&starting-point-node-id=918%3A2868&show-proto-sidebar=1&embed-host=share"
+                allowFullScreen
+                loading="lazy"
+                title="High-Fidelity Prototypes"
+              />
+            </div>
 
-          <div className={`${styles.body}`}>
-            For ReHarvest&#39;s high-fidelity designs, I chose a retro-inspired
-            colour palette and typeface to give the site a warm, nostalgic vibe
-            inspired by the hackathon&#39;s theme of{" "}
-            <span className={`${styles.bodybi}`}>Revisiting the Past</span>.
-            This was also a deliberate contrast to the sterile and impersonal
-            feel of many modern ecommerce platforms as I wanted something more
-            inviting and approachable.
-          </div>
+            <div className={styles.paraContainer}>
+              <div className={`${styles.heading1} ${styles.forestGreen}`}>
+                Customer Flow
+              </div>
 
-          <div className={`flex`}>
-            <iframe
-              style={{
-                width: "100%",
-                height: "500px",
-                border: "none",
-              }}
-              width="800"
-              height="450"
-              src="https://embed.figma.com/proto/xLa6Jm5eZW2VDCD4VGln0M/ReHarvest-CodeBrew-2025?page-id=918%3A2365&node-id=918-2868&viewport=697%2C366%2C0.06&scaling=scale-down&content-scaling=fixed&starting-point-node-id=918%3A2868&show-proto-sidebar=1&embed-host=share"
-              allowFullScreen
-              loading="lazy"
-              title="High-Fidelity Prototypes"
-            />
-          </div>
+              <div className={`${styles.body}`}>
+                The site is designed for quick, intuitive browsing. A prominent
+                CTA on the landing page guides customers straight to shopping
+                for produce. From there, they can easily{" "}
+                <span className={`${styles.bodybi}`}>filter and sort</span>, use
+                the search bar, and view curated seasonal produce. The checkout
+                process is streamlined, and once a purchase is made, customers
+                are shown a clear summary of their{" "}
+                <span className={`${styles.bodybi}`}>environmental impact</span>{" "}
+                including how much food they’ve helped save.
+              </div>
+            </div>
 
-          <div className={`${styles.heading1} ${styles.forestGreen}`}>
-            Customer Flow
-          </div>
+            <div className={styles.paraContainer}>
+              <div className={`${styles.heading1} ${styles.forestGreen}`}>
+                Wholesaler Flow
+              </div>
 
-          <div className={`${styles.body}`}>
-            The site is designed for quick, intuitive browsing. A prominent CTA
-            on the landing page guides customers straight to shopping for
-            produce. From there, they can easily{" "}
-            <span className={`${styles.bodybi}`}>filter and sort</span>, use the
-            search bar, and view curated seasonal produce. The checkout process
-            is streamlined, and once a purchase is made, customers are shown a
-            clear summary of their{" "}
-            <span className={`${styles.bodybi}`}>environmental impact</span>{" "}
-            including how much food they’ve helped save.
-          </div>
-
-          <div className={`${styles.heading1} ${styles.forestGreen}`}>
-            Wholesaler Flow
-          </div>
-
-          <div className={`${styles.body}`}>
-            For wholesalers, everything is{" "}
-            <span className={`${styles.bodybi}`}>
-              centralised in a dashboard
-            </span>
-            , with a clear CTA to access it from the homepage. The dashboard UI
-            is <span className={`${styles.bodybi}`}>intentionally minimal</span>{" "}
-            and <span className={`${styles.bodybi}`}>colour-coded</span> to
-            differentiate key actions. Wholesalers can search, filter, and
-            manage their storefront with ease. Adding produce is flexible;
-            wholesalers can either use a dynamic form to add rows manually or
-            upload an existing CSV (with the right formatting). They also have
-            <span className={`${styles.bodybi}`}> access to insights</span>:
-            sales trends, popular products, total kg saved, and overall
-            environmental impact.
+              <div className={`${styles.body}`}>
+                For wholesalers, everything is{" "}
+                <span className={`${styles.bodybi}`}>
+                  centralised in a dashboard
+                </span>
+                , with a clear CTA to access it from the homepage. The dashboard
+                UI is{" "}
+                <span className={`${styles.bodybi}`}>
+                  intentionally minimal
+                </span>{" "}
+                and <span className={`${styles.bodybi}`}>colour-coded</span> to
+                differentiate key actions. Wholesalers can search, filter, and
+                manage their storefront with ease. Adding produce is flexible;
+                wholesalers can either use a dynamic form to add rows manually
+                or upload an existing CSV (with the right formatting). They also
+                have
+                <span className={`${styles.bodybi}`}> access to insights</span>:
+                sales trends, popular products, total kg saved, and overall
+                environmental impact.
+              </div>
+            </div>
           </div>
         </div>
 
