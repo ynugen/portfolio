@@ -21,6 +21,7 @@ export default function ReHarvest() {
   return (
     <div className="page">
       <div className={styles.container}></div>
+
       {/* Title */}
       <div className={`${styles.titleContainer} text-center`}>
         <span className={`${styles.title}`}>
@@ -30,6 +31,25 @@ export default function ReHarvest() {
 
       {/* Body */}
       <div className={`${styles.bodyContainer}`}>
+        <div className={`${styles.paraContainer}`}>
+          {" "}
+          <div className={`flex`}>
+            <iframe
+              style={{
+                width: "100%",
+                height: "500px",
+                border: "none",
+              }}
+              width="800"
+              height="450"
+              src="https://embed.figma.com/design/xLa6Jm5eZW2VDCD4VGln0M/ReHarvest-CodeBrew-2025?node-id=918-2365&embed-host=share"
+              allowFullScreen
+              loading="lazy"
+              title="High-Fidelity Prototypes"
+            />
+          </div>
+        </div>
+
         {/* Project Overview */}
         <div className={`${styles.paraContainer}`}>
           <div
