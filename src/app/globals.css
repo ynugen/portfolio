@@ -265,13 +265,27 @@
 
 
 /* Container Styles */
+
+.full-page {
+ background-color: var(--matcha);
+ height: 100vh;
+ max-height: 100vh;
+ overflow: hidden;
+ position: relative;;
+  
+}
+
  .page-layout {
   display: flex;
   flex-direction: row;;
  }
 
 .page {
+  position: relative;
+  overflow-y: auto;
   height: fit-content;
+  scroll-behavior: smooth;
+  max-height: 100vh;
 }
 
 .projects-container {
@@ -346,6 +360,14 @@
   .arrow-container {
     min-width: calc(var(--square-size-m) * 0.15);
     min-height: calc(var(--square-size-m) * 0.15);
+  }
+  .page {
+    max-height: none;
+    overflow-y: visible;
+  }
+  .full-page {
+    overflow-y: auto;
+    scroll-behavior: smooth;
   }
 }
 

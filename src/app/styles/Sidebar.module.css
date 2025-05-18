@@ -42,7 +42,7 @@
 }
 
 .subContainer {
-  /* border-bottom: var(--slate-grey) 1px solid; */
+  border-bottom: var(--slate-grey) 1px solid;
   display: flex;
 }
 

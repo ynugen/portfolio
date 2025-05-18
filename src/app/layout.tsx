@@ -22,14 +22,7 @@ export default function RootLayout({
       className={`${pixeloid.variable} ${timetwist.variable} ${helveticaNeue.variable} ${milkyVintage.variable}`}
     >
       <body
-        style={{
-          backgroundColor: "var(--matcha)",
-          height: "100vh",
-          scrollBehavior: "smooth",
-          overflowY: "scroll",
-          maxHeight: "100vh",
-          position: "relative",
-        }}
+        className="full-page"
       >
         <DynamicCSS />
         <div className="h-screen w-full page-layout">
