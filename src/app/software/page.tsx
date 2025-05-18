@@ -16,7 +16,7 @@ export default function Software() {
       </div>
 
       {softwareProjects.length === 0 ? (
-        <div className="p-[6rem] flex subtitle-1 grey justify-center items-center">
+        <div className="p-[6rem] flex subtitle-1 grey justify-center items-center text-center">
           Magic in progress...
         </div>
       ) : (

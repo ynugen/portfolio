@@ -9,7 +9,7 @@ export default function Whimsy() {
       </div>
 
       <div
-        className={`p-[6rem] flex subtitle-1 grey justify-center items-center`}
+        className={`p-[6rem] flex subtitle-1 grey justify-center items-center text-center`}
       >
         {" "}
         Magic in progress...
