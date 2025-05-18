@@ -684,13 +684,13 @@ export default function ReHarvest() {
             >
               <div>Customer</div>
               <div>
-                {" "}
                 <ZoomableImage
                   src={`${basePath}/images/ReHarvestCustomerUserFlow.png`}
                   alt="Wholesaler User Journey"
                   width={3088}
                   height={7120}
                   className={styles.image1}
+                  bgColor="#F4F1E6"
                 />
               </div>
             </div>
@@ -699,16 +699,51 @@ export default function ReHarvest() {
             >
               <div>Wholesaler</div>
               <div>
-                {" "}
                 <ZoomableImage
                   src={`${basePath}/images/ReHarvestWholesalerUserFlow.png`}
                   alt="Wholesaler User Journey"
                   width={4648}
                   height={6496}
                   className={styles.image1}
+                  bgColor="#F4F1E6"
                 />
               </div>
             </div>
+          </div>
+
+          <div className={`${styles.heading1} ${styles.forestGreen}`}>
+            Low-Fidelity Prototypes
+          </div>
+
+          <div className="flex justify-center">
+            <ZoomableImage
+              src={`${basePath}/images/ReHarvestLoFiPrototypes.png`}
+              alt="Wholesaler User Journey"
+              width={1147}
+              height={510}
+              className={styles.image1}
+              bgColor="#F4F1E6"
+            />
+          </div>
+
+          <div className={`${styles.heading1} ${styles.forestGreen}`}>
+            High-Fidelity Prototypes
+          </div>
+
+          <div className={`flex`}>
+            <iframe
+              style={{
+                width: "100%",
+                height: "500px",
+                border: "none",
+              }}
+              width="800"
+              height="450"
+              src="https://embed.figma.com/proto/xLa6Jm5eZW2VDCD4VGln0M/ReHarvest-CodeBrew-2025?page-id=918%3A2365&node-id=918-2868&viewport=697%2C366%2C0.06&scaling=scale-down&content-scaling=fixed&starting-point-node-id=918%3A2868&show-proto-sidebar=1&embed-host=share"
+              allowFullScreen
+              loading="lazy"
+              title="High-Fidelity Prototypes"
+            />
           </div>
         </div>
       </div>

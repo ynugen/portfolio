@@ -239,7 +239,7 @@
 }
 
 .image1 {
-  width: calc(var(--square-size) * 2);
+  width: calc(var(--square-size) * 8);
 }
 
 .people {
