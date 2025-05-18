@@ -750,9 +750,9 @@ export default function ReHarvest() {
           </div>
 
           <div className={`${styles.body}`}>
-            For ReHarvest’s high-fidelity designs, I chose a retro-inspired
+            For ReHarvest&#39;s high-fidelity designs, I chose a retro-inspired
             colour palette and typeface to give the site a warm, nostalgic vibe
-            inspired by the hackathon's theme of{" "}
+            inspired by the hackathon&#39;s theme of{" "}
             <span className={`${styles.bodybi}`}>Revisiting the Past</span>.
             This was also a deliberate contrast to the sterile and impersonal
             feel of many modern ecommerce platforms as I wanted something more
