@@ -271,11 +271,7 @@
  }
 
 .page {
-  position: relative;
-  overflow-y: auto;
-  height: 100vh;
-  scroll-behavior: smooth;
-  max-height: 100vh;
+  height: fit-content;
 }
 
 .projects-container {
