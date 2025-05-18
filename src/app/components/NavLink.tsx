@@ -2,9 +2,9 @@ import NavArrow from "./NavArrow";
 
 type NavLinkProps = {
   direction: "default" | "diagonal";
-  alt: string;
+  alt?: string;
   className?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 export default function NavLink({

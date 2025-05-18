@@ -83,9 +83,19 @@
   font-weight: bold;
   line-height: normal;
   text-transform: capitalize;
-  color: var(--marigold);
   will-change: filter, text-shadow;
   transition: filter 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+}
+
+.link2 {
+  font-family: var(--font-timetwist), serif; 
+  font-size: calc(var(--title-font-size) / (1.618 * 3));
+  font-weight:bold;
+}
+
+.link2:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;;
 }
 
 .body {

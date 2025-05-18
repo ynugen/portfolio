@@ -1,4 +1,6 @@
 import styles from "@/app/styles/Contact.module.css";
+import NavLink from "../components/NavLink";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -21,7 +23,7 @@ export default function Contact() {
             CREATIVE, DESIGNER,
           </div>
           <div className={`${styles.small} ${styles.pixelBodyB}`}>&</div>
-          <div className={`${styles.pixelBodyB} ${styles.medium}`}>
+          <div className={`${styles.pixelBodyB} ${styles.medium} text-center`}>
             SOFTWARE CRAFTSMAN
           </div>{" "}
           <div className={`${styles.small}`}>
@@ -42,7 +44,7 @@ export default function Contact() {
             expressive <span className={`${styles.bodyB}`}>graphics</span>,
             playful <span className={`${styles.bodyB}`}>games</span>, nostalgic{" "}
             <span className={`${styles.bodyBI}`}>pixel art</span>, or
-            <span className={`${styles.bodyBI}`}> 3D models</span>. I
+            <span className={`${styles.bodyBI}`}> 3D models</span>. I{" "}
             <span className={`${styles.bodyI}`}>
               prioritise intentionality{" "}
             </span>{" "}
@@ -50,6 +52,39 @@ export default function Contact() {
             <span className={`${styles.bodyI}`}>continually strive </span> to
             keep refining my craft.
           </div>
+        </div>
+
+        {/* Links */}
+        <div className={`${styles.linksContainer} grey`}>
+          <NavLink direction="diagonal" alt="arrow">
+            <h3>
+              <Link
+                href="mailto:amyymanguyen@gmail.com"
+                className={`link2 grey`}
+              >
+                Email me
+              </Link>
+            </h3>
+          </NavLink>
+
+          <NavLink direction="diagonal" alt="arrow">
+            <h3>
+              <Link
+                href="https://www.linkedin.com/in/ynugen/"
+                className={`link2 grey`}
+              >
+                LinkedIn
+              </Link>
+            </h3>
+          </NavLink>
+
+          <NavLink direction="diagonal" alt="arrow">
+            <h3>
+              <Link href="https://github.com/ynugen" className={`link2 grey`}>
+                GitHub
+              </Link>
+            </h3>
+          </NavLink>
         </div>
       </div>
     </div>

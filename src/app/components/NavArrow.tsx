@@ -16,17 +16,19 @@ export default function NavArrow({
 }: ArrowProps) {
   const basePath = config.basePath;
 
-  const src =
-    direction === "default"
-      ? `${basePath}/icons/arrow-default.png`
-      : `${basePath}/icons/arrow-diagonal.png`;
+  let src = `${basePath}/icons/arrow-default.png`;
+  let imageClass = "arrow object-contain";
+
+  if (direction === "diagonal") {
+    src = `${basePath}/icons/arrow-diagonal.png`;
+  }
 
   return (
     <div className={`arrow-container ${className}`}>
       <Image
         src={src}
         alt={alt}
-        className="arrow object-contain"
+        className={`${imageClass}`}
         fill
         sizes="24px"
       />
