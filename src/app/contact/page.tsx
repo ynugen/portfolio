@@ -42,7 +42,7 @@ export default function Contact() {
               <span className={`${styles.bodyBI}`}>intersection </span>of
               <span className={`${styles.bodyI}`}> design</span> and{" "}
               <span className={`${styles.bodyI}`}>technology </span>. Whether
-              it&#39;s crafting
+              it&#39;s creating
               <span className={`${styles.bodyBI}`}> intuitive products</span>,
               expressive <span className={`${styles.bodyBI}`}>graphics</span>,
               playful <span className={`${styles.bodyBI}`}>games</span>,
