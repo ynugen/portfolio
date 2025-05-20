@@ -14,6 +14,7 @@ import {
   ShoppingCartSimple,
   WarningCircle,
   CheckCircle,
+  Quotes,
 } from "@phosphor-icons/react";
 
 export default function ReHarvest() {
@@ -58,7 +59,7 @@ export default function ReHarvest() {
             Project Overview
           </div>
           <div className={`${styles.bodyb} ${styles.forestGreen}`}>Team</div>
-          <div className={`${styles.body} grey`}>
+          <div className={`${styles.body} ${styles.text}`}>
             I collaborated in a cross-functional hackathon team of five with two
             front-end developers, two back-end developers, and myself as the
             designer. I led the creative direction, defining the brand identity
@@ -67,7 +68,7 @@ export default function ReHarvest() {
           </div>
 
           <div className={`${styles.bodyb} ${styles.forestGreen}`}>Role</div>
-          <div className={`${styles.body} grey`}>
+          <div className={`${styles.body} ${styles.text}`}>
             As the designer on the team, I led the end-to-end design process,
             from initial ideation and user flows to creating low- and
             high-fidelity prototypes. I developed a cohesive brand identity and
@@ -76,7 +77,7 @@ export default function ReHarvest() {
           </div>
 
           <div className={`${styles.bodyb} ${styles.forestGreen}`}>Tools</div>
-          <div className={`${styles.body} grey`}>
+          <div className={`${styles.body} ${styles.text}`}>
             <ul>
               <li>Figma</li>
               <li>Canva</li>
@@ -94,7 +95,7 @@ export default function ReHarvest() {
             Problem Statement
           </div>
 
-          <div className={`${styles.body} grey`}>
+          <div className={`${styles.body} ${styles.text}`}>
             Farmers across Australia are forced to discard{" "}
             <span className={styles.bodyb}>perfectly good produce</span> that
             doesn’t meet the{" "}
@@ -118,7 +119,7 @@ export default function ReHarvest() {
             Competitor Analysis
           </div>
 
-          <div className={`${styles.body} grey`}>
+          <div className={`${styles.body} ${styles.text}`}>
             Most food waste solutions focus on{" "}
             <span className={styles.bodyb}>end-of-line fixes</span> like
             upcycling or surplus redistribution, often missing the{" "}
@@ -130,12 +131,14 @@ export default function ReHarvest() {
             would otherwise go to waste.
           </div>
 
-          <div className={`${styles.body} grey`}>
+          <div className={`${styles.body} ${styles.text}`}>
             {" "}
             Here&#39;s how current solutions fall short:
           </div>
 
-          <ul className={`p-3 ${styles.body} ${styles.listContainer} grey`}>
+          <ul
+            className={`p-3 ${styles.body} ${styles.listContainer} ${styles.text}`}
+          >
             <li>
               Surplus food apps (e.g.{" "}
               <Link
@@ -207,7 +210,7 @@ export default function ReHarvest() {
             {" "}
             <div className={`${styles.person}`}>
               {/* Jess Nguyen */}
-              <div className={`${styles.body} grey`}>
+              <div className={`${styles.body} ${styles.text}`}>
                 <div className={`${styles.heading1} ${styles.forestGreen}`}>
                   Jess Nguyen
                 </div>
@@ -262,7 +265,7 @@ export default function ReHarvest() {
                   <Target size={24} color="#82a36b" weight="fill" />
                   <div className={`${styles.h2Height}`}>Goals</div>
                 </div>
-                <div className={`${styles.body} grey`}>
+                <div className={`${styles.body} ${styles.text}`}>
                   <ul className={`${styles.listContainer1}`}>
                     <li>
                       Find fresh produce that is affordable and within her
@@ -284,7 +287,7 @@ export default function ReHarvest() {
                   <ShoppingCartSimple size={24} color="#82a36b" weight="fill" />
                   <div className={`${styles.h2Height}`}>Behavioural</div>
                 </div>
-                <div className={`${styles.body} grey`}>
+                <div className={`${styles.body} ${styles.text}`}>
                   <ul className={`${styles.listContainer1}`}>
                     <li>Shops for herself and her housemates</li>
                     <li>
@@ -308,7 +311,7 @@ export default function ReHarvest() {
                   <WarningCircle size={24} color="#82a36b" weight="fill" />
                   <div className={`${styles.h2Height}`}>Pain Points</div>
                 </div>
-                <div className={`${styles.body} grey`}>
+                <div className={`${styles.body} ${styles.text}`}>
                   <ul className={`${styles.listContainer1}`}>
                     <li>
                       Supermarket produce is often expensive and lacks
@@ -335,7 +338,7 @@ export default function ReHarvest() {
                   <CheckCircle size={24} color="#82a36b" weight="fill" />
                   <div className={`${styles.h2Height}`}>Needs</div>
                 </div>
-                <div className={`${styles.body} grey`}>
+                <div className={`${styles.body} ${styles.text}`}>
                   <ul className={`${styles.listContainer1}`}>
                     <li>
                       A trustworthy, easy-to-use platform to browse and purchase
@@ -355,7 +358,7 @@ export default function ReHarvest() {
             </div>
             <div className={`${styles.person}`}>
               {/* Paul De Luca */}
-              <div className={`${styles.body} grey`}>
+              <div className={`${styles.body} ${styles.text}`}>
                 <div className={`${styles.heading1} ${styles.forestGreen}`}>
                   Paul De Luca
                 </div>
@@ -411,7 +414,7 @@ export default function ReHarvest() {
                   <Target size={24} color="#82a36b" weight="fill" />
                   <div className={`${styles.h2Height}`}>Goals</div>
                 </div>
-                <div className={`${styles.body} grey`}>
+                <div className={`${styles.body} ${styles.text}`}>
                   <ul className={`${styles.listContainer1}`}>
                     <li>
                       Reduce food waste and recover income from surplus/rejected
@@ -431,7 +434,7 @@ export default function ReHarvest() {
                   <ShoppingCartSimple size={24} color="#82a36b" weight="fill" />
                   <div className={`${styles.h2Height}`}>Behavioural</div>
                 </div>
-                <div className={`${styles.body} grey`}>
+                <div className={`${styles.body} ${styles.text}`}>
                   <ul className={`${styles.listContainer1}`}>
                     <li>
                       Regularly supplies large supermarkets, but deals with high
@@ -453,7 +456,7 @@ export default function ReHarvest() {
                   <WarningCircle size={24} color="#82a36b" weight="fill" />
                   <div className={`${styles.h2Height}`}>Pain Points</div>
                 </div>
-                <div className={`${styles.body} grey`}>
+                <div className={`${styles.body} ${styles.text}`}>
                   <ul className={`${styles.listContainer1}`}>
                     <li>
                       Middlemen take significant margins, leaving low profit per
@@ -477,7 +480,7 @@ export default function ReHarvest() {
                   <CheckCircle size={24} color="#82a36b" weight="fill" />
                   <div className={`${styles.h2Height}`}>Needs</div>
                 </div>
-                <div className={`${styles.body} grey`}>
+                <div className={`${styles.body} ${styles.text}`}>
                   <ul className={`${styles.listContainer1}`}>
                     <li>
                       A platform to quickly list available stock with basic
@@ -875,6 +878,173 @@ export default function ReHarvest() {
         <div className={`${styles.paraContainer}`}>
           <div className={`${styles.heading} ${styles.forestGreen}`}>
             User Testing
+          </div>
+
+          <div className={`${styles.paraContainer}`}>
+            <div className={`${styles.body} ${styles.text}`}>
+              <div>
+                I conducted{" "}
+                <span className={`${styles.bodyb}`}>
+                  unmoderated usability testing
+                </span>{" "}
+                using qualitative and quantitative measure with four
+                participants, all university students who regularly shopped for
+                their own groceries. These budget-friendly individuals were
+                frustrated about rising supermarket prices, and had interest in
+                more sustainable ways to buy produce. Participants were given
+                task-based scenarios to evaluate ease of use, interface
+                intuitivity, and overall flow comprehension. While they
+                primarily matched my customer persona, they also helped me test
+                the wholesaler user flow because I did not have access to real
+                wholesalers.
+              </div>
+            </div>
+
+            <div className={`${styles.paraContainer}`}>
+              <div className={`${styles.heading1} ${styles.forestGreen}`}>
+                Main Testing Goals
+              </div>
+
+              <div className={`${styles.body} ${styles.text}`}>
+                My main goals were to assess whether{" "}
+                <span className={`${styles.bodyb}`}>customers</span> could
+                easily <span className={`${styles.bodyi}`}>browse</span> and{" "}
+                <span className={`${styles.bodyi}`}>shop </span>
+                for rejected produce, with an{" "}
+                <span className={`${styles.bodyi}`}>intuitive</span> search,
+                cart, and checkout experience that would clearly display their{" "}
+                <span className={`${styles.bodyi}`}>environmental impact</span>.
+                For <span className={`${styles.bodyb}`}>wholesalers</span>, I
+                wanted to evaluate the workflow{" "}
+                <span className={`${styles.bodyi}`}>simplicity</span>,
+                particularly, the{" "}
+                <span className={`${styles.bodyi}`}>
+                  ease of listing produce
+                </span>
+                , the{" "}
+                <span className={`${styles.bodyi}`}>clarity and usability</span>{" "}
+                of their storefront dashboard, and whether their insights and
+                sustainable trackers were{" "}
+                <span className={`${styles.bodyi}`}>comprehensive</span>.
+              </div>
+            </div>
+
+            <div className={`${styles.paraContainer}`}>
+              <div className={`${styles.heading1} ${styles.forestGreen}`}>
+                Summarised Findings
+              </div>
+
+              <div className={`${styles.paraContainer}`}>
+                <div className={`${styles.heading2} ${styles.forestGreen}`}>
+                  Customer Flow
+                </div>
+
+                <div className={`${styles.body} ${styles.text}`}>
+                  Overall, participants{" "}
+                  <span className={`${styles.bodyb}`}>successfully </span> found
+                  and added produce to their cart, rating the ease of the
+                  process an average of{" "}
+                  <span className={`${styles.bodybi}`}>5.75/7</span>. The
+                  checkout and viewing their environmental impact scored even
+                  higher with an average of
+                  <span className={`${styles.bodybi}`}>6.75/7</span>. For
+                  browsing produce, participants were able to filter and search
+                  for a specific fruit. Some feedback, however, highlighted some
+                  confusion with some elements including non-clickable buttons,
+                  and <span className={`${styles.bodyb}`}> mistaking</span> the
+                  produce price box for the add to cart button.
+                </div>
+
+                <div
+                  className={`${styles.bodyi} ${styles.grassGreen} ${styles.quote}`}
+                >
+                  <div className={`${styles.icon1}`}>
+                    <Quotes size={24} color="#82a36b" weight="fill" />
+                  </div>
+                  The price box that is right under the product looked like it
+                  was a button so everytime when I wanted to add into cart I
+                  would click on that button instead of the add to cart one.
+                </div>
+              </div>
+
+              <div className={`flex justify-center`}>
+                <Image
+                  src={`${basePath}/images/ReHarvestCustomerBarChart.png`}
+                  alt="Customer Feedback"
+                  width={748}
+                  height={314}
+                  className={styles.image}
+                />
+              </div>
+
+              <div className={`${styles.paraContainer}`}>
+                <div className={`${styles.heading2} ${styles.forestGreen}`}>
+                  Wholesaler Flow
+                </div>
+
+                <div className={`${styles.body} ${styles.text}`}>
+                  In the second part of user testing, partcipants{" "}
+                  <span className={`${styles.bodyb}`}>successfully </span>
+                  located the store dahsboard from the landing page as a
+                  wholesaler with relative ease, giving the task average
+                  simplicity of{" "}
+                  <span className={`${styles.bodybi}`}>5.75/7</span>. Adding
+                  products to their storefront less intuitive with an rating of
+                  <span className={`${styles.bodybi}`}> 4.75/7</span>. While
+                  particpants understood and went through the correct
+                  step-by-step of listing multiple items, some expected more
+                  visual clarity and feedback during the process. Some
+                  participants suggested that{" "}
+                  <span className={`${styles.bodybi}`}>clearer navigation</span>{" "}
+                  and <span className={`${styles.bodybi}`}> microcopy </span> of
+                  buttons and would enhance the usability for a wholesaler.
+                </div>
+
+                <div
+                  className={`${styles.bodyi} ${styles.grassGreen} ${styles.quote}`}
+                >
+                  <div className={`${styles.icon1}`}>
+                    <Quotes size={24} color="#82a36b" weight="fill" />
+                  </div>
+                  Missing clear back buttons when in the insights and orders
+                  page.
+                </div>
+
+                <div
+                  className={`${styles.bodyi} ${styles.grassGreen} ${styles.quote}`}
+                >
+                  <div className={`${styles.icon1}`}>
+                    <Quotes size={24} color="#82a36b" weight="fill" />
+                  </div>
+                  On the wholesaler profile, what do you mean by view orders?
+                </div>
+
+                <div
+                  className={`${styles.bodyi} ${styles.grassGreen} ${styles.quote}`}
+                >
+                  <div className={`${styles.icon1}`}>
+                    <Quotes size={24} color="#82a36b" weight="fill" />
+                  </div>
+                  The store dashboard could feel overwhelming for someone less
+                  familiar with websites - there are three different tasks
+                  happening on the same page: viewing store details, managing
+                  products, and adding new produce. It might also help to add
+                  filters to the orders page (like &#39;Not Started&#39;,
+                  &#39;In Progress&#39;, or &#39;Completed&#39;) and include a
+                  way to mark orders as dispatched.”
+                </div>
+              </div>
+
+              <div className={`flex justify-center`}>
+                <Image
+                  src={`${basePath}/images/ReHarvestWholesalerBarChart.png`}
+                  alt="Customer Feedback"
+                  width={748}
+                  height={314}
+                  className={styles.image}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -233,6 +233,16 @@
   padding-top: calc(0.01 * var(--square-size));
 }
 
+.icon1 {
+  transform: scaleY(-1) scaleX(-1);
+  /* padding: calc(var(--square-size) * 0.1); */
+}
+.quote {
+  display: flex;
+  align-items: start;
+  gap: calc(var(--square-size) * 0.1);
+}
+
 .image {
   min-width: calc(var(--square-size));
   min-height: calc(var(--square-size));
