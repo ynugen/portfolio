@@ -947,7 +947,7 @@ export default function ReHarvest() {
                   <span className={`${styles.bodybi}`}>5.75/7</span>. The
                   checkout and viewing their environmental impact scored even
                   higher with an average of
-                  <span className={`${styles.bodybi}`}>6.75/7</span>. For
+                  <span className={`${styles.bodybi}`}> 6.75/7</span>. For
                   browsing produce, participants were able to filter and search
                   for a specific fruit. Some feedback, however, highlighted some
                   confusion with some elements including non-clickable buttons,
