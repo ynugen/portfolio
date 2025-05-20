@@ -15,6 +15,7 @@ import {
   WarningCircle,
   CheckCircle,
   Quotes,
+  ArrowDown,
 } from "@phosphor-icons/react";
 
 export default function ReHarvest() {
@@ -902,7 +903,7 @@ export default function ReHarvest() {
 
             <div className={`${styles.paraContainer}`}>
               <div className={`${styles.heading1} ${styles.forestGreen}`}>
-                Main Testing Goals
+                Goals
               </div>
 
               <div className={`${styles.body} ${styles.text}`}>
@@ -1043,6 +1044,148 @@ export default function ReHarvest() {
                   height={314}
                   className={styles.image}
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={`${styles.paraContainer}`}>
+          <div className={`${styles.heading} ${styles.forestGreen}`}>
+            Improvements
+          </div>
+
+          <div className={`${styles.heading1} ${styles.forestGreen}`}>
+            Improving button intuitivity
+          </div>
+
+          <div className={`${styles.paraContainer3}`}>
+            <div className={`${styles.imageText}`}>
+              <div className={`${styles.imageCompare}`}>
+                <div>
+                  <ZoomableImage
+                    src={`${basePath}/images/ReHarvest1Before.png`}
+                    alt="Customer produce page before"
+                    width={905}
+                    height={857}
+                    className={styles.image2}
+                  />
+                </div>
+              </div>
+
+              <div className={`${styles.paraContainer2}`}>
+                <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                  Before
+                </div>
+
+                <div className={`${styles.body} ${styles.text}`}>
+                  I had the dropdown button for selecting produce amount a dark
+                  green. Compared to the light green add to cart, this had more
+                  contrast and was mistaken for the add to cart button.
+                </div>
+              </div>
+            </div>
+
+            <div className={`${styles.icon}`}>
+              <ArrowDown size={24} color="#82a36b" weight="fill" />
+            </div>
+            <div className={`${styles.icon}`}>
+              <ArrowDown size={24} color="#82a36b" weight="fill" />
+            </div>
+            <div className={`${styles.icon}`}>
+              <ArrowDown size={24} color="#82a36b" weight="fill" />
+            </div>
+
+            <div className={`${styles.imageText}`}>
+              <div className={`${styles.imageCompare}`}>
+                <div>
+                  <ZoomableImage
+                    src={`${basePath}/images/ReHarvest1After.png`}
+                    alt="Customer produce page after"
+                    width={905}
+                    height={857}
+                    className={styles.image2}
+                  />
+                </div>
+              </div>
+
+              <div className={`${styles.paraContainer2}`}>
+                <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                  After
+                </div>
+
+                <div className={`${styles.body} ${styles.text}`}>
+                  I swapped the colours of the dropdown and add to cart buttons
+                  to make the add to cart have higher importance. I also made
+                  the dropdown arrow a dark green to maintain consistency of
+                  button actions.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={`${styles.heading1} ${styles.forestGreen}`}>
+            Improving wholesaler page navigation
+          </div>
+
+          <div className={`${styles.paraContainer3}`}>
+            <div className={`${styles.imageText}`}>
+              <div className={`${styles.imageCompare}`}>
+                <div>
+                  <ZoomableImage
+                    src={`${basePath}/images/ReHarvest2Before.png`}
+                    alt="Wholsaler insights page before"
+                    width={905}
+                    height={857}
+                    className={styles.image2}
+                  />
+                </div>
+              </div>
+
+              <div className={`${styles.paraContainer2}`}>
+                <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                  Before
+                </div>
+
+                <div className={`${styles.body} ${styles.text}`}>
+                  There were missing back to storefront page buttons so it was
+                  more inconvenient and unclear how to navigate back to the
+                  wholesaler dashboard.
+                </div>
+              </div>
+            </div>
+
+            <div className={`${styles.icon}`}>
+              <ArrowDown size={24} color="#82a36b" weight="fill" />
+            </div>
+            <div className={`${styles.icon}`}>
+              <ArrowDown size={24} color="#82a36b" weight="fill" />
+            </div>
+            <div className={`${styles.icon}`}>
+              <ArrowDown size={24} color="#82a36b" weight="fill" />
+            </div>
+
+            <div className={`${styles.imageText}`}>
+              <div className={`${styles.imageCompare}`}>
+                <div>
+                  <ZoomableImage
+                    src={`${basePath}/images/ReHarvest2After.png`}
+                    alt="Wholsaler insights page before"
+                    width={905}
+                    height={857}
+                    className={styles.image2}
+                  />
+                </div>
+              </div>
+
+              <div className={`${styles.paraContainer2}`}>
+                <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                  After
+                </div>
+
+                <div className={`${styles.body} ${styles.text}`}>
+                  Added a back to store button on the insights page for easy
+                  navigation back to storefront page.
+                </div>
               </div>
             </div>
           </div>

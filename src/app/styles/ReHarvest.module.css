@@ -176,6 +176,20 @@
   width: 100%;
 }
 
+.paraContainer2 {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--square-size) * 0.1);
+  height: auto;
+}
+
+.paraContainer3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--square-size) * 0.1);
+}
+
 .listContainer {
   display: flex;
   flex-direction: column;
@@ -244,12 +258,30 @@
 }
 
 .image {
-  min-width: calc(var(--square-size));
-  min-height: calc(var(--square-size));
+  width: calc(var(--square-size));
+  min-height: auto;
 }
 
 .image1 {
   width: calc(var(--square-size) * 8);
+}
+
+.image2 {
+  max-width: calc(var(--square-size));
+}
+
+.imageCompare {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(var(--square-size) * 1.618);
+  gap: calc(var(--square-size) * 0.1);
+}
+
+.imageText {
+  display: flex;
+  gap: calc(var(--square-size) * 0.2);
 }
 
 .people {
@@ -332,6 +364,10 @@
   .icon {
     width: 20px;
   }
+  .imageCompare {
+    max-width: calc(var(--square-size-m) * 1.618);
+    gap: calc(var(--square-size-m) * 0.1);
+  }
 }
 
 @media (max-width: 640px) {
@@ -371,6 +407,10 @@
     justify-content: center;
     align-items: center;
     gap: calc(var(--square-size-s) * 0.5);
+  }
+  .imageCompare {
+    max-width: calc(var(--square-size-s) * 1.618);
+    gap: calc(var(--square-size-s) * 0.1);
   }
 }
 
