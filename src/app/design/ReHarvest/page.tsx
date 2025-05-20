@@ -974,7 +974,7 @@ export default function ReHarvest() {
                   alt="Customer Feedback"
                   width={748}
                   height={314}
-                  className={styles.image}
+                  className={styles.image1}
                 />
               </div>
 
@@ -1042,7 +1042,7 @@ export default function ReHarvest() {
                   alt="Customer Feedback"
                   width={748}
                   height={314}
-                  className={styles.image}
+                  className={styles.image1}
                 />
               </div>
             </div>
