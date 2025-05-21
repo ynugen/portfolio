@@ -1051,7 +1051,7 @@ export default function ReHarvest() {
 
         <div className={`${styles.paraContainer}`}>
           <div className={`${styles.heading} ${styles.forestGreen}`}>
-            Improvements
+            Refinements
           </div>
 
           <div className={`${styles.paraContainer}`}>
@@ -1081,8 +1081,9 @@ export default function ReHarvest() {
                   <div className={`${styles.body} ${styles.text}`}>
                     I had the dropdown button for selecting produce amount a
                     dark green. Compared to the light green add to cart, this
-                    had more contrast and was mistaken for the add to cart
-                    button.
+                    had more contrast and was{" "}
+                    <span className={styles.bodyb}>mistaken </span>for the add
+                    to cart button.
                   </div>
                 </div>
               </div>
@@ -1117,9 +1118,11 @@ export default function ReHarvest() {
 
                   <div className={`${styles.body} ${styles.text}`}>
                     I swapped the colours of the dropdown and add to cart
-                    buttons to make the add to cart have higher importance. I
+                    buttons to make the add to cart have{" "}
+                    <span className={styles.bodyb}>higher importance</span>. I
                     also made the dropdown arrow a dark green to maintain
-                    consistency of button actions.
+                    <span className={styles.bodyb}> consistency </span> of
+                    button actions.
                   </div>
                 </div>
               </div>
@@ -1151,8 +1154,9 @@ export default function ReHarvest() {
                   </div>
 
                   <div className={`${styles.body} ${styles.text}`}>
-                    There were missing back to storefront page buttons so it was
-                    more inconvenient and unclear how to navigate back to the
+                    There were <span className={styles.bodyb}> missing</span>{" "}
+                    "back to storefront" page buttons so it was more
+                    inconvenient and unclear how to navigate back to the
                     wholesaler dashboard.
                   </div>
                 </div>
@@ -1214,12 +1218,16 @@ export default function ReHarvest() {
                   </div>
 
                   <div className={`${styles.body} ${styles.text}`}>
-                    The wholesaler dashboard was overwhelming with multiple
-                    areas of high contrast colours like the orange profile
-                    container containing low contrast, hard-to-read actions
-                    buttons, and the listing produce container below. This can
-                    make it overwhelming for new time users as there aren't
-                    clear points of focus.
+                    The wholesaler dashboard was{" "}
+                    <span className={styles.bodyb}>overwhelming </span> with
+                    multiple areas of high contrast colours like the orange
+                    profile container containing{" "}
+                    <span className={styles.bodyb}>
+                      low contrast, hard-to-read actions buttons
+                    </span>
+                    , and the listing produce container below. This can make it
+                    confusing for new time users as there aren't clear points of
+                    focus.
                   </div>
                 </div>
               </div>
@@ -1253,11 +1261,14 @@ export default function ReHarvest() {
 
                   <div className={`${styles.body} ${styles.text}`}>
                     I changed the profile container to have a lower contrast
-                    colour, yellow, and the action buttons within to have higher
-                    contrast and readability with orange and light coloured
-                    text. I also improved the microcopy of the button "My
-                    Orders" to "Manage Orders" to clarify that they can access
-                    any orders from their storefront.
+                    colour, yellow, and the action buttons within to have{" "}
+                    <span className={styles.bodyb}>
+                      higher contrast and readability
+                    </span>{" "}
+                    with orange and light coloured text. I also improved the
+                    <span className={styles.bodyb}> microcopy </span> of the
+                    button "My Orders" to "Manage Orders" to clarify that they
+                    can access any orders from their storefront.
                   </div>
                 </div>
               </div>
@@ -1287,10 +1298,11 @@ export default function ReHarvest() {
                     </div>
 
                     <div className={`${styles.body} ${styles.text}`}>
-                      It was a very simple page with no filters or way to sort
-                      orders. There is only one action button to export order
-                      details as a spreadsheet. This was very limiting if the
-                      wholesaler wanted to handle the orders one one central
+                      It was a very simple page with{" "}
+                      <span className={styles.bodyb}>no filters </span> or way
+                      to sort orders. There is only one action button to export
+                      order details as a spreadsheet. This was very limiting if
+                      the wholesaler wanted to handle the orders one one central
                       platform.
                     </div>
                   </div>
@@ -1335,6 +1347,35 @@ export default function ReHarvest() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className={`${styles.paraContainer}`}>
+          <div className={`${styles.heading} ${styles.forestGreen}`}>
+            Next Steps
+          </div>
+
+          <div className={`${styles.body} ${styles.text}`}>
+            I&#39;d love to continue refining ReHarvest, conducting{" "}
+            <span className={styles.bodyb}>further usability testing</span> with
+            both customers and wholesalers to ensure the changes are intuitive
+            and effective for each user group. I also plan to{" "}
+            <span className={styles.bodyb}>optimise </span> the layouts for
+            <span className={styles.bodyb}> mobile responsiveness </span> to
+            make the experience seamless across all devices.
+          </div>
+
+          <div className={`${styles.body} ${styles.text}`}>
+            Throughout the hackathon, I learned a lot about{" "}
+            <span className={styles.bodyi}>
+              branding, user research, and rapid prototyping
+            </span>{" "}
+            within a tight{" "}
+            <span className={styles.bodyb}>48-hour timeframe</span>. In the
+            post-hackathon phase, refining the project gave me a deeper
+            appreciation for the{" "}
+            <span className={styles.bodyb}>Double Diamond design process</span>{" "}
+            and the value of iterating based on real user feedback.
           </div>
         </div>
       </div>
