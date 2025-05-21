@@ -888,7 +888,7 @@ export default function ReHarvest() {
                 <span className={`${styles.bodyb}`}>
                   unmoderated usability testing
                 </span>{" "}
-                using qualitative and quantitative measure with four
+                using qualitative and quantitative measure with five
                 participants, all university students who regularly shopped for
                 their own groceries. These budget-friendly individuals were
                 frustrated about rising supermarket prices, and had interest in
@@ -945,10 +945,10 @@ export default function ReHarvest() {
                   <span className={`${styles.bodyb}`}>successfully </span> found
                   and added produce to their cart, rating the ease of the
                   process an average of{" "}
-                  <span className={`${styles.bodybi}`}>5.75/7</span>. The
+                  <span className={`${styles.bodybi}`}>5.40/7</span>. The
                   checkout and viewing their environmental impact scored even
                   higher with an average of
-                  <span className={`${styles.bodybi}`}> 6.75/7</span>. For
+                  <span className={`${styles.bodybi}`}> 6.40/7</span>. For
                   browsing produce, participants were able to filter and search
                   for a specific fruit. Some feedback, however, highlighted some
                   confusion with some elements including non-clickable buttons,
@@ -989,9 +989,9 @@ export default function ReHarvest() {
                   located the store dahsboard from the landing page as a
                   wholesaler with relative ease, giving the task average
                   simplicity of{" "}
-                  <span className={`${styles.bodybi}`}>5.75/7</span>. Adding
+                  <span className={`${styles.bodybi}`}>5.60/7</span>. Adding
                   products to their storefront less intuitive with an rating of
-                  <span className={`${styles.bodybi}`}> 4.75/7</span>. While
+                  <span className={`${styles.bodybi}`}> 4.60/7</span>. While
                   particpants understood and went through the correct
                   step-by-step of listing multiple items, some expected more
                   visual clarity and feedback during the process. Some
@@ -1041,7 +1041,7 @@ export default function ReHarvest() {
                   src={`${basePath}/images/ReHarvestWholesalerBarChart.png`}
                   alt="Customer Feedback"
                   width={748}
-                  height={314}
+                  height={328}
                   className={styles.image1}
                 />
               </div>
@@ -1054,137 +1054,284 @@ export default function ReHarvest() {
             Improvements
           </div>
 
-          <div className={`${styles.heading1} ${styles.forestGreen}`}>
-            Improving button intuitivity
+          <div className={`${styles.paraContainer}`}>
+            <div className={`${styles.heading1} ${styles.forestGreen}`}>
+              Improving button intuitivity
+            </div>
+
+            <div className={`${styles.paraContainer3}`}>
+              <div className={`${styles.imageText}`}>
+                <div className={`${styles.imageCompare}`}>
+                  <div>
+                    <ZoomableImage
+                      src={`${basePath}/images/ReHarvest1Before.png`}
+                      alt="Customer produce page before"
+                      width={905}
+                      height={857}
+                      className={styles.image2}
+                    />
+                  </div>
+                </div>
+
+                <div className={`${styles.paraContainer2}`}>
+                  <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                    Before
+                  </div>
+
+                  <div className={`${styles.body} ${styles.text}`}>
+                    I had the dropdown button for selecting produce amount a
+                    dark green. Compared to the light green add to cart, this
+                    had more contrast and was mistaken for the add to cart
+                    button.
+                  </div>
+                </div>
+              </div>
+
+              <div className={`${styles.icon}`}>
+                <ArrowDown size={24} color="#82a36b" weight="fill" />
+              </div>
+              <div className={`${styles.icon}`}>
+                <ArrowDown size={24} color="#82a36b" weight="fill" />
+              </div>
+              <div className={`${styles.icon}`}>
+                <ArrowDown size={24} color="#82a36b" weight="fill" />
+              </div>
+
+              <div className={`${styles.imageText}`}>
+                <div className={`${styles.imageCompare}`}>
+                  <div>
+                    <ZoomableImage
+                      src={`${basePath}/images/ReHarvest1After.png`}
+                      alt="Customer produce page after"
+                      width={905}
+                      height={857}
+                      className={styles.image2}
+                    />
+                  </div>
+                </div>
+
+                <div className={`${styles.paraContainer2}`}>
+                  <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                    After
+                  </div>
+
+                  <div className={`${styles.body} ${styles.text}`}>
+                    I swapped the colours of the dropdown and add to cart
+                    buttons to make the add to cart have higher importance. I
+                    also made the dropdown arrow a dark green to maintain
+                    consistency of button actions.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className={`${styles.paraContainer3}`}>
-            <div className={`${styles.imageText}`}>
-              <div className={`${styles.imageCompare}`}>
-                <div>
-                  <ZoomableImage
-                    src={`${basePath}/images/ReHarvest1Before.png`}
-                    alt="Customer produce page before"
-                    width={905}
-                    height={857}
-                    className={styles.image2}
-                  />
+          <div className={`${styles.paraContainer}`}>
+            <div className={`${styles.heading1} ${styles.forestGreen}`}>
+              Improving wholesaler page navigation
+            </div>
+
+            <div className={`${styles.paraContainer3}`}>
+              <div className={`${styles.imageText}`}>
+                <div className={`${styles.imageCompare}`}>
+                  <div>
+                    <ZoomableImage
+                      src={`${basePath}/images/ReHarvest2Before.png`}
+                      alt="Wholsaler insights page before"
+                      width={905}
+                      height={857}
+                      className={styles.image2}
+                    />
+                  </div>
+                </div>
+
+                <div className={`${styles.paraContainer2}`}>
+                  <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                    Before
+                  </div>
+
+                  <div className={`${styles.body} ${styles.text}`}>
+                    There were missing back to storefront page buttons so it was
+                    more inconvenient and unclear how to navigate back to the
+                    wholesaler dashboard.
+                  </div>
                 </div>
               </div>
 
-              <div className={`${styles.paraContainer2}`}>
-                <div className={`${styles.heading2} ${styles.grassGreen}`}>
-                  Before
+              <div className={`${styles.icon}`}>
+                <ArrowDown size={24} color="#82a36b" weight="fill" />
+              </div>
+              <div className={`${styles.icon}`}>
+                <ArrowDown size={24} color="#82a36b" weight="fill" />
+              </div>
+              <div className={`${styles.icon}`}>
+                <ArrowDown size={24} color="#82a36b" weight="fill" />
+              </div>
+
+              <div className={`${styles.imageText}`}>
+                <div className={`${styles.imageCompare}`}>
+                  <div>
+                    <ZoomableImage
+                      src={`${basePath}/images/ReHarvest2After.png`}
+                      alt="Wholsaler insights page before"
+                      width={905}
+                      height={857}
+                      className={styles.image2}
+                    />
+                  </div>
                 </div>
 
-                <div className={`${styles.body} ${styles.text}`}>
-                  I had the dropdown button for selecting produce amount a dark
-                  green. Compared to the light green add to cart, this had more
-                  contrast and was mistaken for the add to cart button.
+                <div className={`${styles.paraContainer2}`}>
+                  <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                    After
+                  </div>
+
+                  <div className={`${styles.body} ${styles.text}`}>
+                    Added a back to storefront button on the insights page for
+                    easy navigation back to storefront page. This way, they
+                    don't need to guess and press around on the header to
+                    return.
+                  </div>
+                </div>
+              </div>
+
+              <div className={`${styles.imageText}`}>
+                <div className={`${styles.imageCompare}`}>
+                  <div>
+                    <ZoomableImage
+                      src={`${basePath}/images/ReHarvest4Before.png`}
+                      alt="Wholsaler dashboard page before"
+                      width={905}
+                      height={857}
+                      className={styles.image2}
+                    />
+                  </div>
+                </div>
+
+                <div className={`${styles.paraContainer2}`}>
+                  <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                    Before
+                  </div>
+
+                  <div className={`${styles.body} ${styles.text}`}>
+                    The wholesaler dashboard was overwhelming with multiple
+                    areas of high contrast colours like the orange profile
+                    container containing low contrast, hard-to-read actions
+                    buttons, and the listing produce container below. This can
+                    make it overwhelming for new time users as there aren't
+                    clear points of focus.
+                  </div>
+                </div>
+              </div>
+
+              <div className={`${styles.icon}`}>
+                <ArrowDown size={24} color="#82a36b" weight="fill" />
+              </div>
+              <div className={`${styles.icon}`}>
+                <ArrowDown size={24} color="#82a36b" weight="fill" />
+              </div>
+              <div className={`${styles.icon}`}>
+                <ArrowDown size={24} color="#82a36b" weight="fill" />
+              </div>
+
+              <div className={`${styles.imageText}`}>
+                <div className={`${styles.imageCompare}`}>
+                  <div>
+                    <ZoomableImage
+                      src={`${basePath}/images/ReHarvest4After.png`}
+                      alt="Wholsaler dashboard page after"
+                      width={905}
+                      height={857}
+                      className={styles.image2}
+                    />
+                  </div>
+                </div>
+                <div className={`${styles.paraContainer2}`}>
+                  <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                    After
+                  </div>
+
+                  <div className={`${styles.body} ${styles.text}`}>
+                    I changed the profile container to have a lower contrast
+                    colour, yellow, and the action buttons within to have higher
+                    contrast and readability with orange and light coloured
+                    text. I also improved the microcopy of the button "My
+                    Orders" to "Manage Orders" to clarify that they can access
+                    any orders from their storefront.
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className={`${styles.icon}`}>
-              <ArrowDown size={24} color="#82a36b" weight="fill" />
-            </div>
-            <div className={`${styles.icon}`}>
-              <ArrowDown size={24} color="#82a36b" weight="fill" />
-            </div>
-            <div className={`${styles.icon}`}>
-              <ArrowDown size={24} color="#82a36b" weight="fill" />
-            </div>
-
-            <div className={`${styles.imageText}`}>
-              <div className={`${styles.imageCompare}`}>
-                <div>
-                  <ZoomableImage
-                    src={`${basePath}/images/ReHarvest1After.png`}
-                    alt="Customer produce page after"
-                    width={905}
-                    height={857}
-                    className={styles.image2}
-                  />
-                </div>
+            <div className={`${styles.paraContainer}`}>
+              <div className={`${styles.heading1} ${styles.forestGreen}`}>
+                Improving Wholesaler Order Management
               </div>
+              <div className={`${styles.paraContainer3}`}>
+                <div className={`${styles.imageText}`}>
+                  <div className={`${styles.imageCompare}`}>
+                    <div>
+                      <ZoomableImage
+                        src={`${basePath}/images/ReHarvest3Before.png`}
+                        alt="Manage orders page before"
+                        width={905}
+                        height={857}
+                        className={styles.image2}
+                      />
+                    </div>
+                  </div>
 
-              <div className={`${styles.paraContainer2}`}>
-                <div className={`${styles.heading2} ${styles.grassGreen}`}>
-                  After
+                  <div className={`${styles.paraContainer2}`}>
+                    <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                      Before
+                    </div>
+
+                    <div className={`${styles.body} ${styles.text}`}>
+                      It was a very simple page with no filters or way to sort
+                      orders. There is only one action button to export order
+                      details as a spreadsheet. This was very limiting if the
+                      wholesaler wanted to handle the orders one one central
+                      platform.
+                    </div>
+                  </div>
                 </div>
 
-                <div className={`${styles.body} ${styles.text}`}>
-                  I swapped the colours of the dropdown and add to cart buttons
-                  to make the add to cart have higher importance. I also made
-                  the dropdown arrow a dark green to maintain consistency of
-                  button actions.
+                <div className={`${styles.icon}`}>
+                  <ArrowDown size={24} color="#82a36b" weight="fill" />
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div className={`${styles.heading1} ${styles.forestGreen}`}>
-            Improving wholesaler page navigation
-          </div>
-
-          <div className={`${styles.paraContainer3}`}>
-            <div className={`${styles.imageText}`}>
-              <div className={`${styles.imageCompare}`}>
-                <div>
-                  <ZoomableImage
-                    src={`${basePath}/images/ReHarvest2Before.png`}
-                    alt="Wholsaler insights page before"
-                    width={905}
-                    height={857}
-                    className={styles.image2}
-                  />
+                <div className={`${styles.icon}`}>
+                  <ArrowDown size={24} color="#82a36b" weight="fill" />
                 </div>
-              </div>
-
-              <div className={`${styles.paraContainer2}`}>
-                <div className={`${styles.heading2} ${styles.grassGreen}`}>
-                  Before
+                <div className={`${styles.icon}`}>
+                  <ArrowDown size={24} color="#82a36b" weight="fill" />
                 </div>
 
-                <div className={`${styles.body} ${styles.text}`}>
-                  There were missing back to storefront page buttons so it was
-                  more inconvenient and unclear how to navigate back to the
-                  wholesaler dashboard.
-                </div>
-              </div>
-            </div>
+                <div className={`${styles.imageText}`}>
+                  <div className={`${styles.imageCompare}`}>
+                    <div>
+                      <ZoomableImage
+                        src={`${basePath}/images/ReHarvest3After.png`}
+                        alt="Manage orders page after"
+                        width={905}
+                        height={857}
+                        className={styles.image2}
+                      />
+                    </div>
+                  </div>
 
-            <div className={`${styles.icon}`}>
-              <ArrowDown size={24} color="#82a36b" weight="fill" />
-            </div>
-            <div className={`${styles.icon}`}>
-              <ArrowDown size={24} color="#82a36b" weight="fill" />
-            </div>
-            <div className={`${styles.icon}`}>
-              <ArrowDown size={24} color="#82a36b" weight="fill" />
-            </div>
+                  <div className={`${styles.paraContainer2}`}>
+                    <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                      After
+                    </div>
 
-            <div className={`${styles.imageText}`}>
-              <div className={`${styles.imageCompare}`}>
-                <div>
-                  <ZoomableImage
-                    src={`${basePath}/images/ReHarvest2After.png`}
-                    alt="Wholsaler insights page before"
-                    width={905}
-                    height={857}
-                    className={styles.image2}
-                  />
-                </div>
-              </div>
-
-              <div className={`${styles.paraContainer2}`}>
-                <div className={`${styles.heading2} ${styles.grassGreen}`}>
-                  After
-                </div>
-
-                <div className={`${styles.body} ${styles.text}`}>
-                  Added a back to store button on the insights page for easy
-                  navigation back to storefront page.
+                    <div className={`${styles.body} ${styles.text}`}>
+                      I added filters and sorting options for each property so
+                      that the wholesaler can customise to their needs. I also
+                      added a search bar to make it even easier to find a
+                      specific order. This way, they can manage their orders on
+                      the platform if they wish.
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
