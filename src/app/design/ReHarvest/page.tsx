@@ -1193,7 +1193,7 @@ export default function ReHarvest() {
                   <div className={`${styles.body} ${styles.text}`}>
                     Added a back to storefront button on the insights page for
                     easy navigation back to storefront page. This way, they
-                    don't need to guess and press around on the header to
+                    don&#39;t need to guess and press around on the header to
                     return.
                   </div>
                 </div>
@@ -1226,8 +1226,8 @@ export default function ReHarvest() {
                       low contrast, hard-to-read actions buttons
                     </span>
                     , and the listing produce container below. This can make it
-                    confusing for new time users as there aren't clear points of
-                    focus.
+                    confusing for new time users as there aren&#39;t clear
+                    points of focus.
                   </div>
                 </div>
               </div>
