@@ -1032,7 +1032,7 @@ export default function ReHarvest() {
                   products, and adding new produce. It might also help to add
                   filters to the orders page (like &#39;Not Started&#39;,
                   &#39;In Progress&#39;, or &#39;Completed&#39;) and include a
-                  way to mark orders as dispatched.”
+                  way to mark orders as dispatched.
                 </div>
               </div>
 
@@ -1155,7 +1155,7 @@ export default function ReHarvest() {
 
                   <div className={`${styles.body} ${styles.text}`}>
                     There were <span className={styles.bodyb}> missing</span>{" "}
-                    "back to storefront" page buttons so it was more
+                    &#34;back to storefront&#34; page buttons so it was more
                     inconvenient and unclear how to navigate back to the
                     wholesaler dashboard.
                   </div>
@@ -1267,8 +1267,9 @@ export default function ReHarvest() {
                     </span>{" "}
                     with orange and light coloured text. I also improved the
                     <span className={styles.bodyb}> microcopy </span> of the
-                    button "My Orders" to "Manage Orders" to clarify that they
-                    can access any orders from their storefront.
+                    button &#34;My Orders&#34; to &#34;Manage Orders&#34; to
+                    clarify that they can access any orders from their
+                    storefront.
                   </div>
                 </div>
               </div>
