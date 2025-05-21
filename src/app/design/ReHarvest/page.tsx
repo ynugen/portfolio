@@ -888,7 +888,7 @@ export default function ReHarvest() {
                 <span className={`${styles.bodyb}`}>
                   unmoderated usability testing
                 </span>{" "}
-                using qualitative and quantitative measure with five
+                using qualitative and quantitative measures with five
                 participants, all university students who regularly shopped for
                 their own groceries. These budget-friendly individuals were
                 frustrated about rising supermarket prices, and had interest in
