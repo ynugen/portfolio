@@ -22,8 +22,6 @@ export default function ReHarvest() {
   const basePath = config.basePath;
   return (
     <div className="page">
-      <div className={styles.container}></div>
-
       {/* Title */}
       <div className={`${styles.titleContainer} text-center`}>
         <span className={`${styles.title}`}>
@@ -55,11 +53,11 @@ export default function ReHarvest() {
         {/* Project Overview */}
         <div className={`${styles.paraContainer}`}>
           <div
-            className={`${styles.heading} ${styles.headingContainer} ${styles.forestGreen}`}
+            className={`${styles.heading} ${styles.headingContainer} ${styles.matchaGreen}`}
           >
             Project Overview
           </div>
-          <div className={`${styles.bodyb} ${styles.forestGreen}`}>Team</div>
+          <div className={`${styles.heading3} ${styles.forestGreen}`}>Team</div>
           <div className={`${styles.body} ${styles.text}`}>
             I collaborated in a cross-functional hackathon team of five with two
             front-end developers, two back-end developers, and myself as the
@@ -68,7 +66,7 @@ export default function ReHarvest() {
             intuitive web experience.
           </div>
 
-          <div className={`${styles.bodyb} ${styles.forestGreen}`}>Role</div>
+          <div className={`${styles.heading3} ${styles.forestGreen}`}>Role</div>
           <div className={`${styles.body} ${styles.text}`}>
             As the designer on the team, I led the end-to-end design process,
             from initial ideation and user flows to creating low- and
@@ -77,7 +75,9 @@ export default function ReHarvest() {
             across the platform.
           </div>
 
-          <div className={`${styles.bodyb} ${styles.forestGreen}`}>Tools</div>
+          <div className={`${styles.heading3} ${styles.forestGreen}`}>
+            Tools
+          </div>
           <div className={`${styles.body} ${styles.text}`}>
             <ul>
               <li>Figma</li>
@@ -91,7 +91,7 @@ export default function ReHarvest() {
         {/* Problem Statement */}
         <div className={styles.paraContainer}>
           <div
-            className={`${styles.heading} ${styles.headingContainer} ${styles.forestGreen}`}
+            className={`${styles.heading} ${styles.headingContainer} ${styles.matchaGreen}`}
           >
             Problem Statement
           </div>
@@ -115,7 +115,7 @@ export default function ReHarvest() {
 
         <div className={styles.paraContainer}>
           <div
-            className={`${styles.heading} ${styles.headingContainer} ${styles.forestGreen}`}
+            className={`${styles.heading} ${styles.headingContainer} ${styles.matchaGreen}`}
           >
             Competitor Analysis
           </div>
@@ -203,7 +203,7 @@ export default function ReHarvest() {
         {/* User Personas */}
         <div className={styles.paraContainer}>
           <div
-            className={`${styles.heading} ${styles.headingContainer} ${styles.forestGreen}`}
+            className={`${styles.heading} ${styles.headingContainer} ${styles.matchaGreen}`}
           >
             User Personas
           </div>
@@ -212,7 +212,7 @@ export default function ReHarvest() {
             <div className={`${styles.person}`}>
               {/* Jess Nguyen */}
               <div className={`${styles.body} ${styles.text}`}>
-                <div className={`${styles.heading1} ${styles.forestGreen}`}>
+                <div className={`${styles.heading1} ${styles.goldenSquash}`}>
                   Jess Nguyen
                 </div>
                 <div className={styles.personaContainer}>
@@ -360,7 +360,7 @@ export default function ReHarvest() {
             <div className={`${styles.person}`}>
               {/* Paul De Luca */}
               <div className={`${styles.body} ${styles.text}`}>
-                <div className={`${styles.heading1} ${styles.forestGreen}`}>
+                <div className={`${styles.heading1} ${styles.goldenSquash}`}>
                   Paul De Luca
                 </div>
                 <div className={styles.personaContainer}>
@@ -505,7 +505,7 @@ export default function ReHarvest() {
         {/* User Journeys */}
         <div className={`${styles.paraContainer}`}>
           <div
-            className={`${styles.heading} ${styles.headingContainer} ${styles.forestGreen}`}
+            className={`${styles.heading} ${styles.headingContainer} ${styles.matchaGreen}`}
           >
             User Journeys
           </div>
@@ -545,7 +545,7 @@ export default function ReHarvest() {
           </div>
 
           <div className={`${styles.paraContainer}`}>
-            <div className={`${styles.heading} ${styles.forestGreen}`}>
+            <div className={`${styles.heading} ${styles.matchaGreen}`}>
               Ideation
             </div>
 
@@ -738,12 +738,12 @@ export default function ReHarvest() {
 
         {/* Delivery */}
         <div className={`${styles.paraContainer}`}>
-          <div className={`${styles.heading} ${styles.forestGreen}`}>
+          <div className={`${styles.heading} ${styles.matchaGreen}`}>
             Designs
           </div>
 
           <div className={styles.paraContainer}>
-            <div className={`${styles.heading1} ${styles.forestGreen}`}>
+            <div className={`${styles.heading1} ${styles.goldenSquash}`}>
               User Flows
             </div>
 
@@ -782,7 +782,7 @@ export default function ReHarvest() {
           </div>
 
           <div className={styles.paraContainer}>
-            <div className={`${styles.heading1} ${styles.forestGreen}`}>
+            <div className={`${styles.heading1} ${styles.goldenSquash}`}>
               Low-Fidelity Prototypes
             </div>
 
@@ -799,7 +799,7 @@ export default function ReHarvest() {
           </div>
 
           <div className={styles.paraContainer}>
-            <div className={`${styles.heading1} ${styles.forestGreen}`}>
+            <div className={`${styles.heading1} ${styles.goldenSquash}`}>
               High-Fidelity Prototypes
             </div>
 
@@ -830,7 +830,7 @@ export default function ReHarvest() {
             </div>
 
             <div className={styles.paraContainer}>
-              <div className={`${styles.heading1} ${styles.forestGreen}`}>
+              <div className={`${styles.heading1} ${styles.goldenSquash}`}>
                 Customer Flow
               </div>
 
@@ -848,7 +848,7 @@ export default function ReHarvest() {
             </div>
 
             <div className={styles.paraContainer}>
-              <div className={`${styles.heading1} ${styles.forestGreen}`}>
+              <div className={`${styles.heading1} ${styles.goldenSquash}`}>
                 Wholesaler Flow
               </div>
 
@@ -877,7 +877,7 @@ export default function ReHarvest() {
         </div>
 
         <div className={`${styles.paraContainer}`}>
-          <div className={`${styles.heading} ${styles.forestGreen}`}>
+          <div className={`${styles.heading} ${styles.matchaGreen}`}>
             User Testing
           </div>
 
@@ -902,7 +902,7 @@ export default function ReHarvest() {
             </div>
 
             <div className={`${styles.paraContainer}`}>
-              <div className={`${styles.heading1} ${styles.forestGreen}`}>
+              <div className={`${styles.heading1} ${styles.goldenSquash}`}>
                 Goals
               </div>
 
@@ -931,7 +931,7 @@ export default function ReHarvest() {
             </div>
 
             <div className={`${styles.paraContainer}`}>
-              <div className={`${styles.heading1} ${styles.forestGreen}`}>
+              <div className={`${styles.heading1} ${styles.goldenSquash}`}>
                 Summarised Findings
               </div>
 
@@ -1050,12 +1050,12 @@ export default function ReHarvest() {
         </div>
 
         <div className={`${styles.paraContainer}`}>
-          <div className={`${styles.heading} ${styles.forestGreen}`}>
+          <div className={`${styles.heading} ${styles.matchaGreen}`}>
             Refinements
           </div>
 
           <div className={`${styles.paraContainer}`}>
-            <div className={`${styles.heading1} ${styles.forestGreen}`}>
+            <div className={`${styles.heading1} ${styles.goldenSquash}`}>
               Improving button intuitivity
             </div>
 
@@ -1074,7 +1074,7 @@ export default function ReHarvest() {
                 </div>
 
                 <div className={`${styles.paraContainer2}`}>
-                  <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                  <div className={`${styles.heading2} ${styles.forestGreen}`}>
                     Before
                   </div>
 
@@ -1112,7 +1112,7 @@ export default function ReHarvest() {
                 </div>
 
                 <div className={`${styles.paraContainer2}`}>
-                  <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                  <div className={`${styles.heading2} ${styles.forestGreen}`}>
                     After
                   </div>
 
@@ -1130,7 +1130,7 @@ export default function ReHarvest() {
           </div>
 
           <div className={`${styles.paraContainer}`}>
-            <div className={`${styles.heading1} ${styles.forestGreen}`}>
+            <div className={`${styles.heading1} ${styles.goldenSquash}`}>
               Improving wholesaler page navigation
             </div>
 
@@ -1149,7 +1149,7 @@ export default function ReHarvest() {
                 </div>
 
                 <div className={`${styles.paraContainer2}`}>
-                  <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                  <div className={`${styles.heading2} ${styles.forestGreen}`}>
                     Before
                   </div>
 
@@ -1186,7 +1186,7 @@ export default function ReHarvest() {
                 </div>
 
                 <div className={`${styles.paraContainer2}`}>
-                  <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                  <div className={`${styles.heading2} ${styles.forestGreen}`}>
                     After
                   </div>
 
@@ -1213,7 +1213,7 @@ export default function ReHarvest() {
                 </div>
 
                 <div className={`${styles.paraContainer2}`}>
-                  <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                  <div className={`${styles.heading2} ${styles.forestGreen}`}>
                     Before
                   </div>
 
@@ -1255,7 +1255,7 @@ export default function ReHarvest() {
                   </div>
                 </div>
                 <div className={`${styles.paraContainer2}`}>
-                  <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                  <div className={`${styles.heading2} ${styles.forestGreen}`}>
                     After
                   </div>
 
@@ -1276,7 +1276,7 @@ export default function ReHarvest() {
             </div>
 
             <div className={`${styles.paraContainer}`}>
-              <div className={`${styles.heading1} ${styles.forestGreen}`}>
+              <div className={`${styles.heading1} ${styles.goldenSquash}`}>
                 Improving Wholesaler Order Management
               </div>
               <div className={`${styles.paraContainer3}`}>
@@ -1294,7 +1294,7 @@ export default function ReHarvest() {
                   </div>
 
                   <div className={`${styles.paraContainer2}`}>
-                    <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                    <div className={`${styles.heading2} ${styles.forestGreen}`}>
                       Before
                     </div>
 
@@ -1333,7 +1333,7 @@ export default function ReHarvest() {
                   </div>
 
                   <div className={`${styles.paraContainer2}`}>
-                    <div className={`${styles.heading2} ${styles.grassGreen}`}>
+                    <div className={`${styles.heading2} ${styles.forestGreen}`}>
                       After
                     </div>
 
@@ -1352,7 +1352,7 @@ export default function ReHarvest() {
         </div>
 
         <div className={`${styles.paraContainer}`}>
-          <div className={`${styles.heading} ${styles.forestGreen}`}>
+          <div className={`${styles.heading} ${styles.matchaGreen}`}>
             Next Steps
           </div>
 
@@ -1375,8 +1375,9 @@ export default function ReHarvest() {
             <span className={styles.bodyb}>48-hour timeframe</span>. In the
             post-hackathon phase, refining the project gave me a deeper
             appreciation for the{" "}
-            <span className={styles.bodyb}>Double Diamond design process</span>{" "}
-            and the value of iterating based on real user feedback.
+            <span className={styles.bodyb}>Double Diamond</span> design process
+            and the value of iterating based on{" "}
+            <span className={styles.bodyb}>real user feedback</span>.
           </div>
         </div>
       </div>
