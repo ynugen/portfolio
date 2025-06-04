@@ -21,19 +21,16 @@ export default function RootLayout({
       lang="en"
       className={`${pixeloid.variable} ${timetwist.variable} ${helveticaNeue.variable} ${milkyVintage.variable}`}
     >
-      <body
-        className="full-page"
-      >
+      <body className="full-page">
         <DynamicCSS />
         <div className="h-screen w-full page-layout">
-          <Sidebar />
           <MobileHeader />
+          <Sidebar />
 
           <main
             className="flex-1"
             style={{
               backgroundColor: "var(--background)",
-              border: "var(--slate-grey) 1px solid",
             }}
           >
             {children}

@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: calc(var(--square-size) / (1.618 * 2));
-  padding: calc(0.3 * var(--square-size)) calc(var(--square-size) * 2);
+  padding: calc(var(--square-size) / (1.618 * 3)) 0;
+  width: 50%;
 }
 
 .aboutContainer {
@@ -69,9 +70,9 @@
 /* Responsiveness */
 @media (max-width: 768px) {
   .mainContainer {
-    padding: calc(var(--square-size-m) / (1.618 * 3))
-      calc(var(--square-size-m) / (1.618 * 3));
+    padding: calc(var(--square-size-m) / (1.618 * 3)) 0;
     gap: calc(var(--square-size-m) / (1.618 * 2));
+    width: 70%;
   }
   .aboutContainer {
     padding: 0;

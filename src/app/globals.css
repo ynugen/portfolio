@@ -327,10 +327,12 @@
   height: fit-content;
   scroll-behavior: smooth;
   max-height: 100vh;
+  min-height: 100vh;;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: calc(var(--square-size) * 0.4) 0;
+  border: 1px solid var(--slate-grey);
 }
 
 .projects-container {
