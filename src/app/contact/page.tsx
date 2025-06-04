@@ -43,7 +43,7 @@ export default function Contact() {
             fill
             className="object-cover"
             priority
-            style={{ backgroundColor: "var(--matcha)" }}
+            style={{ backgroundColor: "var(--background)" }}
           />
         )}
         {/* Title */}
