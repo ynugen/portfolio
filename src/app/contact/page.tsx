@@ -1,13 +1,38 @@
+"use client";
 import styles from "@/app/styles/Contact.module.css";
 import NavLink from "../components/NavLink";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import config from "../../../next.config.js";
+import Image from "next/image";
 
 export default function Contact() {
+  const [showGif, setShowGif] = useState(false);
+  const basePath = config.basePath;
+
+  useEffect(() => {
+    const timout = setTimeout(() => {
+      setShowGif(true);
+    }, 1200);
+    return () => clearTimeout(timout);
+  }, []);
+
   return (
     <div
       className={`h-screen flex justify-center align-center`}
-      style={{ backgroundColor: "var(--marigold)" }}
+      style={{ backgroundColor: showGif ? "transparent" : "var(--marigold)" }}
     >
+      {/* Show honey animation */}
+      {showGif && (
+        <Image
+          src={`${basePath}/images/honey.gif`}
+          alt="Melting honey animation"
+          fill
+          className="object-cover"
+          priority
+        />
+      )}
+
       <div className="page flex flex-col align-center">
         <div
           className="title-2 peach-dropshadow page-title-container h-[var(--title-font-size)] text-center"
