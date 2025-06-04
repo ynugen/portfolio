@@ -436,3 +436,14 @@ ul {
   }
 }
 
+.scroll-ease-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.scroll-ease-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+

@@ -78,6 +78,7 @@
   text-transform: uppercase;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: var(--Text, #3c3c3b);
+  line-height: 1;
 }
 
 .heading1 {

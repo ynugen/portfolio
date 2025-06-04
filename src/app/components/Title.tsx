@@ -5,12 +5,14 @@ type TitleProps = {
   children: React.ReactNode;
   className?: string;
   color?: string;
+  isVertical?: boolean;
 };
 
 export default function Title({
   children,
   className = "title-1 flex h-[6.5rem]",
   color = "var(--marigold)",
+  isVertical = false,
 }: TitleProps) {
   const titleRef = useRef<HTMLDivElement>(null);
   const [shadowStyle, setShadowStyle] = useState({});
@@ -44,7 +46,10 @@ export default function Title({
       }
 
       setShadowStyle({
-        textShadow: `${offsetX}px 0px 0px ${color}`,
+        writingMode: isVertical ? "sideways-lr" : "horizontal-tb",
+        textShadow: isVertical
+          ? `0px ${offsetX}px 0px ${color}`
+          : `${offsetX}px 0px 0px ${color}`,
       });
     };
 
