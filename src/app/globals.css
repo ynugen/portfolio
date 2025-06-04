@@ -428,7 +428,7 @@
     );
   }
   .page-title-container {
-    padding: calc(var(--square-size-s) * 0.4) 0 0 0;
+    padding: 0 0 0 0;
   }
   .projects-container {
     padding: calc(var(--square-size-s) * 0.2) calc(var(--square-size-s) * 0.3);

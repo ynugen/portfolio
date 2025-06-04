@@ -82,6 +82,9 @@
     flex-direction: column;
     padding: 0 calc(var(--square-size) / (1.618 * 2));
   }
+  .linksContainer {
+    gap: calc(var(--square-size-m) / (1.618 * 2));
+  }
   .small {
     font-size: calc(var(--title-font-size-m) / (1.618 * 2));
   }
@@ -92,9 +95,9 @@
 
 @media (max-width: 480px) {
   .mainContainer {
-    padding: calc(var(--square-size-s) / (1.618 * 2))
-      calc(var(--square-size-s) / (1.618 * 2));
+    padding: calc(var(--square-size-s) / (1.618 * 2)) 0;
     gap: calc(var(--square-size-s) / (1.618 * 5));
+    width: 70%;
   }
   .aboutContainer {
     padding: 0;
@@ -103,6 +106,11 @@
   .container {
     flex-direction: column;
     padding: 0;
+  }
+  .linksContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--square-size-s) / (1.618 * 3));
   }
   .small {
     font-size: calc(var(--title-font-size-s) / (1.618 * 3));

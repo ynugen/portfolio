@@ -24,11 +24,11 @@ export default function Contact() {
 
   return (
     <div
-      className={`relative h-screen flex justify-center align-center`}
+      className={`relative h-screen flex justify-start align-center`}
       style={{ backgroundColor: "var(--marigold)" }}
     >
       <div
-        className="page flex flex-col align-center justify-center"
+        className="page flex flex-col align-center justify-start"
         style={
           hideGif
             ? { backgroundColor: "var(--marigold)" }
