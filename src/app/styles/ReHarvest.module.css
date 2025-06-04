@@ -32,7 +32,7 @@
   line-height: normal;
 
   /* Animation */
-  animation: textShadowEaseOut 1s ease-out;
+  animation: textShadowEaseOut 2s ease-out;
 }
 
 @keyframes textShadowEaseOut {
@@ -165,18 +165,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: calc(0.3 * var(--square-size)) 0 0 0;
-  gap: calc(var(--square-size) * 0.05);
 }
 
 .bodyContainer {
   display: flex;
-  width: 100%;
-  overflow-x: hidden;
+  width: 50%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: calc(0.3 * var(--square-size)) calc(var(--square-size) * 2);
   gap: calc(var(--square-size) * 0.3);
 }
 
@@ -316,7 +312,6 @@
 /* Responsiveness */
 @media (max-width: 768px) {
   .titleContainer {
-    padding: calc(0.3 * var(--square-size-m));
     gap: calc(var(--square-size-m) * 0.05);
   }
   .title {
@@ -364,6 +359,7 @@
   }
   .bodyContainer {
     padding: calc(0.1 * var(--square-size-m)) calc(var(--square-size-m) * 0.4);
+    width: 80%;
   }
   .paraContainer {
     padding: calc(0.08 * var(--square-size-m)) 0;

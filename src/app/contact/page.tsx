@@ -4,10 +4,13 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div className={`h-screen flex justify-center`}>
-      <div className="page">
+    <div
+      className={`h-screen flex justify-center align-center`}
+      style={{ backgroundColor: "var(--marigold)" }}
+    >
+      <div className="page flex flex-col align-center">
         <div
-          className="title-2 marigold-dropshadow page-title-container h-[var(--title-font-size)] text-center"
+          className="title-2 peach-dropshadow page-title-container h-[var(--title-font-size)] text-center"
           style={{ color: "var(--slate-grey)" }}
         >
           <h2>Let&#39;s Connect</h2>

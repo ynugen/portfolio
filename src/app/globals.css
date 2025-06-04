@@ -57,7 +57,7 @@
   font-weight: bold;
   text-transform: uppercase;
   vertical-align: middle; 
-  letter-spacing: -1.5rem;
+  letter-spacing: calc(var(--square-size) / (-1.68 * 3));
   writing-mode: vertical-lr;
 }
 
@@ -140,6 +140,12 @@
   line-height: normal;
 }
 
+.background-dropshadow {
+  text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--background),
+    0px calc(var(--square-size) * 0.072) 0px var(--background),
+    0px calc(var(--square-size) * 0.038) 0px var(--background);
+}
+
 .matcha-dropshadow {
   text-shadow: 0px calc(var(--square-size) * 0.105) 0px var(--matcha),
     0px calc(var(--square-size) * 0.072) 0px var(--matcha),
@@ -200,7 +206,11 @@
  .body-bi {
   font-size: calc(var(--title-font-size-m) / (1.618 * 3));
  }
-
+ .background-dropshadow {
+  text-shadow: 0px calc(var(--square-size-m) * 0.105) 0px var(--background),
+    0px calc(var(--square-size-m) * 0.072) 0px var(--background),
+    0px calc(var(--square-size-m) * 0.038) 0px var(--background);
+ }
  .matcha-dropshadow {
   text-shadow: 0px calc(var(--square-size-m) * 0.105) 0px var(--matcha),
     0px calc(var(--square-size-m) * 0.072) 0px var(--matcha),
@@ -257,6 +267,12 @@
   font-size: calc(var(--title-font-size-s) / (1.618 * 3));
  }
 
+ .background-dropshadow {
+  text-shadow: 0px calc(var(--square-size-s) * 0.105) 0px var(--background),
+    0px calc(var(--square-size-s) * 0.072) 0px var(--background),
+    0px calc(var(--square-size-s) * 0.038) 0px var(--background);
+ }
+
  .matcha-dropshadow {
   text-shadow: 0px calc(var(--square-size-s) * 0.105) 0px var(--matcha),
     0px calc(var(--square-size-s) * 0.072) 0px var(--matcha),
@@ -291,19 +307,18 @@
 
 
 /* Container Styles */
-
 .full-page {
  background-color: var(--matcha);
  height: 100vh;
  max-height: 100vh;
  overflow: hidden;
- position: relative;;
+ position: relative;
   
 }
 
  .page-layout {
   display: flex;
-  flex-direction: row;;
+  flex-direction: row;
  }
 
 .page {
@@ -312,7 +327,10 @@
   height: fit-content;
   scroll-behavior: smooth;
   max-height: 100vh;
-  padding-bottom: 3rem;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(var(--square-size) * 0.4) 0;
 }
 
 .projects-container {
@@ -330,7 +348,6 @@
   justify-content: center;;
   height: fit-content;
   width: 100%;
-  padding: calc(var(--square-size) * 0.4) 0 0 0;
   pointer-events: none;
   background-color: transparent;
 }
@@ -391,6 +408,7 @@
   .page {
     max-height: none;
     overflow-y: visible;
+    padding: calc(var(--square-size-m) * 0.4) 0;
   }
   .full-page {
     overflow-y: auto;

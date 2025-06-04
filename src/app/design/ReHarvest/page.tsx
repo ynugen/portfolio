@@ -212,16 +212,19 @@ export default function ReHarvest() {
           >
             User Personas
           </div>
-          <div className={`${styles.people}`}>
+          <div ref={easeRef} className={`${styles.people} scroll-ease-in`}>
             {" "}
-            <div className={`${styles.person}`}>
+            <div ref={easeRef} className={`${styles.person} scroll-ease-in`}>
               {/* Jess Nguyen */}
               <div className={`${styles.body} ${styles.text}`}>
                 <div className={`${styles.heading1} ${styles.goldenSquash}`}>
                   Jess Nguyen
                 </div>
                 <div className={styles.personaContainer}>
-                  <div className={styles.profileContainer}>
+                  <div
+                    ref={easeRef}
+                    className={`${styles.profileContainer} scroll-ease-in`}
+                  >
                     <Image
                       src={`${basePath}/images/ReHarvestJess.png`}
                       alt="Jess Nguyen"
@@ -231,7 +234,10 @@ export default function ReHarvest() {
                     />
                   </div>
 
-                  <div className="flex flex-col gap-3">
+                  <div
+                    ref={easeRef}
+                    className="flex flex-col gap-3 scroll-ease-in"
+                  >
                     <div className={`${styles.iconText}`}>
                       {" "}
                       <div className={`${styles.icon}`}>
@@ -263,7 +269,10 @@ export default function ReHarvest() {
               </div>
 
               {/* Goals */}
-              <div className={styles.paraContainer1}>
+              <div
+                ref={easeRef}
+                className={`${styles.paraContainer1} scroll-ease-in`}
+              >
                 {" "}
                 <div
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
@@ -286,7 +295,10 @@ export default function ReHarvest() {
               </div>
 
               {/* Behavioural */}
-              <div className={styles.paraContainer1}>
+              <div
+                ref={easeRef}
+                className={`${styles.paraContainer1} scroll-ease-in`}
+              >
                 <div
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
                 >
@@ -309,7 +321,10 @@ export default function ReHarvest() {
               </div>
 
               {/* Pain Points */}
-              <div className={styles.paraContainer1}>
+              <div
+                ref={easeRef}
+                className={`${styles.paraContainer1} scroll-ease-in`}
+              >
                 {" "}
                 <div
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
@@ -336,7 +351,10 @@ export default function ReHarvest() {
               </div>
 
               {/* Needs */}
-              <div className={styles.paraContainer1}>
+              <div
+                ref={easeRef}
+                className={`${styles.paraContainer1} scroll-ease-in`}
+              >
                 {" "}
                 <div
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
@@ -362,14 +380,17 @@ export default function ReHarvest() {
                 </div>
               </div>
             </div>
-            <div className={`${styles.person}`}>
+            <div ref={easeRef} className={`${styles.person} scroll-ease-in`}>
               {/* Paul De Luca */}
               <div className={`${styles.body} ${styles.text}`}>
                 <div className={`${styles.heading1} ${styles.goldenSquash}`}>
                   Paul De Luca
                 </div>
-                <div className={styles.personaContainer}>
-                  <div className={styles.profileContainer}>
+                <div className={`${styles.personaContainer}`}>
+                  <div
+                    ref={easeRef}
+                    className={`${styles.profileContainer} scroll-ease-in`}
+                  >
                     <Image
                       src={`${basePath}/images/ReHarvestPaul.png`}
                       alt="Jess Nguyen"
@@ -379,7 +400,10 @@ export default function ReHarvest() {
                     />
                   </div>
 
-                  <div className="flex flex-col gap-3">
+                  <div
+                    ref={easeRef}
+                    className="flex flex-col gap-3 scroll-ease-in"
+                  >
                     <div className={`${styles.iconText}`}>
                       {" "}
                       <div className={`${styles.icon}`}>
@@ -412,7 +436,10 @@ export default function ReHarvest() {
               </div>
 
               {/* Goals */}
-              <div className={styles.paraContainer1}>
+              <div
+                ref={easeRef}
+                className={`${styles.paraContainer1} scroll-ease-in`}
+              >
                 {" "}
                 <div
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
@@ -433,7 +460,10 @@ export default function ReHarvest() {
               </div>
 
               {/* Behavioural */}
-              <div className={styles.paraContainer1}>
+              <div
+                ref={easeRef}
+                className={`${styles.paraContainer1} scroll-ease-in`}
+              >
                 <div
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
                 >
@@ -454,7 +484,10 @@ export default function ReHarvest() {
               </div>
 
               {/* Pain Points */}
-              <div className={styles.paraContainer1}>
+              <div
+                ref={easeRef}
+                className={`${styles.paraContainer1} scroll-ease-in`}
+              >
                 {" "}
                 <div
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
@@ -478,7 +511,10 @@ export default function ReHarvest() {
               </div>
 
               {/* Needs */}
-              <div className={styles.paraContainer1}>
+              <div
+                ref={easeRef}
+                className={`${styles.paraContainer1} scroll-ease-in`}
+              >
                 {" "}
                 <div
                   className={`${styles.heading2} ${styles.forestGreen} ${styles.iconText}`}
@@ -567,7 +603,10 @@ export default function ReHarvest() {
             aligned closely with our goals and user needs:
           </div>
 
-          <div className={styles.paraContainer}>
+          <div
+            ref={easeRef}
+            className={`${styles.paraContainer} scroll-ease-in`}
+          >
             <div className={`${styles.heading2} ${styles.forestGreen}`}>
               1. Seasonal Produce Tracker
             </div>
@@ -632,7 +671,10 @@ export default function ReHarvest() {
             </div>
           </div>
 
-          <div className={styles.paraContainer}>
+          <div
+            ref={easeRef}
+            className={`${styles.paraContainer} scroll-ease-in`}
+          >
             <div className={`${styles.heading2} ${styles.forestGreen}`}>
               2. Marketplace for Rescued Produce{" "}
               <span className={`${styles.bodyi} ${styles.goldenSquash}`}>
@@ -713,7 +755,10 @@ export default function ReHarvest() {
             </div>
           </div>
 
-          <div className={styles.paraContainer}>
+          <div
+            ref={easeRef}
+            className={`${styles.paraContainer} scroll-ease-in`}
+          >
             <div className={`${styles.body}`}>
               Ultimately, we decided to move forward with the{" "}
               <span className={`${styles.bodyb} ${styles.grassGreen}`}>
@@ -730,13 +775,16 @@ export default function ReHarvest() {
           </div>
         </div>
 
-        {/* Delivery */}
+        {/* Designs */}
         <div ref={easeRef} className={`${styles.paraContainer} scroll-ease-in`}>
           <div className={`${styles.heading} ${styles.matchaGreen}`}>
             Designs
           </div>
 
-          <div className={styles.paraContainer}>
+          <div
+            ref={easeRef}
+            className={`${styles.paraContainer} scroll-ease-in`}
+          >
             <div className={`${styles.heading1} ${styles.goldenSquash}`}>
               User Flows
             </div>
@@ -775,7 +823,10 @@ export default function ReHarvest() {
             </div>
           </div>
 
-          <div className={styles.paraContainer}>
+          <div
+            ref={easeRef}
+            className={`${styles.paraContainer} scroll-ease-in`}
+          >
             <div className={`${styles.heading1} ${styles.goldenSquash}`}>
               Low-Fidelity Prototypes
             </div>
@@ -792,7 +843,10 @@ export default function ReHarvest() {
             </div>
           </div>
 
-          <div className={styles.paraContainer}>
+          <div
+            ref={easeRef}
+            className={`${styles.paraContainer} scroll-ease-in`}
+          >
             <div className={`${styles.heading1} ${styles.goldenSquash}`}>
               High-Fidelity Prototypes
             </div>
@@ -823,7 +877,10 @@ export default function ReHarvest() {
               />
             </div>
 
-            <div className={styles.paraContainer}>
+            <div
+              ref={easeRef}
+              className={`${styles.paraContainer} scroll-ease-in`}
+            >
               <div className={`${styles.heading1} ${styles.goldenSquash}`}>
                 Customer Flow
               </div>
@@ -841,7 +898,10 @@ export default function ReHarvest() {
               </div>
             </div>
 
-            <div className={styles.paraContainer}>
+            <div
+              ref={easeRef}
+              className={`${styles.paraContainer} scroll-ease-in`}
+            >
               <div className={`${styles.heading1} ${styles.goldenSquash}`}>
                 Wholesaler Flow
               </div>
@@ -895,7 +955,10 @@ export default function ReHarvest() {
               </div>
             </div>
 
-            <div className={`${styles.paraContainer}`}>
+            <div
+              ref={easeRef}
+              className={`${styles.paraContainer} scroll-ease-in`}
+            >
               <div className={`${styles.heading1} ${styles.goldenSquash}`}>
                 Goals
               </div>
@@ -924,12 +987,18 @@ export default function ReHarvest() {
               </div>
             </div>
 
-            <div className={`${styles.paraContainer}`}>
+            <div
+              ref={easeRef}
+              className={`${styles.paraContainer} scroll-ease-in`}
+            >
               <div className={`${styles.heading1} ${styles.goldenSquash}`}>
                 Summarised Findings
               </div>
 
-              <div className={`${styles.paraContainer}`}>
+              <div
+                ref={easeRef}
+                className={`${styles.paraContainer} scroll-ease-in`}
+              >
                 <div className={`${styles.heading2} ${styles.forestGreen}`}>
                   Customer Flow
                 </div>
@@ -962,7 +1031,10 @@ export default function ReHarvest() {
                 </div>
               </div>
 
-              <div className={`flex justify-center`}>
+              <div
+                ref={easeRef}
+                className={`flex justify-center scroll-ease-in`}
+              >
                 <Image
                   src={`${basePath}/images/ReHarvestCustomerBarChart.png`}
                   alt="Customer Feedback"
@@ -972,7 +1044,10 @@ export default function ReHarvest() {
                 />
               </div>
 
-              <div className={`${styles.paraContainer}`}>
+              <div
+                ref={easeRef}
+                className={`${styles.paraContainer} scroll-ease-in`}
+              >
                 <div className={`${styles.heading2} ${styles.forestGreen}`}>
                   Wholesaler Flow
                 </div>
@@ -1030,7 +1105,10 @@ export default function ReHarvest() {
                 </div>
               </div>
 
-              <div className={`flex justify-center`}>
+              <div
+                ref={easeRef}
+                className={`flex justify-center scroll-ease-in`}
+              >
                 <Image
                   src={`${basePath}/images/ReHarvestWholesalerBarChart.png`}
                   alt="Customer Feedback"
@@ -1048,7 +1126,10 @@ export default function ReHarvest() {
             Refinements
           </div>
 
-          <div className={`${styles.paraContainer}`}>
+          <div
+            ref={easeRef}
+            className={`${styles.paraContainer} scroll-ease-in`}
+          >
             <div className={`${styles.heading1} ${styles.goldenSquash}`}>
               Improving button intuitivity
             </div>
@@ -1123,7 +1204,10 @@ export default function ReHarvest() {
             </div>
           </div>
 
-          <div className={`${styles.paraContainer}`}>
+          <div
+            ref={easeRef}
+            className={`${styles.paraContainer} scroll-ease-in`}
+          >
             <div className={`${styles.heading1} ${styles.goldenSquash}`}>
               Improving wholesaler page navigation
             </div>
@@ -1268,76 +1352,79 @@ export default function ReHarvest() {
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className={`${styles.paraContainer}`}>
-              <div className={`${styles.heading1} ${styles.goldenSquash}`}>
-                Improving Wholesaler Order Management
+          <div
+            ref={easeRef}
+            className={`${styles.paraContainer} scroll-ease-in`}
+          >
+            <div className={`${styles.heading1} ${styles.goldenSquash}`}>
+              Improving Wholesaler Order Management
+            </div>
+            <div className={`${styles.paraContainer3}`}>
+              <div className={`${styles.imageText}`}>
+                <div className={`${styles.imageCompare}`}>
+                  <div>
+                    <ZoomableImage
+                      src={`${basePath}/images/ReHarvest3Before.png`}
+                      alt="Manage orders page before"
+                      width={905}
+                      height={857}
+                      className={styles.image2}
+                    />
+                  </div>
+                </div>
+
+                <div className={`${styles.paraContainer2}`}>
+                  <div className={`${styles.heading2} ${styles.forestGreen}`}>
+                    Before
+                  </div>
+
+                  <div className={`${styles.body} ${styles.text}`}>
+                    It was a very simple page with{" "}
+                    <span className={styles.bodyb}>no filters </span> or way to
+                    sort orders. There is only one action button to export order
+                    details as a spreadsheet. This was very limiting if the
+                    wholesaler wanted to handle the orders one one central
+                    platform.
+                  </div>
+                </div>
               </div>
-              <div className={`${styles.paraContainer3}`}>
-                <div className={`${styles.imageText}`}>
-                  <div className={`${styles.imageCompare}`}>
-                    <div>
-                      <ZoomableImage
-                        src={`${basePath}/images/ReHarvest3Before.png`}
-                        alt="Manage orders page before"
-                        width={905}
-                        height={857}
-                        className={styles.image2}
-                      />
-                    </div>
-                  </div>
 
-                  <div className={`${styles.paraContainer2}`}>
-                    <div className={`${styles.heading2} ${styles.forestGreen}`}>
-                      Before
-                    </div>
+              <div className={`${styles.icon}`}>
+                <ArrowDown size={24} color="#82a36b" weight="fill" />
+              </div>
+              <div className={`${styles.icon}`}>
+                <ArrowDown size={24} color="#82a36b" weight="fill" />
+              </div>
+              <div className={`${styles.icon}`}>
+                <ArrowDown size={24} color="#82a36b" weight="fill" />
+              </div>
 
-                    <div className={`${styles.body} ${styles.text}`}>
-                      It was a very simple page with{" "}
-                      <span className={styles.bodyb}>no filters </span> or way
-                      to sort orders. There is only one action button to export
-                      order details as a spreadsheet. This was very limiting if
-                      the wholesaler wanted to handle the orders one one central
-                      platform.
-                    </div>
+              <div className={`${styles.imageText}`}>
+                <div className={`${styles.imageCompare}`}>
+                  <div>
+                    <ZoomableImage
+                      src={`${basePath}/images/ReHarvest3After.png`}
+                      alt="Manage orders page after"
+                      width={905}
+                      height={857}
+                      className={styles.image2}
+                    />
                   </div>
                 </div>
 
-                <div className={`${styles.icon}`}>
-                  <ArrowDown size={24} color="#82a36b" weight="fill" />
-                </div>
-                <div className={`${styles.icon}`}>
-                  <ArrowDown size={24} color="#82a36b" weight="fill" />
-                </div>
-                <div className={`${styles.icon}`}>
-                  <ArrowDown size={24} color="#82a36b" weight="fill" />
-                </div>
-
-                <div className={`${styles.imageText}`}>
-                  <div className={`${styles.imageCompare}`}>
-                    <div>
-                      <ZoomableImage
-                        src={`${basePath}/images/ReHarvest3After.png`}
-                        alt="Manage orders page after"
-                        width={905}
-                        height={857}
-                        className={styles.image2}
-                      />
-                    </div>
+                <div className={`${styles.paraContainer2}`}>
+                  <div className={`${styles.heading2} ${styles.forestGreen}`}>
+                    After
                   </div>
 
-                  <div className={`${styles.paraContainer2}`}>
-                    <div className={`${styles.heading2} ${styles.forestGreen}`}>
-                      After
-                    </div>
-
-                    <div className={`${styles.body} ${styles.text}`}>
-                      I added filters and sorting options for each property so
-                      that the wholesaler can customise to their needs. I also
-                      added a search bar to make it even easier to find a
-                      specific order. This way, they can manage their orders on
-                      the platform if they wish.
-                    </div>
+                  <div className={`${styles.body} ${styles.text}`}>
+                    I added filters and sorting options for each property so
+                    that the wholesaler can customise to their needs. I also
+                    added a search bar to make it even easier to find a specific
+                    order. This way, they can manage their orders on the
+                    platform if they wish.
                   </div>
                 </div>
               </div>
