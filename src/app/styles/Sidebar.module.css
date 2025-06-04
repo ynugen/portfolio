@@ -21,6 +21,13 @@
   background-color: var(--matcha);
 }
 
+.sidebarWrapper {
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  /* Optional: smooth opacity/fade as well */
+  transition-property: width, opacity, transform;
+}
+
 @media (max-width: 768px) {
   .sidebarExpanded {
     display: none;
