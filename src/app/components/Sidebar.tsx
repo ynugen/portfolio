@@ -14,17 +14,12 @@ const basePath = config.basePath;
 const Sidebar: React.FC = () => {
   const pathname = usePathname();
   const [handleClick, setHandleClick] = useState<(() => void) | null>(null);
-  const [isProjectPage, setIsProjectPage] = useState(false);
-
+  const isProjectPage = pathname.split("/").filter(Boolean).length >= 2;
   useEffect(() => {
-    // Only set the click handler on the client
+    // Set click handler on the client
     setHandleClick(() => () => {
       window.location.href = `${basePath}${navLinks.contact[0].href}`;
     });
-
-    const currentPath = window.location.pathname;
-    const segments = currentPath.split("/").filter(Boolean);
-    setIsProjectPage(segments.length >= 2);
   }, []);
 
   return (
