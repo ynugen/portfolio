@@ -41,11 +41,6 @@
   transform: scale(1.05);
 }
 
-.mainContainer:hover .projectTitle,
-.mainContainer:hover .projectDesc {
-  font-style: italic;
-}
-
 .mainContainer:hover .imageContainer {
   transform: scale(1.05);
 }
