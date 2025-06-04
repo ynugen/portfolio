@@ -46,10 +46,8 @@ export default function Title({
       }
 
       setShadowStyle({
-        writingMode: isVertical ? "sideways-lr" : "horizontal-tb",
-        textShadow: isVertical
-          ? `0px ${offsetX}px 0px ${color}`
-          : `${offsetX}px 0px 0px ${color}`,
+        writingMode: isVertical ? "vertical-lr" : "horizontal-tb",
+        textShadow: `${offsetX}px 0px 0px ${color}`,
       });
     };
 

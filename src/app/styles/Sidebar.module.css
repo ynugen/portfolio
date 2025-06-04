@@ -52,7 +52,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  writing-mode: sideways-lr;
+  text-orientation: upright;
+  border-bottom: var(--slate-grey) 1px solid;
 }
 
 .imageContainer {

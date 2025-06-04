@@ -22,9 +22,6 @@ const Sidebar: React.FC = () => {
     });
 
     const currentPath = window.location.pathname;
-    // Print currentPath in the terminal (dev server console)
-    // eslint-disable-next-line no-console
-    // console.log("Sidebar currentPath:", currentPath);
     const segments = currentPath.split("/").filter(Boolean);
     setIsProjectPage(segments.length >= 2);
   }, []);
@@ -39,9 +36,9 @@ const Sidebar: React.FC = () => {
       {isProjectPage && (
         <div className={`${styles.sidebarCollapsed}`}>
           {/* Name */}
-          <div className={`title-1 grey flex ${styles.verticalNameContainer}`}>
+          <div className={`title-11 grey flex ${styles.verticalNameContainer}`}>
             <Title
-              className="title-1 flex"
+              className="title-11 flex"
               color="var(--marigold)"
               isVertical={true}
             >
@@ -49,6 +46,75 @@ const Sidebar: React.FC = () => {
                 <h1>AYIMA</h1>
               </Link>
             </Title>
+          </div>
+
+          {/* Navigation Links */}
+          <div className={`${styles.navContainer}`}>
+            {/* Page Links */}
+            <div className={`${styles.pageLinks}`}>
+              {navLinks.main.map((link) => (
+                <NavLink key={link.href} direction="default" alt="arrow">
+                  <h3>
+                    <Link
+                      href={link.href}
+                      className={`link`}
+                      style={{
+                        textShadow:
+                          pathname === link.href
+                            ? `calc(var(--square-size) * 0.02) 0px 0px ${link.color}`
+                            : "var(--slate-grey)",
+                        color: `var(--slate-grey)`,
+                        transition: "text-shadow 0.3s ease", // Add transition for smooth animation
+                      }}
+                      onMouseEnter={(e) =>
+                        (e.currentTarget.style.textShadow = `calc(var(--square-size) * 0.02) 0px 0px ${link.color}`)
+                      }
+                      onMouseLeave={(e) =>
+                        (e.currentTarget.style.textShadow =
+                          pathname === link.href
+                            ? `calc(var(--square-size) * 0.02) 0px 0px ${link.color}`
+                            : "none")
+                      }
+                    >
+                      {link.label}
+                    </Link>
+                  </h3>
+                </NavLink>
+              ))}
+            </div>
+
+            {/* Contact Links */}
+            <div className={`${styles.contactLinks}`}>
+              {navLinks.contact.map((link) => (
+                <NavLink key={link.href} direction="diagonal" alt="arrow">
+                  <h3>
+                    <Link
+                      href={link.href}
+                      className={`link`}
+                      style={{
+                        textShadow:
+                          pathname === link.href
+                            ? `calc(var(--square-size) * 0.02) 0px 0px ${link.color}`
+                            : "var(--slate-grey)",
+                        color: `var(--slate-grey)`,
+                        transition: "text-shadow 0.3s ease", // Add transition for smooth animation
+                      }}
+                      onMouseEnter={(e) =>
+                        (e.currentTarget.style.textShadow = `calc(var(--square-size) * 0.02) 0px 0px ${link.color}`)
+                      }
+                      onMouseLeave={(e) =>
+                        (e.currentTarget.style.textShadow =
+                          pathname === link.href
+                            ? `calc(var(--square-size) * 0.02) 0px 0px ${link.color}`
+                            : "none")
+                      }
+                    >
+                      {link.label}
+                    </Link>
+                  </h3>
+                </NavLink>
+              ))}
+            </div>
           </div>
         </div>
       )}

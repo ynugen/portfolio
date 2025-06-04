@@ -176,7 +176,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: calc(0.3 * var(--square-size)) calc(var(--square-size) * 0.8);
+  padding: calc(0.3 * var(--square-size)) calc(var(--square-size) * 2);
   gap: calc(var(--square-size) * 0.3);
 }
 

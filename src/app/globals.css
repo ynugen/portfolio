@@ -51,6 +51,15 @@
   vertical-align: middle;
 }
 
+.title-11 {
+   font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
+  font-size: var(--title-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle; 
+  letter-spacing: -1.5rem;
+}
+
 .title-2 {
   font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
   font-size: calc(var(--title-font-size) / 1.618);
