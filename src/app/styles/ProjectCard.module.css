@@ -41,6 +41,15 @@
   transform: scale(1.05);
 }
 
+.mainContainer:hover .projectTitle,
+.mainContainer:hover .projectDesc {
+  font-style: italic;
+}
+
+.mainContainer:hover .imageContainer {
+  transform: scale(1.05);
+}
+
 .projectTitle {
   font-family: "Helvetica-Neue", sans-serif;
   font-weight: 600;
