@@ -179,6 +179,7 @@
 .headingContainer {
   width: 100%;
 }
+
 .paraContainer {
   display: flex;
   flex-direction: column;
