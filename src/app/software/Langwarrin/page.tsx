@@ -78,21 +78,21 @@ export default function Langwarrin() {
             Langwarrin Community Centre. Working in an agile environment, our
             goal was to significantly improve usability, customisation options,
             and the overall experience for both users and administrators in the
-            local community. We worked closely with Leona, the Centre's liaison
-            staff member, to implement the new features she requested and to
-            ensure we not only addressed the limitations of their outdated site
-            but also optimised the redesign to better support their current
-            workflow.
+            local community. We worked closely with Leona, the Centre&#39;s
+            liaison staff member, to implement the new features she requested
+            and to ensure we not only addressed the limitations of their
+            outdated site but also optimised the redesign to better support
+            their current workflow.
           </div>
 
           <div className={`${styles.heading3} ${styles.mint}`}>Role</div>
 
           <div className={`${styles.body} grey`}>
             I took the lead on frontend development and design, ensuring a
-            cohesive and user-friendly interface that aligned with the client's
-            needs. I also supported backend development as required,
-            collaborating closely with the rest of the team to ensure smooth
-            integration across the stack.
+            cohesive and user-friendly interface that aligned with the
+            client&#39;s needs. I also supported backend development as
+            required, collaborating closely with the rest of the team to ensure
+            smooth integration across the stack.
           </div>
 
           <div className={`${styles.heading3} ${styles.mint}`}>Tools</div>
