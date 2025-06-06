@@ -30,6 +30,10 @@ html {
 scroll-behavior: smooth;
 }
 
+h3 {
+  scroll-margin-top: 80px; 
+}
+
 .grey {
   color: var(--slate-grey);
 }
@@ -406,8 +410,8 @@ scroll-behavior: smooth;
 .toc {
   position: fixed;
   top:0;
-  right: 0;
-  margin: calc(var(--square-size) * 0.4);
+  left: calc(var(--square-size) * 1.5);
+  margin: calc(var(--square-size) * 1) 0;
 
 }
 
