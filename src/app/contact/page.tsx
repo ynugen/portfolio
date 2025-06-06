@@ -1,7 +1,6 @@
 "use client";
 import styles from "@/app/styles/Contact.module.css";
 import NavLink from "../components/NavLink";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import config from "../../../next.config.js";
 import Image from "next/image";
@@ -103,31 +102,37 @@ export default function Contact() {
           <div className={`${styles.linksContainer} grey`}>
             <NavLink direction="diagonal" alt="arrow">
               <h3>
-                <Link
+                <a
                   href="mailto:amyymanguyen@gmail.com"
                   className={`link2 grey`}
+                  target="_blank"
                 >
                   Email me
-                </Link>
+                </a>
               </h3>
             </NavLink>
 
             <NavLink direction="diagonal" alt="arrow">
               <h3>
-                <Link
+                <a
                   href="https://www.linkedin.com/in/ynugen/"
                   className={`link2 grey`}
+                  target="_blank"
                 >
                   LinkedIn
-                </Link>
+                </a>
               </h3>
             </NavLink>
 
             <NavLink direction="diagonal" alt="arrow">
               <h3>
-                <Link href="https://github.com/ynugen" className={`link2 grey`}>
+                <a
+                  href="https://github.com/ynugen"
+                  className={`link2 grey`}
+                  target="_blank"
+                >
                   GitHub
-                </Link>
+                </a>
               </h3>
             </NavLink>
           </div>
