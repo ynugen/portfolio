@@ -1,7 +1,7 @@
 import NavArrow from "./NavArrow";
 
 type NavLinkProps = {
-  direction: "default" | "diagonal";
+  direction: "default" | "diagonal" | "back";
   alt?: string;
   className?: string;
   children?: React.ReactNode;

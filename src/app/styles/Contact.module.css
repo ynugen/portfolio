@@ -9,8 +9,9 @@
 .aboutContainer {
   display: flex;
   flex-direction: column;
-  padding: calc(var(--square-size) / (1.618 * 2))
-    calc(var(--square-size) / 1.618 / 5) 0 calc(var(--square-size) / 1.618 / 5);
+  padding: 0 calc(var(--square-size) / 1.618 / 5) 0
+    calc(var(--square-size) / 1.618 / 5) 0
+    calc(var(--square-size) / (1.618 * 2));
   gap: calc(var(--square-size) / (1.618 * 15));
 }
 
@@ -25,6 +26,14 @@
   flex-direction: row;
   justify-content: center;
   gap: calc(var(--square-size) / (1.618 * 2));
+}
+
+.backContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 calc(var(--square-size) / (1.618 * 2));
+  position: absolute;
 }
 
 .body {
@@ -84,6 +93,9 @@
   }
   .linksContainer {
     gap: calc(var(--square-size-m) / (1.618 * 2));
+  }
+  .backContainer {
+    display: none;
   }
   .small {
     font-size: calc(var(--title-font-size-m) / (1.618 * 2));

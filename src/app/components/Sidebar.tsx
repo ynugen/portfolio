@@ -26,12 +26,12 @@ const Sidebar: React.FC = () => {
 
   return (
     <div
-      className={styles.sidebar}
+      className={!isAboutPage ? `${styles.sidebar}` : `${styles.backContainer}`}
       style={
         !isProjectPage && !isAboutPage
           ? { width: "calc(var(--square-size)*3)" }
           : isAboutPage
-          ? { width: "0", display: "none" }
+          ? { width: "fit-content" }
           : { width: "var(--square-size)" }
       }
     >
@@ -42,6 +42,7 @@ const Sidebar: React.FC = () => {
             ? `${styles.verticalTitleContainer}`
             : `${styles.titleContainer}`
         }
+        style={isAboutPage ? { width: "0", display: "none" } : {}}
       >
         {/* Scrolling animated text */}
         <div
@@ -124,7 +125,10 @@ const Sidebar: React.FC = () => {
         </div>
       </div>
 
-      <div className={styles.subContainer}>
+      <div
+        className={styles.subContainer}
+        style={isAboutPage ? { width: "0", display: "none" } : {}}
+      >
         {/* About Text */}
         <div
           className={`${styles.aboutContainer}`}

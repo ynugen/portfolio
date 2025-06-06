@@ -4,7 +4,7 @@ import config from "../../../next.config.js";
 // Simple component to render an arrow icon
 
 type ArrowProps = {
-  direction?: "default" | "diagonal";
+  direction?: "default" | "diagonal" | "back";
   alt: string;
   className?: string;
 };
@@ -17,7 +17,12 @@ export default function NavArrow({
   const basePath = config.basePath;
 
   let src = `${basePath}/icons/arrow-default.png`;
-  const imageClass = "arrow object-contain";
+
+  let imageClass = "arrow object-contain";
+
+  if (direction === "back") {
+    imageClass += " scale-x-[-1]";
+  }
 
   if (direction === "diagonal") {
     src = `${basePath}/icons/arrow-diagonal.png`;

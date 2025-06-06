@@ -4,11 +4,14 @@ import NavLink from "../components/NavLink";
 import { useEffect, useState } from "react";
 import config from "../../../next.config.js";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Contact() {
   const [showGif, setShowGif] = useState(false);
   const [hideGif, setHideGif] = useState(false);
   const basePath = config.basePath;
+  const pathname = usePathname();
 
   useEffect(() => {
     setShowGif(true);
@@ -27,13 +30,42 @@ export default function Contact() {
       style={{ backgroundColor: "var(--marigold)" }}
     >
       <div
-        className="page flex flex-col align-center justify-start"
+        className="page flex flex-col align-center justify-start relative"
         style={
           hideGif
             ? { backgroundColor: "var(--marigold)" }
             : { backgroundColor: "transparent" }
         }
       >
+        <div className={`${styles.backContainer} z-[1]`}>
+          <NavLink direction="back" alt="back arrow">
+            <h3>
+              <Link
+                href="/"
+                className={`link`}
+                style={{
+                  textShadow:
+                    pathname === "/"
+                      ? `calc(var(--square-size) * 0.02) 0px 0px var(--peach)`
+                      : "var(--slate-grey)",
+                  color: `var(--slate-grey)`,
+                  transition: "text-shadow 0.3s ease", // Add transition for smooth animation
+                }}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.textShadow = `calc(var(--square-size) * 0.02) 0px 0px var(--peach)`)
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.textShadow =
+                    pathname === "/"
+                      ? `calc(var(--square-size) * 0.02) 0px 0px var(--peach)`
+                      : "none")
+                }
+              >
+                Back
+              </Link>
+            </h3>
+          </NavLink>
+        </div>
         {/* Show honey animation */}
         {showGif && !hideGif && (
           <Image
@@ -61,7 +93,11 @@ export default function Contact() {
               Nguyen MT A. (aka AYIMA) is an aspiring{" "}
             </div>
             <div className={`${styles.pixelBodyB} ${styles.medium}`}>
-              CREATIVE, DESIGNER,
+              CREATIVE,
+            </div>
+            <div className={`${styles.pixelBodyB} ${styles.medium}`}>
+              {" "}
+              DESIGNER,
             </div>
             <div className={`${styles.small} ${styles.pixelBodyB}`}>&</div>
             <div
