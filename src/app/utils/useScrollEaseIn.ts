@@ -18,7 +18,7 @@ export function useScrollEaseIn() {
 
             // Calculate delay based on order in the list
             const index = elementsRef.current.indexOf(el);
-            el.style.transitionDelay = `${index * 0.02}s`;
+            el.style.transitionDelay = `${index * 0.01}s`;
 
             el.classList.add("visible");
             observer.unobserve(el);

@@ -26,6 +26,10 @@
 
 }
 
+html {
+scroll-behavior: smooth;
+}
+
 .grey {
   color: var(--slate-grey);
 }
@@ -67,6 +71,14 @@
   font-weight: normal;
   line-height: normal;
   font-style: italic;
+}
+
+.title-3 {
+  font-family: var(--font-timetwist), serif; /* Use Timetwist variable */
+  font-size: calc(var(--title-font-size) / (1.618 ));
+  font-weight: bold;
+  line-height: normal;
+  font-style: normal;
 }
 
 .subtitle-1 {
@@ -129,6 +141,14 @@
   font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-style: italic;
   font-weight: 500;
+  line-height: normal;
+}
+
+.body-i {
+  font-family: var(--font-helvetica), sans-serif; /* Use Helvetica Neue variable */
+  font-size: calc(var(--title-font-size) / (1.618 * 3));
+  font-style: italic;
+  font-weight: 300;
   line-height: normal;
 }
 
@@ -381,6 +401,14 @@
     (var(--title-font-size) / (1.618 * 2) + 0.025 * var(--square-size))
   );
   padding-top: calc(0.025 * var(--square-size));
+}
+
+.toc {
+  position: fixed;
+  top:0;
+  right: 0;
+  margin: calc(var(--square-size) * 0.4);
+
 }
 
 @media (max-width: 768px) {

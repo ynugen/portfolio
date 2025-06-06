@@ -5,7 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ZoomableImage from "../../components/ZoomableImage";
-import { useScrollEaseIn } from "../../components/useScrollEaseIn";
+import { useScrollEaseIn } from "../../utils/useScrollEaseIn";
+import generateSlug from "../../utils/slugify";
+import TableOfContents from "../../components/TableOfContents";
+import { useState, useEffect } from "react";
 import {
   MapPin,
   User,
@@ -23,8 +26,33 @@ export default function ReHarvest() {
   const basePath = config.basePath;
   const easeRef = useScrollEaseIn();
 
+  const [headings, setHeadings] = useState<{ id: string; title: string }[]>([]);
+  useEffect(() => {
+    const headingElements = Array.from(
+      document.querySelectorAll("#content h3")
+    );
+
+    const extracted = headingElements.map((el) => {
+      const title = el.textContent?.trim() || "";
+      const id = generateSlug(title);
+      el.id = id;
+      return { id, title };
+    });
+
+    setHeadings(extracted);
+  }, []);
+
   return (
-    <div className="page">
+    <div id="content" className="page">
+      <div className="toc">
+        <TableOfContents
+          headings={headings}
+          containerId="content"
+          className={styles.grassGreen}
+          highlightStyle={styles.matchaGreen}
+        />
+      </div>
+
       {/* Title */}
       <div
         ref={easeRef}
@@ -61,7 +89,7 @@ export default function ReHarvest() {
           <div
             className={`${styles.heading} ${styles.headingContainer} ${styles.matchaGreen}`}
           >
-            Project Overview
+            <h3 id={generateSlug("Project Overview")}>Project Overview</h3>
           </div>
           <div className={`${styles.heading3} ${styles.forestGreen}`}>Team</div>
           <div className={`${styles.body} ${styles.text}`}>
@@ -99,7 +127,7 @@ export default function ReHarvest() {
           <div
             className={`${styles.heading} ${styles.headingContainer} ${styles.matchaGreen}`}
           >
-            Problem Statement
+            <h3 id={generateSlug("Problem Statement")}>Problem Statement</h3>
           </div>
 
           <div className={`${styles.body} ${styles.text}`}>
@@ -122,7 +150,9 @@ export default function ReHarvest() {
           <div
             className={`${styles.heading} ${styles.headingContainer} ${styles.matchaGreen}`}
           >
-            Competitor Analysis
+            <h3 id={generateSlug("Competitor Analysis")}>
+              Competitor Analysis
+            </h3>
           </div>
 
           <div className={`${styles.body} ${styles.text}`}>
@@ -210,7 +240,7 @@ export default function ReHarvest() {
           <div
             className={`${styles.heading} ${styles.headingContainer} ${styles.matchaGreen}`}
           >
-            User Personas
+            <h3 id={generateSlug("User Personas")}>User Personas</h3>
           </div>
           <div ref={easeRef} className={`${styles.people} scroll-ease-in`}>
             {" "}
@@ -548,7 +578,7 @@ export default function ReHarvest() {
           <div
             className={`${styles.heading} ${styles.headingContainer} ${styles.matchaGreen}`}
           >
-            User Journeys
+            <h3 id={generateSlug("User Journeys")}>User Journeys</h3>
           </div>
 
           <div className={styles.paraContainer}>
@@ -589,7 +619,7 @@ export default function ReHarvest() {
         {/* Ideation */}
         <div ref={easeRef} className={`${styles.paraContainer} scroll-ease-in`}>
           <div className={`${styles.heading} ${styles.matchaGreen}`}>
-            Ideation
+            <h3 id={generateSlug("Ideation")}>Ideation</h3>
           </div>
 
           <div className={`${styles.body}`}>
@@ -778,7 +808,7 @@ export default function ReHarvest() {
         {/* Designs */}
         <div ref={easeRef} className={`${styles.paraContainer} scroll-ease-in`}>
           <div className={`${styles.heading} ${styles.matchaGreen}`}>
-            Designs
+            <h3 id={generateSlug("Designs")}>Designs</h3>
           </div>
 
           <div
@@ -932,7 +962,7 @@ export default function ReHarvest() {
 
         <div ref={easeRef} className={`${styles.paraContainer} scroll-ease-in`}>
           <div className={`${styles.heading} ${styles.matchaGreen}`}>
-            User Testing
+            <h3 id={generateSlug("User Testing")}>User Testing</h3>
           </div>
 
           <div className={`${styles.paraContainer}`}>
@@ -1123,7 +1153,7 @@ export default function ReHarvest() {
 
         <div ref={easeRef} className={`${styles.paraContainer} scroll-ease-in`}>
           <div className={`${styles.heading} ${styles.matchaGreen}`}>
-            Refinements
+            <h3 id={generateSlug("Refinements")}>Refinements</h3>
           </div>
 
           <div
@@ -1434,7 +1464,7 @@ export default function ReHarvest() {
 
         <div ref={easeRef} className={`${styles.paraContainer} scroll-ease-in`}>
           <div className={`${styles.heading} ${styles.matchaGreen}`}>
-            Next Steps
+            <h3 id={generateSlug("Next Steps")}>Next Steps</h3>
           </div>
 
           <div className={`${styles.body} ${styles.text}`}>

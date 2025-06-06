@@ -161,12 +161,12 @@ const Sidebar: React.FC = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className={`${styles.navContainer}`}>
+        <nav className={`${styles.navContainer}`}>
           {/* Page Links */}
-          <div className={`${styles.pageLinks}`}>
+          <nav className={`${styles.pageLinks}`}>
             {navLinks.main.map((link) => (
               <NavLink key={link.href} direction="default" alt="arrow">
-                <h3>
+                <h4>
                   <Link
                     href={link.href}
                     className={`link`}
@@ -190,16 +190,16 @@ const Sidebar: React.FC = () => {
                   >
                     {link.label}
                   </Link>
-                </h3>
+                </h4>
               </NavLink>
             ))}
-          </div>
+          </nav>
 
           {/* Contact Links */}
-          <div className={`${styles.contactLinks}`}>
+          <nav className={`${styles.contactLinks}`}>
             {navLinks.contact.map((link) => (
               <NavLink key={link.href} direction="diagonal" alt="arrow">
-                <h3>
+                <h4>
                   <Link
                     href={link.href}
                     className={`link`}
@@ -223,11 +223,11 @@ const Sidebar: React.FC = () => {
                   >
                     {link.label}
                   </Link>
-                </h3>
+                </h4>
               </NavLink>
             ))}
-          </div>
-        </div>
+          </nav>
+        </nav>
       </div>
     </div>
   );

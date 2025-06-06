@@ -135,7 +135,7 @@ export default function Contact() {
           </div>
 
           {/* Links */}
-          <div className={`${styles.linksContainer} grey`}>
+          <nav className={`${styles.linksContainer} grey`}>
             <NavLink direction="diagonal" alt="arrow">
               <h3>
                 <a
@@ -171,7 +171,7 @@ export default function Contact() {
                 </a>
               </h3>
             </NavLink>
-          </div>
+          </nav>
         </div>
       </div>
     </div>
