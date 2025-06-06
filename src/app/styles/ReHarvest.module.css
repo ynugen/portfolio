@@ -124,11 +124,28 @@
   /* text-align: justify; */
 }
 
+.bodySmall {
+  font-family: var(--font-helvetica), sans-serif;
+  font-size: calc(var(--title-font-size) / (1.618 * 4));
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: justify;
+}
+
 .bodyi {
   font-family: var(--font-helvetica), sans-serif;
   font-size: calc(var(--title-font-size) / (1.618 * 3));
   font-weight: 400;
   line-height: 1.6;
+  text-align: justify;
+  font-style: italic;
+}
+
+.bodySmalli {
+  font-family: var(--font-helvetica), sans-serif;
+  font-size: calc(var(--title-font-size) / (1.618 * 4));
+  font-weight: 400;
+  line-height: 1.4;
   text-align: justify;
   font-style: italic;
 }
@@ -321,7 +338,7 @@
         calc(var(--square-size-m) * 0.03) 0px var(--slate-grey),
       calc(var(--square-size-m) * 0.055) calc(var(--square-size-m) * 0.055) 0px
         #e9b44c;
-    animation: textShadowEaseOutMed 1s ease-out;
+    animation: textShadowEaseOutMed 2s ease-out;
   }
   .subtitle {
     font-size: calc(var(--title-font-size-m) / (1.618 * 2));

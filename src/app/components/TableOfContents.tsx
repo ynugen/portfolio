@@ -6,6 +6,7 @@ interface TOCProps {
   headings: { id: string; title: string }[];
   containerId: string;
   className?: string;
+  normalStyle: string;
   highlightStyle?: string;
 }
 
@@ -13,7 +14,8 @@ const TableOfContents = ({
   headings,
   containerId,
   className = "",
-  highlightStyle = "text-marigold",
+  normalStyle = "body",
+  highlightStyle = "text-marigold body-i",
 }: TOCProps) => {
   const [activeId, setActiveId] = useState<string | null>(null);
 
@@ -74,11 +76,8 @@ const TableOfContents = ({
         const isActive = activeId === heading.id;
         const slug = generateSlug(heading.title);
 
-        const baseClass =
-          "transition-transform duration-200 hover:-translate-x-2 text-sm md:text-base body";
-        const activeClass = isActive
-          ? `-translate-x-2 body-i ${highlightStyle}`
-          : "";
+        const baseClass = `transition-transform duration-200 hover:-translate-x-2 text-sm md:text-base ${normalStyle}`;
+        const activeClass = isActive ? `-translate-x-2 ${highlightStyle}` : "";
 
         return (
           <a

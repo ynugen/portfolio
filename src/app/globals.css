@@ -220,6 +220,9 @@ h3 {
   .body-bi {
     font-size: calc(var(--title-font-size-m) / (1.618 * 3));
   }
+  .body-i {
+    font-size: calc(var(--title-font-size-m) / (1.618 * 3));
+  }
   .background-dropshadow {
     text-shadow: 0px calc(var(--square-size-m) * 0.105) 0px var(--background),
       0px calc(var(--square-size-m) * 0.072) 0px var(--background),
@@ -280,7 +283,9 @@ h3 {
   .body-bi {
     font-size: calc(var(--title-font-size-s) / (1.618 * 3));
   }
-
+  .body-i {
+    font-size: calc(var(--title-font-size-s) / (1.618 * 3));
+  }
   .background-dropshadow {
     text-shadow: 0px calc(var(--square-size-s) * 0.105) 0px var(--background),
       0px calc(var(--square-size-s) * 0.072) 0px var(--background),
@@ -399,11 +404,15 @@ h3 {
 .toc {
   position: fixed;
   top: 0;
-  left: calc(var(--square-size) * 1.5);
+  left: calc(var(--square-size) * 0.2 + var(--square-size));
   margin: calc(var(--square-size) * 1) 0;
+  padding: 0 calc(var(--square-size) * 0.2);
 }
 
 @media (max-width: 768px) {
+  .toc {
+    display: none;
+  }
   .page-layout {
     flex-direction: column;
   }
