@@ -1,5 +1,20 @@
 import localFont from "next/font/local";
 
+export const karla = localFont({
+  src: [
+    {
+      path: "./Karla-VariableFont_wght.ttf",
+      style: "normal",
+    },
+    {
+      path: "./Karla-Italic-VariableFont_wght.ttf",
+      style: "italic",
+    },
+  ],
+  display: "swap",
+  variable: "--font-karla",
+});
+
 export const pixeloid = localFont({
   src: [
     {

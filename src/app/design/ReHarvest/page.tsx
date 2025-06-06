@@ -44,12 +44,13 @@ export default function ReHarvest() {
 
   return (
     <div id="content" className="page">
-      <div className="toc">
+      <div className={`toc`}>
         <TableOfContents
           headings={headings}
           containerId="content"
-          className={styles.grassGreen}
-          highlightStyle={styles.matchaGreen}
+          className={`${styles.matchaGreen}`}
+          normalStyle={`${styles.bodySmall}`}
+          highlightStyle={`${styles.grassGreen} ${styles.bodySmalli}`}
         />
       </div>
 
@@ -622,7 +623,7 @@ export default function ReHarvest() {
             <h3 id={generateSlug("Ideation")}>Ideation</h3>
           </div>
 
-          <div className={`${styles.body}`}>
+          <div className={`${styles.body} ${styles.text}`}>
             To address the challenges surrounding
             <span className={`${styles.bodybi}`}> food waste</span>, limited
             access to
@@ -641,12 +642,12 @@ export default function ReHarvest() {
               1. Seasonal Produce Tracker
             </div>
 
-            <div className={`${styles.body}`}>
+            <div className={`${styles.body} ${styles.text}`}>
               A visual and educational tool designed to help users easily
               identify which produce is in season, encouraging sustainable and
               informed shopping decisions.
             </div>
-            <div className={`${styles.body}`}>
+            <div className={`${styles.body} ${styles.text}`}>
               <ul className={`${styles.listContainer}`}>
                 <li>
                   <span className={`${styles.bodybi}`}>Reduces demand</span> for
@@ -712,12 +713,12 @@ export default function ReHarvest() {
               </span>
             </div>
 
-            <div className={`${styles.body}`}>
+            <div className={`${styles.body} ${styles.text}`}>
               A platform where users can browse, reserve, and purchase
               discounted surplus or imperfect produce from nearby farmers and
               suppliers.
             </div>
-            <div className={`${styles.body}`}>
+            <div className={`${styles.body} ${styles.text}`}>
               <ul className={`${styles.listContainer}`}>
                 <li>
                   Tackles food waste at the{" "}
@@ -789,7 +790,7 @@ export default function ReHarvest() {
             ref={easeRef}
             className={`${styles.paraContainer} scroll-ease-in`}
           >
-            <div className={`${styles.body}`}>
+            <div className={`${styles.body} ${styles.text}`}>
               Ultimately, we decided to move forward with the{" "}
               <span className={`${styles.bodyb} ${styles.grassGreen}`}>
                 Marketplace for Rescued Produce
@@ -881,7 +882,7 @@ export default function ReHarvest() {
               High-Fidelity Prototypes
             </div>
 
-            <div className={`${styles.body}`}>
+            <div className={`${styles.body} ${styles.text}`}>
               For ReHarvest&#39;s high-fidelity designs, I chose a
               retro-inspired colour palette and typeface to give the site a
               warm, nostalgic vibe inspired by the hackathon&#39;s theme of{" "}
@@ -915,7 +916,7 @@ export default function ReHarvest() {
                 Customer Flow
               </div>
 
-              <div className={`${styles.body}`}>
+              <div className={`${styles.body} ${styles.text}`}>
                 The site is designed for quick, intuitive browsing. A prominent
                 CTA on the landing page guides customers straight to shopping
                 for produce. From there, they can easily{" "}
@@ -936,7 +937,7 @@ export default function ReHarvest() {
                 Wholesaler Flow
               </div>
 
-              <div className={`${styles.body}`}>
+              <div className={`${styles.body} ${styles.text}`}>
                 For wholesalers, everything is{" "}
                 <span className={`${styles.bodybi}`}>
                   centralised in a dashboard

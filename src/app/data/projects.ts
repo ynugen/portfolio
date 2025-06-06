@@ -31,6 +31,6 @@ export const projects: Project[] = [
     alt: "Langwarrin Website Revamp",
     type: ["software"],
     link: "/software/Langwarrin",
-    main: true,
+    main: false,
   },
 ];

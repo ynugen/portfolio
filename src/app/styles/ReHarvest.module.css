@@ -127,7 +127,7 @@
 .bodySmall {
   font-family: var(--font-helvetica), sans-serif;
   font-size: calc(var(--title-font-size) / (1.618 * 4));
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.4;
   text-align: justify;
 }

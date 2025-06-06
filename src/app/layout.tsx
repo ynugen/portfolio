@@ -9,6 +9,7 @@ import {
   timetwist,
   helveticaNeue,
   milkyVintage,
+  karla,
 } from "@/app/fonts/fonts";
 
 export default function RootLayout({
@@ -19,7 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${pixeloid.variable} ${timetwist.variable} ${helveticaNeue.variable} ${milkyVintage.variable}`}
+      className={`${pixeloid.variable} ${timetwist.variable} ${helveticaNeue.variable} ${milkyVintage.variable} ${karla.variable}`}
     >
       <body className="full-page">
         <DynamicCSS />
