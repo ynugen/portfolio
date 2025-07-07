@@ -9,7 +9,7 @@
   width: fit-content;
   aspect-ratio: auto;
   /* height: 100vh; */
-  background-color: var(--matcha);
+  background-color: var(--marigold);
   transition: width 0.2s ease-out;
 }
 

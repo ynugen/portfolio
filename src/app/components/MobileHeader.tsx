@@ -66,7 +66,7 @@ const MobileHeader: React.FC = () => {
         <div className="flex">
           {/* Title text */}
           <div className={`title-1 grey flex ${styles.nameContainer}`}>
-            <Title className="title-1 flex" color="var(--marigold)">
+            <Title className="title-1 flex" color="var(--peach)">
               <Link href="/">
                 <h1>AYIMA</h1>
               </Link>

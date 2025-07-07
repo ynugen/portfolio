@@ -5,6 +5,7 @@
   border-top: var(--slate-grey) 1px solid;
   border-left: var(--slate-grey) 1px solid;
   border-right: var(--slate-grey) 1px solid;
+  background-color: var(--marigold);
 }
 
 @media (max-width: 768px) {

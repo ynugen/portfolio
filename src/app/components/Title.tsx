@@ -10,7 +10,7 @@ type TitleProps = {
 export default function Title({
   children,
   className = "title-1 flex h-[6.5rem]",
-  color = "var(--marigold)",
+  color = "var(--peach)",
 }: TitleProps) {
   const titleRef = useRef<HTMLDivElement>(null);
   const [shadowStyle, setShadowStyle] = useState({});

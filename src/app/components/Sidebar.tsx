@@ -96,7 +96,7 @@ const Sidebar: React.FC = () => {
         >
           <Title
             className={isProjectPage ? "title-11 flex" : "title-1 flex"}
-            color="var(--marigold)"
+            color="var(--peach)"
           >
             <Link href="/">
               <h1>AYIMA</h1>
